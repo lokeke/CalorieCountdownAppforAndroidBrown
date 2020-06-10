@@ -1,0 +1,5 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
+    android:name="ese.com.caloriecountdownappforandroidbrown.Log_It_In_CIF15Fragment"
+    tools:layout="@layout/fragment_log__it__in__cif15" android:layout_width="match_parent"
+    android:layout_height="match_parent" />

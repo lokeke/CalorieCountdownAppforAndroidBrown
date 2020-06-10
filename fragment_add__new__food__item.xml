@@ -1,0 +1,267 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ese.com.caloriecountdownappforandroid.Add_New_Food_Item">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="ese.com.caloriecountdownappforandroid.Add_New_Food_Item">
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+        android:id="@+id/textview10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+
+        <EditText
+            android:id="@+id/edit_text40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment1" />
+        <EditText
+            android:id="@+id/edit_text41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment2" />
+        <EditText
+            android:id="@+id/edit_text42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment3" />
+        <EditText
+            android:id="@+id/edit_text43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment4" />
+        <EditText
+            android:id="@+id/edit_text44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment5" />
+        <EditText
+            android:id="@+id/edit_text45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment6" />
+        <EditText
+            android:id="@+id/edit_text46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment7" />
+        <EditText
+            android:id="@+id/edit_text47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment8" />
+        <EditText
+            android:id="@+id/edit_text48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment9" />
+        <EditText
+            android:id="@+id/edit_text49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment10" />
+        <EditText
+            android:id="@+id/edit_text50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment11" />
+        <EditText
+            android:id="@+id/edit_text51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment12" />
+        <EditText
+            android:id="@+id/edit_text52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment13" />
+        <EditText
+            android:id="@+id/edit_text53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment14" />
+        <EditText
+            android:id="@+id/edit_text54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment15" />
+        <EditText
+            android:id="@+id/edit_text55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment16" />
+        <EditText
+            android:id="@+id/edit_text56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment17" />
+        <EditText
+            android:id="@+id/edit_text57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment18" />
+        <EditText
+            android:id="@+id/edit_text58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment19" />
+        <EditText
+            android:id="@+id/edit_text59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment20" />
+        <EditText
+            android:id="@+id/edit_text60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment21" />
+        <EditText
+            android:id="@+id/edit_text61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment22" />
+        <EditText
+            android:id="@+id/edit_text62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment23" />
+        <EditText
+            android:id="@+id/edit_text63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/cancel3"/>
+
+            <Button
+                android:id="@+id/butto11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/cancel2"/>
+
+        </LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
+
+

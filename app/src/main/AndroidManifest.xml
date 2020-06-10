@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ese.com.caloriecountdownappforandroidbrown">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen_Fragement_001_Class"
+            android:label="@string/splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CCD_GUI_CD_CIF1"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Food_Diary_Sheet_CIF3"
+            android:label="@string/title_activity_food__diary__sheet__cif3"
+            android:parentActivityName=".CCD_GUI_CD_CIF1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="CCD_GUI_CD_CIF1" />
+        </activity>
+        <activity
+            android:name=".FoodItemsListActivity_CIF7"
+            android:label="@string/food_item_text"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Spelling_TextView_Frag_CIF7"
+            android:label="@string/spellchecker_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Web_Calculator_fragment_2"
+            android:label="@string/title_activity_web__calculator_fragment_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Log_It_In_CIF15"
+            android:label="@string/title_activity_log_it_in_fragment_3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Start_Weight_Loss_ActivityCIF14"
+            android:label="@string/action_start_weightloss_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Add_New_Item_Activity_CIF12"
+            android:label="@string/action_start_weightloss_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".BreakfastBoxService_CIFragement001"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".LunchBoxService_CIFragement001"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".DinnerBoxService_CIFragement001"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Spell_Checker_GranularFragment018"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_TEXT_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textservice.Spell_Checker_GranularFragment018" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.textservice.scs"
+                android:resource="@xml/spellchecker" />
+        </service>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Diet_Plan_Activity_fragment008"
+            android:label="@string/title_activity_diet__plan__fragment008"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".FivePMBox_Service"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

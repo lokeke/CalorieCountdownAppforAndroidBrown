@@ -1,0 +1,6 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    android:name="ese.com.caloriecountdownappforandroid.Add_New_Item_Activity_CIF12Fragment"
+    tools:layout="@layout/fragment_add__new__item__activity__cif12"
+    android:layout_width="match_parent" android:layout_height="match_parent" />
