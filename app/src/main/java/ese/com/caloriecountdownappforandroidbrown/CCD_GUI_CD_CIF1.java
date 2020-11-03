@@ -1,5 +1,7 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +17,7 @@ import android.net.Uri;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -118,7 +121,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //StartDebitActivityCIF13();
+                StartDebitActivityCIF13();
             }
         });
 
@@ -239,7 +242,31 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.submenu6)
 
+        {
+            Populate_SQLite_Database();
+            return true;
+        }
+
+        if (id == R.id.submenu9)
+
+        {
+            De_Populate_SQLite_Database();
+            return true;
+        }
+
+        if (id == R.id.submenu7)
+
+        {
+            Clear_SQLite_Database();
+            return true;
+        }
+
+        if (id == R.id.action_fitness_log_debit) // Physical Activity Debit
+        {
+            StartDebitActivityCIF13();
+        }
 
 
 
@@ -346,6 +373,72 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
                 //Start_Day_End();
 
         }
+
+
+        if (requestcode == REQUEST_CODE_GET_FOOD_ITEM) {
+
+            try {
+
+                android.util.Log.d("Credit_Value, Pos 1", "We are in Start of Request Food Diary" );
+
+
+                int CreditResult = data.getIntExtra(Food_Diary_Sheet_CIF3.TOTAL_CREDIT_VALUE, 1);
+
+                android.util.Log.d("Credit_Value, Pos 2", "We are in Start of Request Food Diary" );
+
+                String Summation = data.getStringExtra(Food_Diary_Sheet_CIF3.SUMMATION_TEXT);
+                //How it for Countdown Screen, get App ready ready for use, might have to look in Intent
+
+                android.util.Log.d("Credit_Value, Pos 3", "We are in Start of Request Food Diary" );
+
+                mSummation = SummaryBoxCIF12.get(CCD_GUI_CD_CIF1.this);
+                mSummation.Set_mCurrentBalance(Get_currentBalance());
+                Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+                display_dialog_cif11.Set_mAppContext(CCD_GUI_CD_CIF1.this);
+
+                android.util.Log.d("Credit_Value, Pos 4", "We are in Start of Request Food Diary" );
+
+                Record_Food_Journal(mSummation.Get_mFoodItems());
+
+                android.util.Log.d("Credit_Value, Pos 5", "We are in Start of Request Food Diary" );
+
+                Log.d("1st RecordJ Fi name", mSummation.Get_mFoodItems().get(0).Get_food_item_name());
+
+                android.util.Log.d("Credit_Value, Pos 6", "We are in Start of Request Food Diary" );
+
+                display_dialog_cif11.SummaryBoxShowing(mSummation);
+                android.util.Log.d("Credit_Value, Pos 7", "We are in Start of Request Food Diary" );
+                mSummation.reset();
+                android.util.Log.d("Credit_Value, Pos 8", "We are in Start of Request Food Diary" );
+                //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+                Countup(CreditResult);
+                android.util.Log.d("Credit_Value, Pos 9", "We are in Start of Request Food Diary" );
+                Refresh();
+                android.util.Log.d("Credit_Value, Pos 10", "We are in Start of Request Food Diary" );
+            }
+            catch(NullPointerException e)
+            {
+                Log.d("Countdown", "Null Pointer Sent Back" + e.toString());
+            }
+        }
+
+
+        if (requestcode == REQUEST_CODE_START_DEBIT_ACTIVITY) {
+
+
+            int DebitResult = data.getIntExtra(Debit_Activity_CiF003_fragment_box.TOTAL_DEBIT_VALUE, 1);
+            //String Summation = data.getStringExtra(Food_Diary_Sheet_CIF3.SUMMATION_TEXT);
+            //How it for Countdown Screen, get App ready ready for use, might have to look in Intent
+            mSummation = SummaryBoxCIF12.get(CCD_GUI_CD_CIF1.this);
+            mSummation.Set_mCurrentBalance(Get_currentBalance());
+            Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+            display_dialog_cif11.Set_mAppContext(CCD_GUI_CD_CIF1.this);
+            display_dialog_cif11.SummaryBoxShowingDebit(mSummation);
+
+            //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+            Countdown(DebitResult);
+            Refresh();
+        }
     }
 
 
@@ -431,6 +524,17 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             this.startActivityForResult(i, REQUEST_CODE_DIET_PLAN);
 
         }
+
+    public void Countup(int credit) {
+        //android.util.Log.d("Countdown","Consider Countdown Updated Token") ;
+        final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        String CountdownFigure = countdownbalance.getText().toString();
+        CountdownFigure = new RoundingCIF13().IntToString(new RoundingCIF13().StringToInt(CountdownFigure) + credit);
+        countdownbalance.setText(CountdownFigure);
+        StoreCountdownBalance(CountdownFigure);
+        Kitty();
+
+    }
 
         private void OpenAccount ( int OpeningBalance)
         {
@@ -525,9 +629,11 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
 
     private void StartFoodDiaryAidSheetCIF3() {
-
+        android.util.Log.d("Pre Multi-Search", "number2");
         Intent i = new Intent(CCD_GUI_CD_CIF1.this, Food_Diary_Sheet_CIF3.class);
+        android.util.Log.d("Pre Multi-Search", "number3");
         this.startActivityForResult(i, REQUEST_CODE_GET_FOOD_ITEM);
+        android.util.Log.d("Pre Multi-Search", "number4");
         //CancelAlarm();
 
     }
@@ -571,6 +677,12 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         public void refreshMainActivity();
     }
 
+    private void StartDebitActivityCIF13()
+    {
+        Intent i = new Intent(CCD_GUI_CD_CIF1.this, Debit_Activity_CiF003_fragment_box.class);
+        this.startActivityForResult(i, REQUEST_CODE_START_DEBIT_ACTIVITY);
+    }
+
 
     private void NewDay()
     {
@@ -597,6 +709,387 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     {
         NewDay();
     }
+
+
+    private boolean Populate_SQLite_Database()
+    {
+        Populate_SQLDatabase_Food_Items_CIF7 Gen_Pop = new Populate_SQLDatabase_Food_Items_CIF7(this);
+        return Gen_Pop.Populate();
+
+    }
+
+    private boolean De_Populate_SQLite_Database()
+    {
+        Populate_SQLDatabase_Food_Items_CIF7 Gen_Pop = new Populate_SQLDatabase_Food_Items_CIF7(this);
+        return Gen_Pop.De_Populate_Database();
+    }
+
+    private void Clear_SQLite_Database()
+    {
+        Populate_SQLDatabase_Food_Items_CIF7 Gen_Pop = new Populate_SQLDatabase_Food_Items_CIF7(this);
+        Gen_Pop.Delete_Database();
+    }
+
+
+    private void Kitty() {
+
+        MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(getApplicationContext());
+        int dayend = data_model_adapter.RetriveDayEnd();
+        int currentbalance = Get_currentBalanceInt();
+        int kit = currentbalance - dayend;
+        if(kit < 0)
+        {
+            Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+            display_dialog_cif11.Set_mAppContext(CCD_GUI_CD_CIF1.this);
+            display_dialog_cif11.Showing(KittyMinus(kit));
+        }
+
+        if(kit == 0)
+        {
+            Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+            display_dialog_cif11.Set_mAppContext(CCD_GUI_CD_CIF1.this);
+            display_dialog_cif11.Showing(KittyZero(kit));
+        }
+        if(kit > 0)
+        {
+            Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+            display_dialog_cif11.Set_mAppContext(CCD_GUI_CD_CIF1.this);
+            display_dialog_cif11.Showing(KittyPlus(kit));
+        }
+
+    }
+
+    private String KittyMinus(int in)
+    {
+        int kit = Math.abs(in);
+        String out = "You have " + new RoundingCIF13().IntToString(kit) + " Calories left in the Kitty for the meals left in the day.";
+        return out;
+    }
+
+    private String KittyZero(int in)
+    {
+        String out = "You have no Calories to eat left in your Kitty, Do not eat or exercise for the rest of the day, you are on track for Weight loss. ";
+        return out;
+    }
+
+    private String KittyPlus(int in)
+    {
+        int walkminutes = (int) in/7;
+        String out = "You now need to Walk for " + new RoundingCIF13().IntToString(walkminutes) + " minutes to be on track for Weight Loss, only dispose of the dialog once you have performed.";
+        return out;
+    }
+
+
+    private int Get_currentBalanceInt()
+    {
+        final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        return new RoundingCIF13().StringToInt(countdownbalance.getText().toString());
+    }
+
+    private String Get_currentBalance()
+    {
+        final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        return new String(countdownbalance.getText().toString());
+    }
+
+    private void Refresh()
+    {
+        getWindow().getDecorView().findViewById(R.id.fragment).invalidate();
+    }
+
+    private void Record_Food_Journal(ArrayList<Food_Item_CIF4> INPUT)
+    {
+        MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(this);
+        data_model_adapter.Record_Food_Journal(INPUT);
+
+    }
+
+
+
+
+
+
+
+
+
+
+/*    @Override
+    protected void onActivityResult(int requestcode, int resultcode, Intent data) {
+        super.onActivityResult(requestcode, resultcode, data);
+
+        try {
+
+            if (data == null)
+            {
+                Log.d(TAG, "Sorry Mate, Intent is null Baby!");
+                return;
+            }
+        }
+        catch (Exception c)
+        {
+            ;
+        }
+
+        if (requestcode == REQUEST_CODE_GET_FOOD_ITEM) {
+
+            try {
+                int CreditResult = data.getIntExtra(Food_Diary_Sheet_CIF3.TOTAL_CREDIT_VALUE, 1);
+                String Summation = data.getStringExtra(Food_Diary_Sheet_CIF3.SUMMATION_TEXT);
+                //How it for Countdown Screen, get App ready ready for use, might have to look in Intent
+                mSummation = SummaryBoxCIF12.get(CCDGUI_CIF1.this);
+                mSummation.Set_mCurrentBalance(Get_currentBalance());
+                Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+                display_dialog_cif11.Set_mAppContext(CCDGUI_CIF1.this);
+
+                Record_Food_Journal(mSummation.Get_mFoodItems());
+
+                Log.d("1st RecordJ Fi name", mSummation.Get_mFoodItems().get(0).Get_food_item_name());
+
+                display_dialog_cif11.SummaryBoxShowing(mSummation);
+                mSummation.reset();
+                //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+                Countup(CreditResult);
+                Refresh();
+            }
+            catch(NullPointerException e)
+            {
+                Log.d("Countdown", "Null Pointer Sent Back" + e.toString());
+            }
+        }
+
+        if (requestcode == REQUEST_CODE_START_DEBIT_ACTIVITY) {
+
+
+            int DebitResult = data.getIntExtra(Debit_Activity_CIF13Fragment.TOTAL_DEBIT_VALUE, 1);
+            //String Summation = data.getStringExtra(Food_Diary_Sheet_CIF3.SUMMATION_TEXT);
+            //How it for Countdown Screen, get App ready ready for use, might have to look in Intent
+            mSummation = SummaryBoxCIF12.get(CCDGUI_CIF1.this);
+            mSummation.Set_mCurrentBalance(Get_currentBalance());
+            Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+            display_dialog_cif11.Set_mAppContext(CCDGUI_CIF1.this);
+            display_dialog_cif11.SummaryBoxShowingDebit(mSummation);
+
+            //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+            Countdown(DebitResult);
+            Refresh();
+        }
+
+        if (requestcode == REQUEST_CODE_START_WEIGHT_LOSS_ACTIVITY)
+        {
+            String vitals;
+            int openingbalance;
+
+            if(data != null)
+            {
+                openingbalance = data.getIntExtra(Start_Weight_Loss_ActivityCIF14Fragment.OPENING_BALANCE, 1);
+                ResetBreakfastTime = new RoundingCIF13().StringToDate(data.getStringExtra(Start_Weight_Loss_ActivityCIF14Fragment.ResultBreakfastTime));
+                ResetLunchTime = new RoundingCIF13().StringToDate(data.getStringExtra(Start_Weight_Loss_ActivityCIF14Fragment.ResultLunchTime));
+                ResetDinnerTime = new RoundingCIF13().StringToDate(data.getStringExtra(Start_Weight_Loss_ActivityCIF14Fragment.ResultDinnerTime));
+                ResetMidnight = new RoundingCIF13().StringToDate(data.getStringExtra(Start_Weight_Loss_ActivityCIF14Fragment.ResultMidnight));
+                vitals = data.getStringExtra(Start_Weight_Loss_ActivityCIF14Fragment.VitalStats);
+
+                Display_Dialog_CIF11 display_dialog_cif11 = new Display_Dialog_CIF11();
+                display_dialog_cif11.Set_mAppContext(this);
+                display_dialog_cif11.Showing(vitals);
+                //CCDGUI_CIF1.CurrentCalendar cc = new CCDGUI_CIF1.CurrentCalendar();
+                //Start_Weight_Loss(cc.Hour, cc.Minute, cc.Day_of_the_Month, cc.Month, cc.Year);
+                Start_Weight_Loss();
+                OpenAccount(openingbalance);
+                //android.util.Log.d("Start_Weight_Loss", "these are your values:Hour:" + new RoundingCIF13().IntToString(cc.Hour) + " Min: " + new RoundingCIF13().IntToString(cc.Minute) + " Day of month: " + new RoundingCIF13().IntToString(cc.Day_of_the_Month) + " Month: " + new RoundingCIF13().IntToString(cc.Month) + " Year: " + new RoundingCIF13().IntToString(cc.Year));
+                ResetAlarmTimer(ResetBreakfastTime, ResetLunchTime,ResetDinnerTime,ResetMidnight);
+            }
+            else
+            {
+                ResetBreakfastTime = new Date();
+                ResetLunchTime = new Date();
+                ResetDinnerTime = new Date();
+                ResetMidnight = ProperMidnight();
+                vitals = "It's empty mate";
+                openingbalance = 0;
+            }
+
+        }
+
+        else
+        {
+            return;
+        }
+
+
+    }*/
+
+    public void Countdown(int debit) {
+
+        //android.util.Log.d("Countdown","Consider Countdown Updated Token") ;
+        final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        String CountdownFigure = countdownbalance.getText().toString();
+        CountdownFigure = new RoundingCIF13().IntToString(new RoundingCIF13().StringToInt(CountdownFigure) - debit);
+        countdownbalance.setText(CountdownFigure);
+        StoreCountdownBalance(CountdownFigure);
+        Kitty();
+    }
+
+
+
+    public String RetrieveCountdownBalance() {
+        MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(getApplicationContext());
+        return data_model_adapter.RetrieveBalance();
+    }
+
+
+    public void DisplaySummaryString(String summary) {
+        Log.d(TAG, summary);
+    }
+    public void DisplaySummaryInt(int in) {
+        Log.d(TAG, new RoundingCIF13().IntToString(in));
+    }
+
+    public void UpdateCountupUI() {
+        mSummation = SummaryBoxCIF12.get(CCD_GUI_CD_CIF1.this);
+        //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+        DisplaySummaryString(mSummation.GetSummaryString()); //Toast, alert or dialog or both
+        Countup(mSummation.GetCreditValue());
+        mSummation.reset();
+        Refresh();//GUI
+
+    }
+
+    public void UpdateCountdownUI()
+    {
+        mSummation = SummaryBoxCIF12.get(CCD_GUI_CD_CIF1.this);
+        //Update button in Food_Diary_Sheet_CIF3 Activity creates a return event, them this method called
+        DisplaySummaryString(mSummation.GetSummaryString()); //Toast, alert or dialog
+        Countdown(mSummation.GetDebitValue());
+        mSummation.reset();
+        Refresh();//GUI
+
+    }
+
+
+    public void Start_Weight_LossPlus24()
+    {
+        MIF1NewDayEndSetAlarm dayEndSetAlarm = new MIF1NewDayEndSetAlarm();
+        dayEndSetAlarm.NewDayEndSetAlarm(add24(new Date()), this);
+
+    }
+
+    public void Start_Weight_Loss_CancelAlarm()
+    {
+        MIF1NewDayEndSetAlarm dayEndSetAlarm = new MIF1NewDayEndSetAlarm();
+        dayEndSetAlarm.CancelAlarm();
+    }
+
+
+    private void CancelAlarm() {
+        Intent i = new Intent(CCD_GUI_CD_CIF1.this, NewDayCountdown.class);
+        i.setAction(ACTION_STORE_BALANCE);
+        PendingIntent pi = PendingIntent.getService(getApplicationContext(), REQUEST_CODE_NEW_DAY, i, 0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(this.ALARM_SERVICE);
+        alarmManager.cancel(pi);
+        pi.cancel();
+    }
+
+
+
+    private void SetNewDayAlarm(int h, int m, int d, int mon, int yr)
+    {
+        //Alogrithm Engineering ~> Android :
+        //Here you prime AlarmManager to first shoot newdaycountdown intent at 9pm the same day
+        //then it will continue to reset it self.
+        //It can be called by anybody not just StartWeight we will pretend to be start weight loss
+        //and start using it to continue countdown. let is shoot a warning that countdown day is
+        //coming to an end please do all final updates.
+        //Should also check that if already on do nothign etc.
+        //CancelAlarm();
+
+        //CFF Refinement Box i : *“Make DayEnd 9pm work properly first most important execution. *See Blackberry. *Bring NewDaySetAlarm out into MIF, when one DayEnd is set it Calls MIF for next go, must be and 9pm ask users to round up last remaining boxes for the day give 30 minutes so 8:30pm notification and boom new day end like iPhone calculator steps set in Data like current for new Day end” check it works in Samsung well tight like boxes before (re)Loading ~> www.ese-edet.eu.
+        int hour = h;
+        int minute = m;
+        int day_of_month = d;
+        int month = mon;
+        int year = yr;
+        java.util.Calendar Kalends = Calendar.getInstance();
+        Kalends.setTime(new Date());
+        Kalends.set(Calendar.HOUR_OF_DAY, hour);
+        Kalends.set(Calendar.MINUTE, minute);
+        // Kalends.set(Calendar.DAY_OF_MONTH, day_of_month);
+        //Kalends.set(Calendar.MONTH,month);
+        // Kalends.set(Calendar.YEAR, year);
+        long KalendTime = (System.currentTimeMillis() - Kalends.getTimeInMillis());
+        long intervalmillis = (24 * 60 * 60 * 1000); //24 hours
+
+        Intent i = new Intent(CCD_GUI_CD_CIF1.this, NewDayCountdown.class);
+        i.setAction(ACTION_STORE_BALANCE);
+        PendingIntent pi = PendingIntent.getService(getApplicationContext(), REQUEST_CODE_NEW_DAY, i, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(this.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC, (System.currentTimeMillis()+ KalendTime),intervalmillis, pi);
+        Log.d("Countdown", "Alarm Manager Set Yeah verify");
+
+    }
+
+
+
+    public void setResetDayEnd()
+    {
+
+    }
+
+    public void setResetBreakfastTime(Date btime)
+    {
+        ResetBreakfastTime = btime;
+    }
+
+    public void setResetLunchTime(Date ltime)
+    {
+        ResetLunchTime = ltime;
+    }
+
+    public void setResetDinnerTime(Date dtime)
+    {
+        ResetDinnerTime = dtime;
+    }
+
+    private void ResetAlarmTimer(ObjectWithAllTheTimesCIF10 obj)
+    {
+        ResetAlarmTimer(obj.getResetBreakfastTime(), obj.getResetLunchTime(), obj.getResetDinnerTime(), obj.getResetDayEnd());
+    }
+
+
+
+
+    class CurrentCalendar
+    {
+        private java.util.Calendar Kalends;
+        public int Hour;
+        public int Minute;
+        public int Day_of_the_Month;
+        public int Month;
+        public int Year;
+
+
+        public CurrentCalendar()
+        {
+            Kalends = Calendar.getInstance();
+            Kalends.setTimeInMillis(System.currentTimeMillis() + 180000);
+            //Kalends.set(Calendar.HOUR, 17);
+            //Kalends.set(Calendar.MINUTE, 06);
+            Hour = Kalends.HOUR;
+            Minute = Kalends.MINUTE;
+            Day_of_the_Month = Kalends.DAY_OF_MONTH;
+            Month = Kalends.MONTH;
+            Year = Kalends.YEAR;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
 
 
 }

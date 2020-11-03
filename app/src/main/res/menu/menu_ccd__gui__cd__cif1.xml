@@ -13,7 +13,7 @@
     <item android:id="@+id/action_start_weightloss"
         android:title="@string/action_start_weightloss_title"/>
 
-
+<group>
 
     <item android:id="@+id/action_food_diary_credit"
         android:title="@string/action_food_diary_credit_title">
@@ -28,6 +28,7 @@
             <item android:id="@+id/submenu3c" android:title="Big Breakfast Box Food items"></item>
             <item android:id="@+id/submenu5" android:title="Monthly Statement and Food Journal"></item>
             <item android:id="@+id/submenu6" android:title="Populate Food Database"></item>
+            <item android:id="@+id/submenu9" android:title="Depopulate Food Database"></item>
             <item android:id="@+id/submenu7" android:title="Clear Database"></item>
             <item android:id="@+id/submenu8" android:title=" Calculator">
                 <menu>
@@ -41,6 +42,8 @@
 
             <item android:id="@+id/action_fitness_log_debit"
                 android:title="@string/action_fitness_log_debit_title"/>
+
+</group>
 
             <item android:id="@+id/action_log_it_in_reminder"
                 android:title="@string/action_log_it_in_reminder_title"/>

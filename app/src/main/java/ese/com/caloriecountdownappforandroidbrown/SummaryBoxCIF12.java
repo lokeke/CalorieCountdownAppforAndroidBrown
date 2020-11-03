@@ -224,6 +224,18 @@ public class SummaryBoxCIF12
             totalListings = "Listings Not Avaliable";
             return totalListings;
         }
+
+        if(mFitnessItems.getmNameOfActivity() == "Steps")
+        {
+
+                totalListings = newline;
+
+                totalListings = totalListings + mFitnessItems.getmNameOfActivity() + tab  + mFitnessItems.getmMinutesPerformed() + " Calories" + newline;
+
+
+                return totalListings;
+
+        }
         else
         {
             totalListings = newline;

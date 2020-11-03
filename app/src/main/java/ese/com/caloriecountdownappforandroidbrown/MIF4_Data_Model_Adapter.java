@@ -1674,9 +1674,9 @@ public class MIF4_Data_Model_Adapter extends FragmentActivity
         return new Transaction_CIF52();
     }
 
-    public JSONWrapperCIFClass Wrap_in_JSON(Transaction_CIF22 IN)
+    public JSONWrapperCIFClass Wrap_in_JSON(Transactions_CIF22 IN)
     {
-        return new JSONWrapperCIFClass();
+        return new JSONWrapperCIFClass(IN);
     }
 
     public Transaction_CIF22 UnWrap_JSON(JSONWrapperCIFClass IN)

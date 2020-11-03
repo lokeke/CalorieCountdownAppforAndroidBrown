@@ -380,5 +380,28 @@ public class Food_Item_CIF4
         index = INPUT;
     }
 
+    public String dePopulate()
+    {
+        return new String("ING,Tesco Cornish Pasty,200,234,31.5,,,9,31.5,2.3,1.25,N,1.5,2\n +");
+    }
+
+    public boolean hasQuantiyBeenChecked()
+    {
+        return false;
+    }
+
+    public boolean goToNextItem()
+    {
+        return false;
+    }
+
+
+
+    /*****
+     *"ING,Tesco Cornish Pasty,200,234,31.5,,,9,31.5,2.3,1.25,N,1.5,2\n" +
+     *       "ING,Cadbury egg,100,170,6,,,,,,,N,,\n" +
+     *       "ING,Lindt Chocolate bunny solid 1.75 ounces,100,298,18,,,,,,,N,,\n" +
+     *       "ING,Dove dark chocolate eggs 4,100,148,9.2,,,,,,,N,,\n"
+     ***/
 }
 

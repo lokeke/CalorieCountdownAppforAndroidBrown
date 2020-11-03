@@ -1,5 +1,6 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
+import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.Cursor;
@@ -15,9 +16,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 /**
- * Created by lokeke on 07/10/2015.
+ * Created by ESE on 07/10/2015.
  */
 public class Populate_SQLDatabase_Food_Items_CIF7
 {
@@ -29,7 +31,24 @@ public class Populate_SQLDatabase_Food_Items_CIF7
     //Use a JSON File to load inshousecsv.txt from file to food_items table and back from food items table to inhouse?
 
     String filepath;
+
     String Data;
+    String Volume1;
+    String Volume2;
+    String Volume3;
+    String Volume4;
+    String Volume5;
+    String Volume6;
+    String Volume7;
+    String Volume1a;
+    String Volume2a;
+    String Volume3a;
+    String Volume4a;
+    String Volume5a;
+    String Volume6a;
+    String Volume7a;
+    String[] Data_Volume;
+
     Context mContext;
     Display_Dialog_CIF11 display;
 
@@ -40,6 +59,52 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         display = new Display_Dialog_CIF11();
         display.Set_mAppContext(mContext);
         Data = d;
+    }
+
+    public Populate_SQLDatabase_Food_Items_CIF7(Context m)
+    {
+        filepath = "filpath";
+        mContext = m;
+        display = new Display_Dialog_CIF11();
+        display.Set_mAppContext(mContext);
+
+
+
+        Data = mContext.getResources().getString(R.string.Volume1a);
+        Volume1 = mContext.getResources().getString(R.string.Volume1);
+        Volume2 = mContext.getResources().getString(R.string.Volume2);
+        Volume3 = mContext.getResources().getString(R.string.Volume3);
+        Volume4 = mContext.getResources().getString(R.string.Volume3a);
+        Volume5 = mContext.getResources().getString(R.string.Volume3d);
+        Volume6 = mContext.getResources().getString(R.string.Volume4to2);
+        Volume7 = mContext.getResources().getString(R.string.Volume4f);
+        Volume1a = mContext.getResources().getString(R.string.Volume4d);
+        Volume2a = mContext.getResources().getString(R.string.Volume4e);
+
+        Data_Volume = new String[9];
+
+
+        Data_Volume[0] = Volume1;
+        Data_Volume[1] = Volume2;
+        Data_Volume[2] = Volume3;
+        Data_Volume[3] = Volume4;
+        Data_Volume[4] = Volume5;
+        Data_Volume[5] = Volume6;
+        Data_Volume[6] = Volume7;
+        Data_Volume[7] = Volume1a;
+        Data_Volume[8] = Volume2a;
+
+
+
+
+        //Data = "ING,Tesco Cornish Pasty,200,234,31.5,,,9,31.5,2.3,1.25,N,1.5,2\n" +
+        //        "ING,Cadbury egg,100,170,6,,,,,,,N,,\n" +
+        //        "ING,Lindt Chocolate bunny solid 1.75 ounces,100,298,18,,,,,,,N,,\n" +
+        //            "ING,Dove dark chocolate eggs 4,100,148,9.2,,,,,,,N,,\n";
+
+        android.util.Log.d("getResources Contents", Volume1);
+
+
     }
 
 
@@ -81,7 +146,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
     private boolean Checker(String csvfilepath)
     {
         //System.out.println("Inside checker");
-        String inhousecsv = "";
+        String[] inhousecsv = {""};
         inhousecsv = GetInHouseCSV(csvfilepath);
 
 
@@ -103,36 +168,36 @@ public class Populate_SQLDatabase_Food_Items_CIF7
             if(true)//(inhousecsv.startsWith("\n") && inhousecsv.endsWith("\n")))
             {
                 //System.out.println("in house starts with \n");
-                while (inhousecsv.length() > 0)
+                for(int c = 0; c < inhousecsv.length; c++)
                 {
-                    String cut = this.CutFirstNextSubstring(inhousecsv);
-                    inhousecsv = TrunkTrunk(inhousecsv, cut);
+                while (inhousecsv[c].length() > 0) {
+                    String cut = this.CutFirstNextSubstring(inhousecsv[c]);
+                    inhousecsv[c] = TrunkTrunk(inhousecsv[c], cut);
+
+                    android.util.Log.d("inhousecsv[c]", inhousecsv[c]);
 
                     //System.out.println("this is string cut: "+ cut );
-                    if(cut == "\n"){System.out.println("True cut True cut True cut");}
+                    if (cut == "\n") {
+                        android.util.Log.d("True Cut","True cut True cut True cut");
+                    }
                     //  System.out.println(inhousecsv);
 
 
+                    if (cut.length() < 3) ;
 
 
-                    if(cut.length() < 3) ;
-
-
-                    else
-                    {
+                    else {
                         //System.out.println("checking sub code");
 
-                        if (this.CheckSubSCode(cut))
-                        {
-                            // System.out.println("checking sub comma");
-                            if (this.CheckSubSComma(cut))
-                            {
+                        if (this.CheckSubSCode(cut)) {
+                            android.util.Log.d("CheckSubCode",cut);
+                            if (this.CheckSubSComma(cut)) {
                                 //System.out.println("checking parse sub");
+                                android.util.Log.d("CheckSubSComma",cut);
                                 this.ParseSubS(cut);
+                                android.util.Log.d("ParseSubS",cut);
                                 //return true;
-                            }
-                            else
-                            {
+                            } else {
                                 //System.out.println("checking new integer comma");
                                 Integer inter = new Integer(1);
                                 String row = inter.toString();
@@ -141,9 +206,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                                 return false;
                             }
 
-                        }
-                        else
-                        {
+                        } else {
                             //System.out.println("checking new integer category error");
                             Integer inter = new Integer(1);
                             String row = inter.toString();
@@ -153,6 +216,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
                         }
                     }
+                }
                 }
             }
             //1. check that file begins and ends with newline if not display message with this error require formating
@@ -171,7 +235,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
         }
 
-        if(inhousecsv.length() == 0 )
+        if(inhousecsv.length == 0 )
         {
             return true;
         }
@@ -182,10 +246,12 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
     }
 
-    private String GetInHouseCSV(String filepath)
+    private String[] GetInHouseCSV(String filepath)
     {
         //java.io.InputStream is = getClass().getResourceAsStream(filepath);
-        String ret = Data;
+
+        android.util.Log.d("Data Volume Contents", Data_Volume[3]);
+        return Data_Volume;
         //try {
 
             //InputStream is = mContext.openFileInput(filepath);
@@ -242,7 +308,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         //    return null;
         //}
 
-    return ret;
+
 
     }
 
@@ -287,7 +353,9 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
         //if category code is not there goes auotmatically to ingredient recordstore i.e. manually reformat after error msg to ING category code.
 
-        String commacut = CommaCut(tream);
+        String commacut = CommaCutPlus(CommaCut(tream));
+
+        android.util.Log.d("ratu6", commacut);
 
 
 
@@ -296,7 +364,8 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         if(commacut.charAt(0) == 'E' && commacut.charAt(1) == 'A' && commacut.charAt(2) == 'T')return true;
         if(commacut.charAt(0) == 'D' && commacut.charAt(1) == 'R' && commacut.charAt(2) == 'I' && commacut.charAt(3) == 'N' && commacut.charAt(4) == 'K') return true;
         if(commacut.charAt(0) == 'F' && commacut.charAt(1) == 'I' && commacut.charAt(2) == 'T') return true;
-
+        if(commacut.charAt(0) == 'S' && commacut.charAt(1) == 'N' && commacut.charAt(2) == 'A' && commacut.charAt(3) == 'C' && commacut.charAt(4) == 'K') return true;
+        if(commacut.charAt(0) == 'R' && commacut.charAt(1) == 'E' && commacut.charAt(2) == 'C' && commacut.charAt(3) == 'I' && commacut.charAt(4) == 'P' && commacut.charAt(5) == 'E') return true;
         else return false;
 
 
@@ -327,6 +396,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         //add a clean \n to \n line to as record
         try
         {
+            eam = CommaCutPlus(eam);
             String original = eam;
             String commacut = CommaCut(eam);
 
@@ -337,7 +407,6 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                 //{
                 //  Dialog.alert("Food Database already been populated are you sure you want import data? Yes no Yes no act not act FIX THIS TEST");
                 //}
-
                 ingrec.AddRawRecord(original);
                 //System.out.println("Just added to Ingredient Rec " + original);
             }
@@ -346,8 +415,6 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
 
                 MIF4_Data_Model_Adapter ingrec = new MIF4_Data_Model_Adapter(mContext);
-
-
                 ingrec.AddRawRecord(original);
 
 
@@ -365,8 +432,6 @@ public class Populate_SQLDatabase_Food_Items_CIF7
             if(commacut.charAt(0) == 'D' && commacut.charAt(1) == 'R' && commacut.charAt(2) == 'I' && commacut.charAt(3) == 'N' && commacut.charAt(4) == 'K')
             {
                 MIF4_Data_Model_Adapter ingrec = new MIF4_Data_Model_Adapter(mContext);
-
-
                 ingrec.AddRawRecord(original);
 
                 //DrinkRecordStoreCiF47 drinkingrec = new DrinkRecordStoreCiF47();
@@ -379,6 +444,15 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                 fitrec.AddRawRecord(original);
                 //System.out.println("Just added to Energy Rec " + original);
             }
+            if(commacut.charAt(0) == 'R' && commacut.charAt(1) == 'E' && commacut.charAt(2) == 'C' && commacut.charAt(3) == 'I' && commacut.charAt(4) == 'P' && commacut.charAt(5) == 'E')
+            {
+                MIF4_Data_Model_Adapter ingrec = new MIF4_Data_Model_Adapter(mContext);
+                ingrec.AddRawRecord(original);
+
+                //DrinkRecordStoreCiF47 drinkingrec = new DrinkRecordStoreCiF47();
+                //drinkingrec.AddRawRecord(original);
+                //System.out.println("Just added to Drinks Rec " + original);
+            }
 
         }
         catch(Exception c)
@@ -390,14 +464,18 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
     private String CommaCut(String ratu)
     {
+        String cut;
+
+        android.util.Log.d("ratu1", ratu);
 
         for(int p = 0; p  < ratu.length(); p++)
         {
 
-            if(ratu.charAt(p) == ',')
+            if(ratu.charAt(p) == ',' )
             {
 
-                String cut = ratu.substring(0,p);
+                cut = ratu.substring(0,p);
+                android.util.Log.d("ratu3", cut);
 
 
                 return cut;
@@ -406,8 +484,130 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
 
         }
+        android.util.Log.d("ratu4", ratu);
         return ratu;
 
+    }
+
+    private String CommaCutPlus(String ratu)
+    {
+        for(int p = 0; p  < ratu.length(); p++)
+        {
+            if (ratu.charAt(p) == '+') {
+                ratu = ratu.substring((p + 2), ratu.length());
+                android.util.Log.d("ratu2", ratu);
+            }
+        }
+
+        return ratu;
+    }
+
+
+    public String Depopulate_Database()
+    {
+        //Documentation
+        //This Public function returns a String contain all the contents of the SQLite Food and Exercise item Tables
+        //in the same exact format as the inhousecsv.csv file
+
+
+        //Black Office.Algorithm Engineering DOCUMENTATION
+
+        //Here Check if the Food item the User is entering has already been entered and updated successfully in the past.
+        //Every time the User Enters a successful transaction, that same transaction is also entered to the
+        // Cache table
+        //Before it is entered check that it is not already existing a copy of it, Exact copy? Similar Copy?
+        //When Satisfied, enter.
+
+        //Next time when we are in Fetch first match transaction/food item name to all Cache entries
+        //If happy that a found Cache entry is right return it as fetched instead.
+
+        //So Cache Box fragment function should always be done First, before proceeding in multi-search.
+
+        //Really saves time and increase app's value.
+
+
+        //Step 1
+        //Create Cache Table (cache_table)
+        //Cache Table should look exactly like the existing Food and Exercise Items, just a Copy of this table but with a different name to it.
+        //That is the Food items ID Table
+        //Create a new Table for Exercise items already in the String Resources
+        //Exercise items should inherit for Energy_iten or Calorie_Value item or both.
+        //Have a Corresponding Table for each of these inherited from, check if already there.
+        //Identical
+        //Find the Attributes that both Food item and Exercise item share
+        //Both should inherit either or from Energy_item/or Calorie_Value item, or both, here in this table is where
+        //" "
+        //...you find their Core items.
+
+        //This is how the app is able to search for Food and/or Exercise Debit items in EXACTLY THE SAME TABLE
+        // (MyFitnessPal* & NutraCheck* (red) ESE S.C.I LTD in red CODESE*410 & Disney & Apple & Google & Tesla* & 2 (WWW.ESE-EDET.EU*)
+        // These are writing Red.Number88&8 ESE8 exe 8 and all apps and fastic absorbed here and then to the Calorie Countdown Logo*&)
+
+        //Now that you have exactly the same table use this to perform Cache
+
+
+        //CODESE & Channel 410 & ACCA
+        //ESE8exe
+        //Call this Unifying Table A
+
+
+
+
+
+
+        //For Table A go through all the Rows //iterate
+
+        //For each row, use a fragemented_box to INPUT Row OUTPUT a data object frag_box
+
+
+
+
+        //Define very well and properly, individually this data object frag_box till Completion
+
+
+        //This data object frag_box must/can be marked as either a a)First Row type, b) Last_Row type, c) Neither
+
+
+        //If a) First Row type : the output string method stored in it has the Characteritic of outputng a String in the same...
+        //...same format as the first line of the inhousecsvtext.csv file.
+        //Example :
+        //If type b) same thing but same format st the last line of the inhousecsv.csv file
+        //Example :
+        //If type c) then all look the same
+        //Example :
+        //
+        //You can have various fragment dataset of data
+        //if joining multiple dataset to form one single dataset have a fragment_Box Object INPUT/OUTPUT for this
+
+
+        //INPUT :1,2 or more dataset of data OUTPUT one single correct inhousecsv like dataset...
+        //...making sure the first row of string is in the correct format is first row example
+        // same for last row, everything else in norml formet but the rest of between first/last format lines
+        // are striped away set to normal by a break_down fragment_box Object
+        //Change markings of affected Rows/Data object in appropiate properties so that it's "normal"
+        //
+        //Depopulate OUTPUT : new inhousetxt.csv format String.
+        //Write the exact contents of this String/inhousetxt.csv to the depopulate database content of Table A that mirror...
+        //... that mirrors intial/original inhousetxt.csv file but with addition of any and all new food/exercise items...
+        //...items the User must have added in the Course of using the app to explain away correctly and checked the difference between
+        //...the original inhousetxt.csv and the total content of Table A
+        //the new inhousetxt.csv file should exist and mirror original inhousetxt.csv in the same content/format plus additions when viewed.
+        //(re)Load -> www.ese-edet.e
+        //Transit & Green Office. & Builder+
+        //END OF DOCUMENTATION
+
+        //New frag_box2 INPUT above frag_box OUTPUT : String
+
+        //This String houses the exact same format as the inhousetext.csv file
+        //Data Object must/can be
+
+        return new String("empty");
+
+    }
+
+    public boolean De_Populate_Database()
+    {
+        return true;
     }
 
 

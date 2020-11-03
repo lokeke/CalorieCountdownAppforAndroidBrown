@@ -4,11 +4,11 @@ import android.database.Cursor;
 import android.database.CursorWrapper;
 
 /**
- * Created by lokeke on 30/10/2015.
+ * Created by ESE on 30/10/2015.
  */
 public class FoodItemsCursor extends CursorWrapper
 {
-    //A Convenience clas to wrap a cursor that returns rows for the "food items" table.
+    //A Convenience class to wrap a cursor that returns rows for the "food items" table.
     //The {@ link getFoods()} method will give you a Food_Item instance representing the current row.
 
     private static final String TABLE_FOODITEMS = "food_items";

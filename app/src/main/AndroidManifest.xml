@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ese.com.caloriecountdownappforandroidbrown">
-
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="ese.com.caloriecountdownappforandroidbrown"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -12,6 +10,11 @@
         android:roundIcon="@drawable/ic_launcher2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Debit_Activity_CiF003_fragment_box"
+            android:label="@string/title_activity_debit___ci_f003_fragment_box"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Debit_Activity_CIF13" />
         <activity
             android:name=".Splash_Screen_Fragement_001_Class"
             android:label="@string/splash"
@@ -58,6 +61,13 @@
             android:name=".Add_New_Item_Activity_CIF12"
             android:label="@string/action_start_weightloss_title"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Diet_Plan_Activity_fragment008"
+            android:label="@string/title_activity_diet__plan__fragment008"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service
             android:name=".BreakfastBoxService_CIFragement001"
@@ -83,19 +93,13 @@
                 android:name="android.view.textservice.scs"
                 android:resource="@xml/spellchecker" />
         </service>
-
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".Diet_Plan_Activity_fragment008"
-            android:label="@string/title_activity_diet__plan__fragment008"
-            android:theme="@style/AppTheme.NoActionBar" />
-
         <service
             android:name=".FivePMBox_Service"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
 </manifest>

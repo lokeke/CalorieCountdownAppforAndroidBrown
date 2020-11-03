@@ -14,18 +14,21 @@ public class BoxCIF17
     private long Transaction_ID = 1;
     private int Balance = 1;
     private int Energy_OUT = 1;
+    private String inhousecsvtext;
 
     public BoxCIF17()
     {
         mFoodBox = new ArrayList<Food_Item_CIF4>();
         //mFoodBox.add(new Food_Item_CIF4());
         mMeal =  "Food Item Box";
+        inhousecsvtext ="";
     }
 
     public BoxCIF17(String mealname)
     {
         mFoodBox = new ArrayList<Food_Item_CIF4>();
         mMeal =  mealname;
+        inhousecsvtext ="";
     }
 
     public void addFoodItem(Food_Item_CIF4 m)
@@ -138,6 +141,22 @@ public class BoxCIF17
         {
             return "Meal Box empty/. www.ese-edet.eu";
         }
+    }
+
+    public String dePopulate()
+    {
+        for(Food_Item_CIF4 m : mFoodBox)
+        {
+            inhousecsvtext = inhousecsvtext + m.dePopulate();
+        }
+
+        return inhousecsvtext;
+
+    }
+
+    public String amalgamate()
+    {
+        return dePopulate();
     }
 
 

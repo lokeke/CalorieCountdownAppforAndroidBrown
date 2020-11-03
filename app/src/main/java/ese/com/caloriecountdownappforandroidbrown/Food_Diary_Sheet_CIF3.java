@@ -52,6 +52,7 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
     private ArrayList<Food_Item_CIF4> resultList2 = new ArrayList<Food_Item_CIF4>();
     private Food_Item_CIF4 enter;
     private String OUTsb = "empty";
+    private Merge_List_fragment_object mPivot = new Merge_List_fragment_object();
 
     private Runnable r;
 
@@ -63,6 +64,9 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
+        android.util.Log.d("Pre Multi-Search", "number1");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food__diary__sheet__cif3);
         mFoodItems = null;
@@ -131,14 +135,24 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
                 //Alogrithm Engineering :
                 // For each textview per row extract Food_Item_CIF4
                 //Builder :
+                android.util.Log.d("Multi-search", "We are above Show Fetch a");
                 mFoodItems = new ArrayList<Food_Item_CIF4>();
+                android.util.Log.d("Multi-search", "We are above Show Fetch b");
                 mFoodItems = ExtractFoodItems(mFoodItems);
+                android.util.Log.d("Multi-search", "We are above Show Fetch c");
                 FoodItemsLab_CIF9.get(getApplicationContext()).reset();
+                android.util.Log.d("Multi-search", "We are above Show Fetch d");
                 for(int c = 0; c < mFoodItems.size(); c++)
                 {
+                    //mPivot.merge(MultiSearch(mFoodItems.get(c)));
                     MultiSearch(mFoodItems.get(c));
                 }
+
+                android.util.Log.d("Multi-search", "We are above Show Fetch");
+
                 mFoodItems = ShowFetch(mFoodItems);
+
+                android.util.Log.d("Multi-search", "We are below Show Fetch");
 
 
 
@@ -591,6 +605,12 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
         //Check if user already added Calories
 
+        String Data = "empty";
+
+        Data = this.getResources().getString(R.string.Volume2);
+
+        android.util.Log.d("Contents of Resource DATA", Data);
+
         FetchedFoodItems = null;
         String message = "A typo was detected select from the list the word the best fits or click on 'Other' to either cancel or make your own suggestions";
 
@@ -687,14 +707,21 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
     private ArrayList<Food_Item_CIF4> ShowFetch(ArrayList<Food_Item_CIF4> mfd)
     {
+        android.util.Log.d("Multi-search", "We are IN Show Fetch");
 
         Monthly_Statement_Recorded_Tracked_FoodItems();
+
+        android.util.Log.d("Multi-search", "We are below Monthly_Statement");
         //List Select right food item.
         //Food_Item_CIF4 emptyShell= new Food_Item_CIF4();
         Intent i = new Intent(Food_Diary_Sheet_CIF3.this, FoodItemsListActivity_CIF7.class);
 
+        android.util.Log.d("Multi-search", "We are below Intent");
+
 
         startActivityForResult(i,REQUEST_CODE_FOODITEMSLIST);
+
+        android.util.Log.d("Multi-search", "We have left for Results");
 
 
 
@@ -732,6 +759,9 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
     private void BackToParentActivity(SummaryBoxCIF12 summary_box)
     {
+
+        android.util.Log.d("Sending it Home", "Position 1");
+
         //return intent call with intent packed with value of Debit or Credit and Summary String as well as summarybox ready
         Intent i2 = new Intent();
         if(summary_box.GetListingsTotalCaloriesIN() == null)

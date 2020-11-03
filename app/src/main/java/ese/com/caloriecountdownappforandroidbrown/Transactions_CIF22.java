@@ -131,7 +131,8 @@ public class Transactions_CIF22 extends ArrayList
             //Form Statemnt Text
             //Return Statement Text
             StatementText = "";//Date\t\tMeal Type\t\tDescription\t\tCalories IN\t\tCalories OUT\t\tCountdown Balance\n\n";
-            for (Transaction_CIF52 m : mTransactionLines) {
+            for (Transaction_CIF52 m : mTransactionLines)
+            {
                 StatementText = StatementText + "Date: " + m.Get_Single_Transaction_Line().Get_Transaction_DateX().toString() + "\n\n" +
                         "Meal Type: " + m.Get_Single_Transaction_Line().Get_Transaction_Meal_Type() + "\n\n" +
                         "Description: " + m.Get_Single_Transaction_Line().Get_Description() + "\n\n" +
@@ -140,9 +141,6 @@ public class Transactions_CIF22 extends ArrayList
                         "Calories OUT: " + new RoundingCIF13().IntToString(m.Get_Single_Transaction_Line().Get_Calorie_Outwards()) + "\n\n" +
                         "Countdown Balance: " + m.Get_Single_Transaction_Line().Get_New_Balance() + "\n\n" +
                         "__________________________________________"  + "\n\n\n";
-
-
-
 
             }
         }
@@ -167,6 +165,11 @@ public class Transactions_CIF22 extends ArrayList
             mTransactionLines.clear();
         }
 
+    }
+
+    public ArrayList<Transaction_CIF52> getLines()
+    {
+        return Get_TransactionLines();
     }
 
 

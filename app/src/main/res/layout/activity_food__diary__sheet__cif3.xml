@@ -11,6 +11,15 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="ese.com.caloriecountdownappforandroidbrown.Food_Diary_Sheet_CIF3">
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" >
+
     <ScrollView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content">
@@ -369,6 +378,20 @@
                 android:layout_height="wrap_content"
                 android:text= "@string/cancel2"/>
 
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/cancel3a"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/cancel4a"/>
+
+
+
 
 
         </LinearLayout>
@@ -376,6 +399,7 @@
     </TableLayout>
 
 </ScrollView>
+    </HorizontalScrollView>
 
 
 

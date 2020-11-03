@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.StringTokenizer;
 
 /**
- * Created by lokeke on 28/01/2016.
+ * Created by ESE on 28/01/2016.
  */
 public class RoundingCIF13
 {
@@ -145,7 +145,15 @@ public class RoundingCIF13
 
     public int StringToInt(String in)
     {
-        return Integer.parseInt(in);
+        if(DoesInputHaveACommaQuestionMark(in))
+        {
+           in = StripComma(in,3);
+           return Integer.parseInt(in);
+        }
+        else
+            {
+            return Integer.parseInt(in);
+            }
     }
 
     public float DoubleToFloat(double in)
@@ -270,9 +278,15 @@ public class RoundingCIF13
 
     }
 
+    private boolean DoesInputHaveACommaQuestionMark(String INPUT)
+    {
+        return false;
+    }
 
-
-
+    private String StripComma(String INPUT, int pos)
+    {
+        return INPUT;
+    }
 
 
 }

@@ -239,6 +239,68 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
     private static final String COLUMN_Client_DATA_SOURCES = "client_data_sources";
     private static final String COLUMN_Client_MANUAL_SOURCES = "client_manual_sources";
 
+
+    private static final String TABLE_CACHE_TABLE = "cache";
+    //Here Check if the Food item the User is entering has already been entered and updated successfully in the past.
+    //Every time the User Enters a successful transaction, that same transaction is also entered to the Cache table
+    //Before in is entered check that it is not already existing a copy of it, Exact copy? Similar Copy?
+    //Wen Satisfied, enter.
+    //Next time when we are Fetch first match transaction/food item name to all Cache entries
+    //If happy that a found Cache entry is right return as fetched.
+    //So Cache Box fragment function should always be done First.
+    //Really saves time and increase app's value.
+
+    //Step 1
+    //Create Cache Table (cache_table)
+    //Cache Table should look exactly like the existing Food and Exercise Items, just a Copy of this table but with a different name to it.
+    //That is the Food items ID Table
+    //Create a new Table for Exercise items already in the String Resources
+    //Exercise items should inherit for Energy_iten or Calorie_Value item
+    //Have a Corresponding Table for each of these
+    //Identical
+    //Find the Attributes that both Food item and Exercise item share
+    //Both should inherit either or from Energy_item/Calorie_Value item, here in this table is where
+    //...you find their Core items.
+
+    //This is how the app is able to search for Food and/or Exercise Debit items in EXACTLY THE SAME TABLE
+    //Now that you have exactly the same table use this to perform Cache
+
+    //Call this Unifying Table A
+    //For Table A go through all the Rows
+    //For each row, use a fragemented_box to INPUT Row OUTPUT a data object frag_box
+    //Define very well and properly, individually this data object frag_box till Completion
+    //This data object frag_box must/can be marked as either a a)First Row type, b) Last_Row type, c) Neither
+    //If a) First Row type : the output string method stored in it has the Characteritic of outputng a String in the same...
+    //...same format as the first line of the inhousecsvtext.csv file.
+    //Example :
+    //If type b) same thing but same format st the last line of the inhousecsv.csv file
+    //Example :
+    //If type c) then all look the same
+    //Example :
+    //
+    //You can have various fragment dataset of data
+    //if joining multiple dataset to form one single dataset have a fragment_Box Object INPUT/OUTPUT for this
+    //INPUT :1,2 or more dataset of data OUTPUT one single correct inhousecsv like dataset...
+    //...making sure the first row of string is in the correct format is first row example
+    // same for last row, everything else in norml formet but the rest of between first/last format lines
+    // are striped away set to normal by a break_down fragment_box Object
+    //Change markings of affected Rows/Data object in appropiate properties so that it's "normal"
+    //
+    //Depopulate OUTPUT : new inhousetxt.csv format String.
+    //Write the exact contents of this String/inhousetxt.csv to the depopulate database content of Table A that mirror...
+    //... that mirrors intial/original inhousetxt.csv file but with addition of any and all new food/exercise items...
+    //...items the User must have added in the Course of using the app to explain away correctly and checked the difference between
+    //...the original inhousetxt.csv and the total content of Table A
+    //the new inhousetxt.csv file should exist and mirror original inhousetxt.csv in the same content/format plus additions when viewed.
+    //(re)Load -> www.ese-edet.e
+    //Transit & Green Office. & Builder+
+    //END OF DOCUMENTATION
+
+    //New frag_box2 INPUT above frag_box OUTPUT : String
+
+    //This String houses the exact same format as the inhousetext.csv file
+    //Data Object must/can be
+
     private static final String TABLE_SLEEP_TABLE = "sleep_data";
     private static final String COLUMN__ID = "sleep_id";
     private static final String COLUMN_DATE = "night_date";
@@ -305,7 +367,7 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
 
 
 
-    private static final String TABLE_CACHE_TABLE = "cache_table";
+    private static final String TABLE_CACHE_TABLEX = "cache_tablex";
 
     private static final String TABLE_FAVOURITE_FOOD_ITEMS_TABLE = "favourites_table";
 
@@ -677,6 +739,9 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
         ArrayList<Food_Item_CIF4> list = new ArrayList<Food_Item_CIF4>();
         String fooditemname = food_item_subname;
         list = Query_Specific_Food_Items_Table(fooditemname);
+
+        //See Results of Query for Matches
+       // Check_Results(list);
 
         return list;
     }
@@ -1144,17 +1209,23 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
         return repulse;
     }
 
-    private String GetBreakfastCursor(BreakfastCursor obcursor) {
+    private String GetBreakfastCursor(BreakfastCursor obcursor)
+    {
         String repulse = obcursor.getBreakfast();
         obcursor.close();
         return repulse;
     }
 
 
-    private ArrayList<Food_Item_CIF4> GetFoodItemII(FoodItemsCursor food_cursor) {
-        Food_Item_CIF4 food_match = new Food_Item_CIF4();
+    private ArrayList<Food_Item_CIF4> GetFoodItemII(FoodItemsCursor food_cursor)
+    {
+        Food_Item_CIF4 food_match;
         ArrayList<Food_Item_CIF4> relist = new ArrayList<Food_Item_CIF4>();
 
+
+
+        //for(int c = 0; c < food_cursor.getCount(); c++)
+       // {
         //food_match = food_cursor.getFood_Item();
         //relist.add(food_match);
         //return relist;
@@ -1162,21 +1233,31 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
         //while(food_cursor.isAfterLast() == false)
         //{
 
-        food_match.Set_food_item_name(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_ITEM_NAME)));
-        food_match.Set_food_type(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_TYPE)));
-        food_match.Set_grams_per_serving_portion(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_GRAMS_PER_SERVING_PORTION)));
-        food_match.Set_calories_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CALORIE_PER_100G)));
-        food_match.Set_fat_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FAT_PER_100G)));
-        food_match.Set_saturated_fat(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SATURATED_FAT)));
-        food_match.Set_trans_fat(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_TRANS_FAT)));
-        food_match.Set_protein_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_PROTEIN_PER_100G)));
-        food_match.Set_carbs_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CARBS_PER_100G)));
-        food_match.Set_sugar_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SUGAR_PER_100G)));
-        food_match.Set_salt_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SALT_PER_100G)));
-        food_match.Set_wellbeing_index(new RoundingCIF13().StringToBool(new RoundingCIF13().FloatToString(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_WELLBEING_INDEX)))));
-        food_match.Set_fiber(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FIBER)));
-        food_match.Set_price_sterling(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_PRICE_STERLING)));
-        food_match.Set_category(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CATEGORY)));
+        for(int c = 0; c < food_cursor.getCount(); c++) {
+
+            food_match = new Food_Item_CIF4();
+
+            android.util.Log.d("NUMBER OF ROWS IN FETCH", new RoundingCIF13().IntToString(food_cursor.getCount()));
+            food_match.Set_food_item_name((food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_ITEM_NAME))) + " number of rows: " + (new RoundingCIF13().IntToString(food_cursor.getCount())));
+            food_match.Set_food_type(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_TYPE)));
+            food_match.Set_grams_per_serving_portion(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_GRAMS_PER_SERVING_PORTION)));
+            food_match.Set_calories_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CALORIE_PER_100G)));
+            food_match.Set_fat_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FAT_PER_100G)));
+            food_match.Set_saturated_fat(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SATURATED_FAT)));
+            food_match.Set_trans_fat(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_TRANS_FAT)));
+            food_match.Set_protein_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_PROTEIN_PER_100G)));
+            food_match.Set_carbs_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CARBS_PER_100G)));
+            food_match.Set_sugar_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SUGAR_PER_100G)));
+            food_match.Set_salt_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_SALT_PER_100G)));
+            food_match.Set_wellbeing_index(new RoundingCIF13().StringToBool(new RoundingCIF13().FloatToString(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_WELLBEING_INDEX)))));
+            food_match.Set_fiber(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FIBER)));
+            food_match.Set_price_sterling(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_PRICE_STERLING)));
+            food_match.Set_category(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CATEGORY)));
+
+            relist.add(food_match);
+            boolean trash = food_cursor.moveToNext();
+
+        }
 
 
         //food_match.Set_monounsaturated(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_MONOUNSATURATED)));
@@ -1198,8 +1279,11 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
         //}
 
 
-        relist.add(food_match);
+
+        //reloop here ESE
+    //}
         food_cursor.close();
+        //getReadableDatabase().clone()
 
         //}
 
@@ -2136,6 +2220,20 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
     public HealthProfileCiF3 getHealthProfileObjectSerializable()
     {
         return new HealthProfileCiF3();
+    }
+
+    public void Iterate_through_thisTableA_Output_(JSONWrapperCIFClass INPUT_TABLE_A)
+    {
+        //For Table A go through all the Rows //iterate
+
+        //For each row, use a fragemented_box to INPUT Row OUTPUT a data object frag_box
+
+        //fragmented_box
+        Row_Converter_CiF1001_fragment_box_Class rcc = new Row_Converter_CiF1001_fragment_box_Class(INPUT_TABLE_A);
+        //rcc.iterate(MiF4_function_to_peform_on_Transaction_CIF52_Line(rcc.transform(INPUT_TABLE_A)));
+        rcc.iterate();
+
+
     }
 
     private ArrayList<Breakfast_Box_CIF17> Really_Get_Box_items()

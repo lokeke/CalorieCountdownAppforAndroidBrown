@@ -1,7 +1,7 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
 /**
- * Created by lokeke on 22/01/2016.
+ * Created by ESE on 22/01/2016.
  */
 public class Fitness_Item_CIF5
 {
@@ -138,7 +138,7 @@ public class Fitness_Item_CIF5
 
     public int CalculateCountdown()
     {
-        if(getmNameOfActivity().startsWith("Just add Raw"))
+        if(getmNameOfActivity().startsWith("Just add Raw") || getmNameOfActivity().startsWith("Steps"))
         {
             mCalorie_Debit_Value =  getmMinutesPerformed();
         }
@@ -151,5 +151,17 @@ public class Fitness_Item_CIF5
     }
 
 
+
+
+
+
+
+
+
+
+
 }
+
+
+
 

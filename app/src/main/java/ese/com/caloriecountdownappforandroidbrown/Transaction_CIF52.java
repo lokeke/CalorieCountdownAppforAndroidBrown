@@ -17,6 +17,8 @@ public class Transaction_CIF52
 
     //list of Fooditems to used internally by Object eg store in escrow will copying over.
     private BoxCIF17 Internal_Box;
+    private String inhousecsvLinetext;
+    private Row_Type_fragment type = Row_Type_fragment.Neither;
 
     public Transaction_CIF52()
     {
@@ -27,7 +29,6 @@ public class Transaction_CIF52
 
     public Transaction_CIF52(String mealname)
     {
-
 
         mGeneralBox = new ArrayList<BoxCIF17>();
         mTransactionLineCIF17 = new Transaction_Line_CIF17();
@@ -149,4 +150,81 @@ public class Transaction_CIF52
 
 
     }
+
+    public String getInhousecsvLinetext()
+    {
+        return inhousecsvLinetext;
+    }
+
+    public void setInhousecsvLinetext(String INPUT)
+    {
+        inhousecsvLinetext = INPUT;
+    }
+
+    public void dePopulateContents_As_First_Line()
+    {
+
+    }
+
+    public void dePopulateContents_As_Last_Line()
+    {
+
+    }
+
+    public void dePopulateContents_As_Neither()
+    {
+
+    }
+
+    public String dePopulateContents_As_First_Line_and_return()
+    {
+        return dePopulate();
+    }
+
+    public String dePopulateContents_As_Last_Line_and_return()
+    {
+        return dePopulate();
+    }
+
+    public String dePopulateContents_As_Neither_and_return()
+    {
+        return dePopulate();
+    }
+
+    public void Set_Row_Type_to_First_Row()
+    {
+        type = Row_Type_fragment.First_Row_Type;
+    }
+
+    public void Set_Row_Type_to_Last_Row()
+    {
+        type = Row_Type_fragment.Last_Row_Type;
+    }
+
+    public void Set_Row_Type_to_Neither()
+    {
+        type = Row_Type_fragment.Neither;
+    }
+
+    public Row_Type_fragment getType() {
+        return type;
+    }
+
+    public String dePopulate()
+    {
+        return amalgamate();
+    }
+
+    public String get_inhousescvtext()
+    {
+        return inhousecsvLinetext;
+    }
+
+    private String amalgamate()
+    {
+        inhousecsvLinetext = Internal_Box.amalgamate();
+        return inhousecsvLinetext;
+    }
+
+
 }
