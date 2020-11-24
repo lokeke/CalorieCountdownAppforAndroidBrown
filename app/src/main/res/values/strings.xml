@@ -12,7 +12,7 @@
 
 
     <string name="subtype_generic2">French</string>
-    <string name="hello_world">81900</string>
+    <string name="hello_world">77952</string>
 
 
     <string name="hello_world2">Your Countdown Balance</string>
@@ -238,7 +238,76 @@
             "ING,Reeses Peanut Butter Eggs 1,100,180,11,,,,,,,N,,\n" +
             "ING,Robins egg (malted milk candy) 4,100,90,2.5,,,,,,,N,,\n" +
             "ING,Clementines,100,35,0,0,0,1,9,,0.001,N,1,\n" +
-            "ING,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n"
+            "ING,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n" +
+"ING,Pears : 133g,100,62,0.1,0.09,0,0.4,13.3,13.3,0.009,Y,2.9,1.75\n" +
+        "SNACK,Spring roll : One,100,170,,,,,,,,,,\n" +
+"ING,Chewing Gum,100,0,0,1.5,,,,,,,,\n" +
+"ING,Orange,100,85,,,,,,,,,,\n" +
+"DRINK,Water : 3 Cups,100,0,,,,,,,,,,\n" +
+"ING,Ampersand,100,2,,,,,,,,,,\n" +
+"ING,red,100,150,,,,,,,,,,\n" +
+"ING,Jic,100,1,,,,,,,,,,\n" +
+"MEAL,Chocolate Custard,100,840,,,,,,,,,,\n" +
+"MEAL,Akara,100,75,,,,,,,,,,\n" +
+"MEAL,Custard,100,530,,,,,,,,,,\n" +
+"ING,Milk,100,100,,,,,,,,,,\n" +
+"ING,Honey,100,170,,,,,,,,,,\n" +
+"MEAL,Tofu,100,220,,,,,,,,,,\n" +
+ "SNACK,Falafel,100,125,,,,,,,,,,\n" +
+"MEAL,Stew : Irish,100,380,,,,,,,,,,\n" +
+"MEAL,Chicken,100,300,,,,,,,,,,\n" +
+"ING,Water : 2 Cups cups,100,0,,,,,,,,,,\n" +
+"MEAL,Pork Butt,100,134,,,,,,,,,,\n" +
+"RECIPE,Chargrilled Chicken and autumn salad,100,489,,,,,,,,,,\n" +
+"SNACK,African Falafel,100,150,,,,,,,,,,\n" +
+"MEAL,African stew/Stew,100,300,,,,,,,,,,\n" +
+"SNACK,Chicken,100,300,,,,,,,,,,\n" +
+"RECIPE,Instant Pot Chicken Ramen,100,360,14,2,0,50,11,1,1,Y,3,10\n" +
+"ING,Mini Pork Pies : One : 50g,100,193,13,4.9,0,5.6,13,0.8,0.52,N,0.8,1.5\n" +
+"MEAL,Pizza : Piled High : Philly Cheese Steak : whole,100,1200,44,13.8,0,54,144,17.2,4.6	N,12,4.5\n" +
+"SNACK,Blueberry Muffin : One : 75g	100	275	11.6,1.1,0,3.1,38.7,21.5,0.3,N,1.5,1.5\n" +
+"ING,Blueberry Muffin : One : 75g,100,275,11.6,1.1,0,3.1,38.7,21.5,0.3,N,1.5,1.5\n" +
+"SNACK,Confectionery : Chocolate : Kit Kat : 31.2g,100,157,7.62,4.3,0,2.1,19.56,16,0.07,N,0.65,1\n" +
+"ING,Confectionery : Chocolate : Kit Kat : 31.2g,100,157,7.62,4.3,0,2.1,19.56,16,0.07,N,0.65,1\n" +
+"ING,Malt Loaf : Soren : half : 95g,100,295,2.66,0.48,0,9.6,56,17.4,0.475,Y,4.56,0.69\n" +
+"ING,Rice : 75g,100,270,1.1,0.2,0,6,57.8,0,0,N,0.8,1\n" +
+"ING,Milk : Cravendale : 500ml,100,250,8.5,5,0,18,24,24,0.5,Y,0,1.1\n" +
+"ING,Milk : Organic  500ml,100,250,8.5,5,0,18,24,24,0.5,Y,0,2\n" +
+"MEAL,Ready Meal : Haggis Neeps and Tatties : 340g,100,430,23,10.9,0,13.9,39.2,2.7,2.15,N,4.5,2.75\n" +
+"ING,Cereal : Kellogg : Krave : Milk Chocolate : 60g,100,264,8.2,2.4,0,14.4,42,16.8,0.58,Y,1.8,2.8\n" +
+"ING,Cereal : Muesli Fruit and Nut : 50g,100,202,7,2.45,0,3.9,29,12.5,0.14,Y,3.6,2\n " +
+"MEAL,Sandwich : Tesco : Cheese and Onion,100,495,27.5,10.7,0,19.8,40.4,3.6,1.6,N,3.5,1.3\n" +
+"ING,Gu : Salted Caramel Cheesecakes : 92g ramekin	100	339	18.9,10.1,0,3.1,38.7,27,0.46,N,0.9,3.5\n" +
+"ING,Ice Cream : Magnum : Classic : 110ml/79g,100,244,15,11,0,2.8,23,21,0.1,N,0,3.55\n" +
+"ING,Ice Cream : Magnum : White Chocolate : 110ml/79g,100,239,14,9.5,0,2.8,26,24,0.12,N,0,3.55\n" +
+"ING,Confectionery : Chocolate : Lindt Linder :,100g,100622,47,36,0,4.6,44,43,0.14,N,0,1.8\n" +
+"ING,Baby Spinach : 110g : half pack,100,33,0.9,0.1,0,3.1,1.7,1.7,0.4,Y,3,1\n" +
+"ING,Banana : 150g,100,135,0.2,0,0,1.8,30.5,27.2,0.0009,Y,2.1,1.75\n" +
+"SNACK,Porridge Oatmeal Bar : Stoats : 50g,100,221,11.3,5.3,0,25.8,11.2,0.01,Y,2.7,0.85\n" +
+"ING,Porridge Oatmeal Bar : Stoats : 50g,100,221,11.3,5.3,0,25.8,11.2,0.01,Y,2.7,0.85\n" +
+"EATOUT,Takeaway : Fish and  Chips : extra Cheese Salt and Ketchup,100,2000,0,,,,,,,N,,\n" +
+"ING,Almonds : 25g,100	149	11.1,0.88,0,6.3,3.15,1.5,0.025,Y,2.48,0.55\n" +
+"SNACK,Confectionery : Chocolate : Bounty : 57g,100,278,14.6,12,0,2.2,33.6,27.4,0.13,N,0,0.7\n" +
+"ING,Confectionery : Chocolate : Bounty : 57g,100,278,14.6,12,0,2.2,33.6,27.4,0.13,N,0,0.7\n" +
+"MEAL,1 Beef : Rump : 227g,100,290,9.31,3.9,0,50,0,0,0.34,N,0,4.79\n" +
+"ING,1 Beef : Rump : 227g,100,290,9.31,3.9,0,50,0,0,0.34,N,0,4.79\n" +
+"ING,Chips : McCain : 125g,100,260,9,1,0,4,39,0.8,0.68,N,3.7,1\n" +
+"ING,Butter : Lurpak Spreadable Slightly Salted :15g,100,105,11.7,5.25,0,0.075,0.09,0.09,0.135,N,0,2\n" +
+"SNACK,Mini Pork Pies : One : 50g,100,193,13,4.9,0,5.6,13,0.8,0.52,N,0.8,1.5\n" +
+"SNACK,Confectionery : Chocolate : Dairy Milk : Cadburys,100,280,0,N,,,,,,,,0.7\n" +
+"ING,Confectionery : Chocolate : Dairy Milk : Cadburys,100,280,0,N,,,,,,,,0.7\n" +
+"MEAL,Naan Bread : One : 160g,100,468,11.7,1.9,0,11.8,76.8,4.6,1.2,N,4,2.75\n" +
+"ING,Naan Bread : One : 160g,100,468,11.7,1.9,0,11.8,76.8,4.6,1.2,N,4,2.75\n" +
+"MEAL,Peas :,frozen,100,55,0,,,,,,,,\n" +
+"ING,Peas :,frozen,100,55,0,,,,,,,,\n" +
+"DRINK,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n" +
+        "SNACK,Cake Bar : Fibre One : 25g,100,89,3.1,1.9,0,1.2,11,6.5,0.2,N,5.8,1\n" +
+ "ING,Paw Paw : Large Bowl : 455g,100,225,0.6,,0,1,22,16,0.016,Y,1.7,1\n" +
+ "ING,Fufu : Pamper,,,,,,,,,,,,\n" +
+ "ING,Lentil-Sausage Stew With Sweet Potato,,,,,,,,,,,,\n" +
+ "ING,Beer : Star Lager : Radler : 33cl Can,,,,,,,,,,,,\n" +
+ "ING,Indomie Noodles : with Vegetables,,,,,,,,,,,,\n" +
+ "ING,Paw Paw : Normal Bowl : 200g,100,90,0.6,,0,1,22,16,0.016,Y,1.7,1\n"
 
 </string>
     <string name="Volume2">
@@ -1329,8 +1398,7 @@
 "ING,Bread roll : Bread Roll,100,155,,,,,,,,,,\n" +
 "ING,Butter,100,50,,,,,,,,,,\n" +
 "ING,Jam,100,50,,,,,,,,,,\n" +
-"EATOUT,Mixed Grill : Olive Garden,100,700,,,,,,,,,,\n +
-
+"ING,Mixed Grill : Olive Garden,100,700,,,,,,,,,,\n" +
 "ING,Egg Pitsie,100,80,1.18,,,,,,,,,\n" +
 "EATOUT,Tomato,100,50,,,,,,,,,,\n" +
 "EATOUT,Grilled Mix Vegetables,100,80,,,,,,,,,\n" +
@@ -1338,7 +1406,7 @@
 "ING,Sausage,100,200,,,,,,,,,,\n" +
 "ING,OJ,100,157,,,,,,,,,,\n" +
 "ING,Water : Harrogate Spring Water. Since 1572 Still.,100,0,,,,,,,,,\n" +
-"ING,Cake : BA: Everyday Favourites : Mini Chocolate Chip Muffin,100,202,,,,,,,,,,\n" +
+"ING,Cake : BA : Everyday Favourites : Mini Chocolate Chip Muffin,100,202,,,,,,,,,,\n" +
 "RECIPE,Zobo : zobo,100,0,,,,,,,,,,\n" +
 "ING,Coke Zero : Coke zero,100,0,,,,,,,,,,\n" +
 "EATOUT,Coke Zero : Coke zero,100,0,,,,,,,,,,\n" +
@@ -1358,17 +1426,13 @@
 "ING,egg,100,92,,,,,,,,,,\n" +
 "ING,Vegetable,100,145,,,,,,,,,,\n" +
 "ING,Water,100,0,,,,,,,,,,\n" +
-"SNACK,4 puff : 4 Puff : Puff puff,100,600,,,,,,,,,,\n" +
+"SNACK,4 puffs : 4 Puff : Puff puff,100,600,,,,,,,,,,\n" +
 "ING,4 puff,100,600,,,,,,,,,,\n" +
 "SNACK,Egg roll,100,200,,,,,,,,,,\n" +
 "ING,Fanta : Small : 35cl,100,110,,,,,,,,,,\n" +
 "ING,Water,100,0,,,,,,,,,,\n" +
-"ING,Puffs,100,150,,,,,,,,,,\n"
-    </string>
-
-    <string name="Volume4e">
-
-"ING,Egg Sauce/sauce,100,301,,,,,,,,,,\n" +
+"ING,Puffs,100,150,,,,,,,,,,\n" +
+        "ING,Egg Sauce sauce,100,301,,,,,,,,,,\n" +
 "ING,Chips,100,150,,,,,,,,,,\n" +
 "ING,Melon,100,89,,,,,,,,,,\n" +
 "ING,Pineapple,100,100,,,,,,,,,,\n" +
@@ -1388,10 +1452,10 @@
 "ING,Yam Rice,100,440,,,,,,,,,,\n" +
 "ING,Yam,100,180,,,,,,,,,,\n" +
 "EATOUT,Water : 1 cup : One Cup : 1 Cup,100,0,,,,,,,,,,\n" +
-"ING,Guinea Fowl : Half-a-hen,100,550,,,,,,,,,,/n" +
+"ING,Guinea Fowl : Half-a-hen,100,550,,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Grilled Guinea portion,100,300,,,,,,,,,,\n" +
-"EATOUT,KMAC Grill : Smokey Jollof,Rice,100,500,,,,,,,,,\n" +
-"EATOUT,KMAC Grill : Wings Special : 5 Wings : Sweet Potato wedges or Corn on the Cob : Pepper sauce or Ketchup	100	750,,,,,,,,,,,,,\n"  +
+"EATOUT,KMAC Grill : Smokey Jollof Rice,100,500,,,,,,,,,,\n" +
+"EATOUT,KMAC Grill : Wings Special : 5 Wings : Sweet Potato wedges or Corn on the Cob : Pepper sauce or Ketchup	100	750,,,,,,,,,,,,\n"  +
 "EATOUT,KMAC Grill : Seafood Black Box,100,2450,,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Maxi Black Box,100,3900,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Jumbo Black box,100,8000,,,,,,,,,,\n" +
@@ -1410,7 +1474,6 @@
 "ING,Water,100,0,,,,,,,,,,\n" +
 "SNACK,Meatpie,100,566,,,,,,,,,,\n" +
 "ING,Water- 1 Bottle,100,0,,,,,,,,,,\n" +
-"DRUGS,Medicine,100,0,,,,,,,,,,\n" +
 "ING,2 bread butter,100,350,,,,,,,,,,\n" +
 "DRINK,Smoothie,100,299,,,,,,,,,,\n" +
 "MEAL,Jollof Rice,100,350,,,,,,,,,,\n" +
@@ -1424,8 +1487,8 @@
 "DRINK,Small Fanta,100,110,,,,,,,,,,\n" +
 "SNACK,Two sausage roll,100,750,,,,,,,,,,\n" +
 "ING,Advocado,100,250,,,,,,,,,,\n" +
-"MEA,Salad,100,350,,,,,,,,,,\n" +
-"ING,Small ,Coke,100,110,,,,,,,,,,\n" +
+"MEAL,Salad generic,100,350,,,,,,,,,,\n" +
+"ING,Small Coke,100,110,,,,,,,,,,\n" +
 "SNACK,Kilimanjaro : Sausage roll,100,375,,,,,,,,,,\n" +
 "SNACK,Kilimanjaro : Chicken pie,100,500,,,,,,,,,,\n" +
 "SNACK,Chicken Pot Pie,100,701,,,,,,,,,,\n" +
@@ -1449,291 +1512,20 @@
 "SNACK,Samosa,100,308,,,,,,,,,,\n" +
 "RECIPE,Pearl Barley Veg,100,300,,,,,,,,,,\n" +
 "RECIPE,Roasted Vegetable Pearl Barley,100,300,,,,,,,,,,\n" +
-"ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n" +
-"SNACK,Spring roll : One,100,170,,,,,,,,,,\n" +
-"ING,Pears : 133g,100,62,0.1,0.09,0,0.4,13.3,13.3,0.009,Y,2.9,1.75,,,,,,,,,,,,\n" +
-"ING,Chewing Gum,100,0,0,1.5,,,,,,,,\n" +
-"ING,Orange,100,85,,,,,,,,,,\n" +
-"DRINK,Water : 3 Cups,100,0,,,,,,,,,,\n" +
-"ING,Ampersand,100,2,,,,,,,,,,\n" +
-"ING,red,100,150,,,,,,,,,,\n" +
-"ING,Jic,100,1,,,,,,,,,,\n" +
-"MEAL,Chocolate Custard,100,840,,,,,,,,,,\n" +
-"MEAL,Akara,100,75,,,,,,,,,,\n" +
-"MEAL,Custard,100,530,,,,,,,,,,\n" +
-"ING,Milk,100,100,,,,,,,,,,\n" +
-"ING,Honey,100,170,,,,,,,,,,\n" +
-"MEAL,Tofu,100,220,,,,,,,,,,\n" +
- "SNACK,Falafel,100,125,,,,,,,,,,\n" +
-"MEAL,Stew : Irish,100,380,,,,,,,,,,\n" +
-"MEAL,Chicken,100,300,,,,,,,,,,\n" +
-"ING,Water : 2 Cups cups,100,0,,,,,,,,,,\n" +
-"MEAL,Pork Butt,100,134,,,,,,,,,,\n" +
-"RECIPE,Chargrilled Chicken and autumn salad,100,489,,,,,,,,,,\n" +
-"SNACK,African Falafel,100,150,,,,,,,,,,\n" +
-"MEAL,African stew/Stew,100,300,,,,,,,,,,\n" +
-"SNACK,Chicken,100,300,,,,,,,,,,+/n" +
-"RECIPE,Instant Pot Chicken Ramen,100,360,14,2,0,50,11,1,1,Y,3,10\n" +
-"ING,Mini Pork Pies : One : 50g,100,193,13,4.9,0,5.6,13,0.8,0.52,N,0.8,1.5\n" +
-"MEAL,Pizza : Piled High : Philly Cheese Steak : whole,100,1200,44,13.8,0,54,144,17.2,4.6	N,12,4.5\n" +
-"SNACK,Blueberry Muffin : One : 75g	100	275	11.6,1.1,0,3.1,38.7,21.5,0.3,N,1.5,1.5\n" +
-"ING,Blueberry Muffin : One : 75g,100,275,11.6,1.1,0,3.1,38.7,21.5,0.3,N,1.5,1.5\n" +
-"SNACK,Confectionery : Chocolate : Kit Kat : 31.2g,100,157,7.62,4.3,0,2.1,19.56,16,0.07,N,0.65,1\n" +
-"ING,Confectionery : Chocolate : Kit Kat : 31.2g,100,157,7.62,4.3,0,2.1,19.56,16,0.07,N,0.65,1\n" +
-"ING,Malt Loaf : Soren : half : 95g,100,295,2.66,0.48,0,9.6,56,17.4,0.475,Y,4.56,0.69\n" +
-"ING,Rice : 75g,100,270,1.1,0.2,0,6,57.8,0,0,N,0.8,1\n" +
-"ING,Milk : Cravendale : 500ml,100,250,8.5,5,0,18,24,24,0.5,Y,0,1.1\n" +
-"ING,Milk : Organic  500ml,100,250,8.5,5,0,18,24,24,0.5,Y,0,2\n" +
-"MEAL,Ready Meal : Haggis Neeps and Tatties : 340g,100,430,23,10.9,0,13.9,39.2,2.7,2.15,N,4.5,2.75\n" +
-"ING,Cereal : Kellogg : Krave : Milk Chocolate : 60g,100,264,8.2,2.4,0,14.4,42,16.8,0.58,Y,1.8,2.8\n" +
-"ING,Cereal : Muesli Fruit and Nut : 50g,100,202,7,2.45,0,3.9,29,12.5,0.14,Y,3.6,2\n " +
-"MEAL,Sandwich : Tesco : Cheese and Onion,100,495,27.5,10.7,0,19.8,40.4,3.6,1.6,N,3.5,1.3\n" +
-"ING,Gu : Salted Caramel Cheesecakes : 92g ramekin	100	339	18.9,10.1,0,3.1,38.7,27,0.46,N,0.9,3.5\n" +
-"ING,Ice Cream : Magnum : Classic : 110ml/79g,100,244,15,11,0,2.8,23,21,0.1,N,0,3.55\n" +
-"ING,Ice Cream : Magnum : White Chocolate : 110ml/79g,100,239,14,9.5,0,2.8,26,24,0.12,N,0,3.55\n" +
-"ING,Confectionery : Chocolate : Lindt Linder :,100g,100622,47,36,0,4.6,44,43,0.14,N,0,1.8\n" +
-"ING,Baby Spinach : 110g : half pack,100,33,0.9,0.1,0,3.1,1.7,1.7,0.4,Y,3,1\n" +
-"ING,Banana : 150g,100,135,0.2,0,0,1.8,30.5,27.2,0.0009,Y,2.1,1.75\n" +
-"SNACK,Porridge Oatmeal Bar : Stoats : 50g,100,221,11.3,5.3,0,25.8,11.2,0.01,Y,2.7,0.85\n" +
-"ING,Porridge Oatmeal Bar : Stoats : 50g,100,221,11.3,5.3,0,25.8,11.2,0.01,Y,2.7,0.85\n" +
-"EATOUT,Takeaway : Fish and  Chips : extra Cheese Salt and Ketchup,100,2000,0,,,,,,,N,,\n" +
-"ING,Almonds : 25g,100	149	11.1,0.88,0,6.3,3.15,1.5,0.025,Y,2.48,0.55\n" +
-"SNACK,Confectionery : Chocolate : Bounty : 57g,100,278,14.6,12,0,2.2,33.6,27.4,0.13,N,0,0.7\n" +
-"ING,Confectionery : Chocolate : Bounty : 57g,100,278,14.6,12,0,2.2,33.6,27.4,0.13,N,0,0.7\n" +
-"MEAL,1 Beef : Rump : 227g,100,290,9.31,3.9,0,50,0,0,0.34,N,0,4.79\n" +
-"ING,1 Beef : Rump : 227g,100,290,9.31,3.9,0,50,0,0,0.34,N,0,4.79\n" +
-"ING,Chips : McCain : 125g,100,260,9,1,0,4,39,0.8,0.68,N,3.7,1\n" +
-"ING,Butter : Lurpak Spreadable Slightly Salted :,15g,100,105,11.7,5.25,0,0.075,0.09,0.09,0.135,N,0,2\n" +
-"SNACK,Mini Pork Pies : One : 50g,100,193,13,4.9,0,5.6,13,0.8,0.52,N,0.8,1.5\n" +
-"SNACK,Confectionery : Chocolate : Dairy Milk : Cadburys,100,280,0,N,,,,,,,,0.7\n" +
-"ING,Confectionery : Chocolate : Dairy Milk : Cadburys,100,280,0,N,,,,,,,,0.7\n" +
-"MEAL,Naan Bread : One : 160g,100,468,11.7,1.9,0,11.8,76.8,4.6,1.2,N,4,2.75\n" +
-"ING,Naan Bread : One : 160g,100,468,11.7,1.9,0,11.8,76.8,4.6,1.2,N,4,2.75\n" +
-"MEAL,Peas :,frozen,100,55,0,,,,,,,,\n" +
-"ING,Peas :,frozen,100,55,0,,,,,,,,\n" +
-"DRINK,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n" +
-        "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
- "ING,,,,,,,,,,,,,/n" +
-        "SNACK,Cake Bar : Fibre One : 25g,100,89,3.1,1.9,0,1.2,11,6.5,0.2,N,5.8,1\n" +
- "ING,Paw Paw : Large Bowl : 455g,100,225,0.6,,0,1,22,16,0.016,Y,1.7,1/n" +
- "ING,Fufu : Pamper,,,,,,,,,,,,/n" +
- "ING,Lentil-Sausage Stew With Sweet Potato,,,,,,,,,,,,/n" +
- "ING,Beer : Star Lageer : Radler : 33cl Can,,,,,,,,,,,,/n" +
- "ING,Indomie Noodles : with Vegetables,,,,,,,,,,,,/n" +
- "ING,Paw Paw : Normal Bowl : 200g,100,90,0.6,,0,1,22,16,0.016,Y,1.7,1/n"
+        "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
+        "ING,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n" +
+        "MEAL, Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
+"ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n"
+
+
+
+    </string>
+
+    <string name="Volume4e">
+        "XRWGLEF,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n"
+
+
+
 
 
  </string>

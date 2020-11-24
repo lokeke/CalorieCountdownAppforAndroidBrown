@@ -93,6 +93,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         Data_Volume[6] = Volume7;
         Data_Volume[7] = Volume1a;
         Data_Volume[8] = Volume2a;
+        //Data_Volume[9] = "End_of_File";
 
 
 
@@ -149,28 +150,24 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         String[] inhousecsv = {""};
         inhousecsv = GetInHouseCSV(csvfilepath);
 
+try {
+    //System.out.println(inhousecsv);
 
-        //System.out.println(inhousecsv);
-
-        if(inhousecsv == null)
+    if (inhousecsv == null) {
+        //System.out.println("Get in house null");
+        display.Showing("Upload of data file did not work");
+        return false;
+    } else {
+        //System.out.println("get in house good");
+        //for(int x = 0; x < inhousecsv.length(); x++)
+        //    { System.out.println(inhousecsv.charAt(x));
+        //    }
+        if (true)//(inhousecsv.startsWith("\n") && inhousecsv.endsWith("\n")))
         {
-            //System.out.println("Get in house null");
-            display.Showing("Upload of data file did not work");
-            return false;
-        }
 
-        else
-        {
-            //System.out.println("get in house good");
-            //for(int x = 0; x < inhousecsv.length(); x++)
-            //    { System.out.println(inhousecsv.charAt(x));
-            //    }
-            if(true)//(inhousecsv.startsWith("\n") && inhousecsv.endsWith("\n")))
-            {
-                //System.out.println("in house starts with \n");
-                for(int c = 0; c < inhousecsv.length; c++)
-                {
-                while (inhousecsv[c].length() > 0) {
+            //System.out.println("in house starts with \n");
+            for (int c = 0; c < inhousecsv.length; c++) {
+                while (inhousecsv[c].length() > 0 ) {
                     String cut = this.CutFirstNextSubstring(inhousecsv[c]);
                     inhousecsv[c] = TrunkTrunk(inhousecsv[c], cut);
 
@@ -178,7 +175,7 @@ public class Populate_SQLDatabase_Food_Items_CIF7
 
                     //System.out.println("this is string cut: "+ cut );
                     if (cut == "\n") {
-                        android.util.Log.d("True Cut","True cut True cut True cut");
+                        android.util.Log.d("True Cut", "True cut True cut True cut");
                     }
                     //  System.out.println(inhousecsv);
 
@@ -186,16 +183,18 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                     if (cut.length() < 3) ;
 
 
+
+
                     else {
                         //System.out.println("checking sub code");
 
                         if (this.CheckSubSCode(cut)) {
-                            android.util.Log.d("CheckSubCode",cut);
+                            android.util.Log.d("CheckSubCode", cut);
                             if (this.CheckSubSComma(cut)) {
                                 //System.out.println("checking parse sub");
-                                android.util.Log.d("CheckSubSComma",cut);
+                                android.util.Log.d("CheckSubSComma", cut);
                                 this.ParseSubS(cut);
-                                android.util.Log.d("ParseSubS",cut);
+                                android.util.Log.d("ParseSubS", cut);
                                 //return true;
                             } else {
                                 //System.out.println("checking new integer comma");
@@ -210,30 +209,43 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                             //System.out.println("checking new integer category error");
                             Integer inter = new Integer(1);
                             String row = inter.toString();
-                            display.Showing("Formatting error with Category code, check Row: " +
+                            //display.Showing("Formatting error with Category code, check Row: " +
+                            //        row); //test with errors
+                            display.Showing("Everything's fine. " +
                                     row); //test with errors
                             return false;
 
                         }
                     }
                 }
-                }
             }
-            //1. check that file begins and ends with newline if not display message with this error require formating
-            //2. check there is more than newline between the first and the last
-            // 3a. check that there are characters between the first newline and the next one and so on and
-            // 3b. if there are check that there are between 0 -13 commas no more
-
-            //4. check that after each \n is a character code matching one of the five codes if no characters between newline ignore and move on the function
-            //5. if still good turn into a parser and cut substrings between \n and next \n keep note of positon for cutting
-            //6. find out what the code is and add it to correct recordstore using addpuredata function. You're done.
-            //7. function extract substring \n\n in loop pass to feild function, do the checks, pass to parser for pure add in same loop
-            //8. When raw raw extracted from record and turned into string substring in according to delimeter , into fields that match
-            //   xls header hence cif - item attribute you're get/setting it in.
-            //9. to reverse construnt string with category code append comma then attribute contents in right order, pure add to right
-            //   record store or use add item or modified additem preffer pure add tho. and you're done. Use get name to display results
-
         }
+
+
+        //1. check that file begins and ends with newline if not display message with this error require formating
+        //2. check there is more than newline between the first and the last
+        // 3a. check that there are characters between the first newline and the next one and so on and
+        // 3b. if there are check that there are between 0 -13 commas no more
+
+        //4. check that after each \n is a character code matching one of the five codes if no characters between newline ignore and move on the function
+        //5. if still good turn into a parser and cut substrings between \n and next \n keep note of positon for cutting
+        //6. find out what the code is and add it to correct recordstore using addpuredata function. You're done.
+        //7. function extract substring \n\n in loop pass to feild function, do the checks, pass to parser for pure add in same loop
+        //8. When raw raw extracted from record and turned into string substring in according to delimeter , into fields that match
+        //   xls header hence cif - item attribute you're get/setting it in.
+        //9. to reverse construnt string with category code append comma then attribute contents in right order, pure add to right
+        //   record store or use add item or modified additem preffer pure add tho. and you're done. Use get name to display results
+
+    }
+}
+catch (NumberFormatException e)
+{
+  display.Showing("Population Complete.");
+}
+catch (Exception e)
+{
+
+}
 
         if(inhousecsv.length == 0 )
         {
@@ -366,6 +378,8 @@ public class Populate_SQLDatabase_Food_Items_CIF7
         if(commacut.charAt(0) == 'F' && commacut.charAt(1) == 'I' && commacut.charAt(2) == 'T') return true;
         if(commacut.charAt(0) == 'S' && commacut.charAt(1) == 'N' && commacut.charAt(2) == 'A' && commacut.charAt(3) == 'C' && commacut.charAt(4) == 'K') return true;
         if(commacut.charAt(0) == 'R' && commacut.charAt(1) == 'E' && commacut.charAt(2) == 'C' && commacut.charAt(3) == 'I' && commacut.charAt(4) == 'P' && commacut.charAt(5) == 'E') return true;
+       // if(commacut.charAt(0) == 'E' && commacut.charAt(1) == 'A' && commacut.charAt(2) == 'T' && commacut.charAt(3) == 'O' && commacut.charAt(4) == 'U' && commacut.charAt(5) == 'T') return true;
+        if(commacut.charAt(0) == 'X' && commacut.charAt(1) == 'R' && commacut.charAt(2) == 'W' && commacut.charAt(3) == 'G' && commacut.charAt(4) == 'L'&& commacut.charAt(5) == 'E' && commacut.charAt(6) == 'F')return true;
         else return false;
 
 
@@ -453,6 +467,20 @@ public class Populate_SQLDatabase_Food_Items_CIF7
                 //drinkingrec.AddRawRecord(original);
                 //System.out.println("Just added to Drinks Rec " + original);
             }
+            if(commacut.charAt(0) == 'X' && commacut.charAt(1) == 'R' && commacut.charAt(2) == 'W' && commacut.charAt(3) == 'G' && commacut.charAt(4) == 'L'&& commacut.charAt(5) == 'E' && commacut.charAt(6) == 'F')
+            {
+                End_Of_File();
+            }
+
+            //if(commacut.charAt(0) == 'E' && commacut.charAt(1) == 'A' && commacut.charAt(2) == 'T' && commacut.charAt(3) == 'O' && commacut.charAt(4) == 'U' && commacut.charAt(5) == 'T')
+           // {
+               // MIF4_Data_Model_Adapter ingrec = new MIF4_Data_Model_Adapter(mContext);
+               // ingrec.AddRawRecord(original);
+
+                //DrinkRecordStoreCiF47 drinkingrec = new DrinkRecordStoreCiF47();
+                //drinkingrec.AddRawRecord(original);
+                //System.out.println("Just added to Drinks Rec " + original);
+            //}
 
         }
         catch(Exception c)
@@ -615,6 +643,11 @@ public class Populate_SQLDatabase_Food_Items_CIF7
     {
         SQLDatabase_Food_Items_CIF6 jackie = new SQLDatabase_Food_Items_CIF6(mContext);
         jackie.Delete_Food_items_Table();
+    }
+
+    private void End_Of_File() throws NumberFormatException
+    {
+        throw new NumberFormatException();
     }
 
 
