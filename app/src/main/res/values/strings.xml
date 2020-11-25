@@ -12,14 +12,14 @@
 
 
     <string name="subtype_generic2">French</string>
-    <string name="hello_world">77952</string>
+    <string name="hello_world">77418</string>
 
 
     <string name="hello_world2">Your Countdown Balance</string>
-    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 275.6lbs</string>
-    <string name="estimated_date_to_zero">Estimate arrival date to zero: 13 09 21</string>
+    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 272.0lbs</string>
+    <string name="estimated_date_to_zero">Estimate arrival date to zero: 18 08 21</string>
     <string name="last_modified">Balance last updated on</string>
-    <string name="last_modified2">1159, 30 OCT 20</string>
+    <string name="last_modified2">1159, 25 NOV 20</string>
     <string name="Credit_Button">Credit</string>
 
 
@@ -1514,6 +1514,7 @@
 "RECIPE,Roasted Vegetable Pearl Barley,100,300,,,,,,,,,,\n" +
         "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
         "ING,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n" +
+        "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,\n" +
         "MEAL, Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
 "ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n"
 
