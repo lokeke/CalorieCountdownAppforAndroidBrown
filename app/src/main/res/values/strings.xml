@@ -1515,6 +1515,14 @@
         "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
         "ING,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n" +
         "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,\n" +
+        "ING, Fruit and Nut Mix : 30g,100,122,6.4.0.9,0,5.6,7.9,7.8,0.05,Y,5,1\n" +
+        "ING, Pudding and Dessert : Ganache : Salted Caramel and Belgian Chocolate : Per Pot,100,322,25,15,0,3.6,21,18,0.49,N,0.7,1\n" +
+        "ING, Pudding and Dessert : Melting Middle Chocolate Pudding : Per Pot : 135g,100,473,25.9,16.6,0,7.4,51,34.7,0.3,N,2.7,1\n" +
+        "ING, Confectionery : Chocolate : Almond and Hazelnut Chocolate Florentines : Per 3 Florentines : 29g,100,162,10,3.3,0,2.3,15,11,0.01,N,1,1\n" +
+        "ING, Cereal Bar or Bakes : Soft Bakes : Red Berries : Per Bake : 50g,100,185,4.8,0.4,0,3.1,30,9.7,0.21,Y,5,1\n" +
+        "ING, Ice Cream IceCream : Salted Caramel : One : 80g : Pudding and Desserts or Dessert : Icecream,100,285,17,13,0,2.3,30,28,0.23,N,0.8,1\n" +
+        "ING, Cheese Slices : Dairylea : One Slice : 25g,100,56,3.4,2.2,0,3.8,2.1,1.6,0.36,N,0.6,1\n" +
+        "ING, Sausage : Frankfurter : One,100,100,8.8,3.4,0,4.4,0.7,0.7,0.56,N,0.4,1\n" +
         "MEAL, Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
 "ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n"
 
