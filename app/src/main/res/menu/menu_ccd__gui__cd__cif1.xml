@@ -18,18 +18,27 @@
     <item android:id="@+id/action_food_diary_credit"
         android:title="@string/action_food_diary_credit_title">
         <menu>
-            <item android:id="@+id/submenu1" android:title="Big Brunch Food items"></item>
-            <item android:id="@+id/submenu2" android:title="First Breakie Box Food items"></item>
+
+            <group android:id="@+id/group1">
             <item android:id="@+id/submenu3" android:title="Create a Diet Plan"></item>
+            <item android:id="@+id/submenu2" android:title="First Breakie Box Food items"></item>
+            <item android:id="@+id/submenu3c" android:title="Big Breakfast Box Food items"></item>
+            <item android:id="@+id/submenu1" android:title="Big Brunch Box Food items"></item>
+            </group>
+
+            <group android:id="@+id/group2">
             <item android:id="@+id/submenu4" android:title="Dinner Box Food items"></item>
             <item android:id="@+id/submenu3d" android:title="Snack Box Food items"></item>
             <item android:id="@+id/submenu3a" android:title="Supper Box Food items"></item>
-            <item android:id="@+id/submenu3b" android:title="Big Brunch Box Food items"></item>
-            <item android:id="@+id/submenu3c" android:title="Big Breakfast Box Food items"></item>
+            </group>
+            <group android:id="@+id/group3">
             <item android:id="@+id/submenu5" android:title="Monthly Statement and Food Journal"></item>
+            </group>
+            <group android:id="@+id/group4">
             <item android:id="@+id/submenu6" android:title="Populate Food Database"></item>
             <item android:id="@+id/submenu9" android:title="Depopulate Food Database"></item>
             <item android:id="@+id/submenu7" android:title="Clear Database"></item>
+            </group>
             <item android:id="@+id/submenu8" android:title=" Calculator">
                 <menu>
                     <item android:id="@+id/sub-submenuitem1" android:title="Web Calculator"></item>
