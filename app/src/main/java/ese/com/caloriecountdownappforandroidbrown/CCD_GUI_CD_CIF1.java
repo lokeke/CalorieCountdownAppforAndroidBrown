@@ -40,6 +40,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private static int REQUEST_CODE_NEW_DAY = 7;
     private static int REQUEST_CODE_MONTHLY_STATEMENT_ACTIVITY = 9;
     private static int REQUEST_CODE_DIET_PLAN = 16;
+    private static int REQUEST_CODE_START_JOURNAL_ACTIVITY = 17;
 
     private Button mCreditButton;
     private Button mDebitButton;
@@ -253,6 +254,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
         {
             De_Populate_SQLite_Database();
+
             return true;
         }
 
@@ -263,10 +265,20 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.submenu2a)
+
+        {
+            Start_Journal_Activity_CiF115();
+            return true;
+        }
+
         if (id == R.id.action_fitness_log_debit) // Physical Activity Debit
         {
             StartDebitActivityCIF13();
+
         }
+
+
 
 
 
@@ -681,6 +693,12 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     {
         Intent i = new Intent(CCD_GUI_CD_CIF1.this, Debit_Activity_CiF003_fragment_box.class);
         this.startActivityForResult(i, REQUEST_CODE_START_DEBIT_ACTIVITY);
+    }
+
+    private void Start_Journal_Activity_CiF115()
+    {
+        Intent i = new Intent(CCD_GUI_CD_CIF1.this, Journal_Activity_CiF0115_fragment_box.class);
+        this.startActivityForResult(i, REQUEST_CODE_START_JOURNAL_ACTIVITY);
     }
 
 

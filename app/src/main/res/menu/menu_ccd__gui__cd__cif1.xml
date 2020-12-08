@@ -19,18 +19,30 @@
         android:title="@string/action_food_diary_credit_title">
         <menu>
 
-            <group android:id="@+id/group1">
-            <item android:id="@+id/submenu3" android:title="Create a Diet Plan"></item>
-            <item android:id="@+id/submenu2" android:title="First Breakie Box Food items"></item>
-            <item android:id="@+id/submenu3c" android:title="Big Breakfast Box Food items"></item>
-            <item android:id="@+id/submenu1" android:title="Big Brunch Box Food items"></item>
-            </group>
+            <item android:id="@+id/submenu8x" android:title=" Accrual">
+                <menu>
+                    <item android:id="@+id/submenu3aa" android:title="Accurual"></item>
+                    <item android:id="@+id/submenu2a" android:title="Journal"></item>
+                    <item android:id="@+id/submenu3ca" android:title="SOP"></item>
+                    <item android:id="@+id/submenu1a" android:title="POP"></item>
+                </menu>
+            </item>
 
-            <group android:id="@+id/group2">
-            <item android:id="@+id/submenu4" android:title="Dinner Box Food items"></item>
-            <item android:id="@+id/submenu3d" android:title="Snack Box Food items"></item>
-            <item android:id="@+id/submenu3a" android:title="Supper Box Food items"></item>
-            </group>
+
+            <item android:id="@+id/submenu8xx" android:title="Meal Time">
+                <menu>
+                    <item android:id="@+id/submenu3" android:title="Create a Diet Plan"></item>
+                    <item android:id="@+id/submenu2" android:title="First Breakie Box Food items"></item>
+                    <item android:id="@+id/submenu3c" android:title="Big Breakfast Box Food items"></item>
+                    <item android:id="@+id/submenu1" android:title="Big Brunch Box Food items"></item>
+                    <item android:id="@+id/submenu4" android:title="Dinner Box Food items"></item>
+                    <item android:id="@+id/submenu3d" android:title="Snack Box Food items"></item>
+                    <item android:id="@+id/submenu3a" android:title="Supper Box Food items"></item>
+
+                </menu>
+            </item>
+
+
             <group android:id="@+id/group3">
             <item android:id="@+id/submenu5" android:title="Monthly Statement and Food Journal"></item>
             </group>

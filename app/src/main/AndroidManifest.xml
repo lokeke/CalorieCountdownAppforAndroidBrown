@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ese.com.caloriecountdownappforandroidbrown"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ese.com.caloriecountdownappforandroidbrown">
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Journal_Activity_CiF0115_fragment_box"
+            android:label="@string/title_activity_journal___ci_f0115_fragment_box"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Debit_Activity_CiF003_fragment_box"
             android:label="@string/title_activity_debit___ci_f003_fragment_box"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Debit_Activity_CIF13" />
         <activity
             android:name=".Splash_Screen_Fragement_001_Class"
@@ -69,6 +73,7 @@
             android:label="@string/title_activity_diet__plan__fragment008"
             android:theme="@style/AppTheme.NoActionBar" />
 
+
         <service
             android:name=".BreakfastBoxService_CIFragement001"
             android:enabled="true"
@@ -98,8 +103,8 @@
             android:enabled="true"
             android:exported="true" />
     </application>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
 </manifest>

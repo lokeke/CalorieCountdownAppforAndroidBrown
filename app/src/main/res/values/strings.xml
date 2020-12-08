@@ -12,14 +12,14 @@
 
 
     <string name="subtype_generic2">French</string>
-    <string name="hello_world">76999</string>
+    <string name="hello_world">76300</string>
 
 
     <string name="hello_world2">Your Countdown Balance</string>
-    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 272.0lbs</string>
-    <string name="estimated_date_to_zero">Estimate arrival date to zero: 18 08 21</string>
+    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 270.8lbs</string>
+    <string name="estimated_date_to_zero">Estimate arrival date to zero: 18 07 21</string>
     <string name="last_modified">Balance last updated on</string>
-    <string name="last_modified2">1159, 25 NOV 20</string>
+    <string name="last_modified2">1159, 08 DEC 20</string>
     <string name="Credit_Button">Credit</string>
 
 
@@ -201,6 +201,20 @@
     <string name="diet_plan16">Food item name</string>
     <string name="diet_plan17">Food item name</string>
     <string name="diet_plan18">Food item name</string>
+
+    <string name="hello_blank_fragment_jc">Reference</string>
+    <string name="hello_blank_fragment_jc1">Date</string>
+    <string name="hello_blank_fragment_jc2">Day From</string>
+    <string name="hello_blank_fragment_jc3">Day To</string>
+    <string name="hello_blank_fragment_jc4">Amount of Points to Journal</string>
+    <string name="hello_blank_fragment_jc5">Description</string>
+    <string name="hello_blank_fragment_jc6">Journal Debit</string>
+    <string name="hello_blank_fragment_jc7">Journal Credit</string>
+    <string name="hello_blank_fragment_jc8">Transactions_IDs to Journal (Optional/Advance)</string>
+
+
+    <string name="cancel3x">Save Journal</string>
+
 
 
     <string name="title_activity_start__weight__loss__activity_cif14">
@@ -1572,6 +1586,7 @@
 
     <!-- Example settings for Data & Sync -->
     <string name="title_activity_diet__plan__fragment008">Diet_Plan_Activity_fragment008</string>
+    <string name="title_activity_diet__plan__fragment008a">Journal</string>
 
     <string name="cancel17">Debit Balance with Step Count</string>
     <string name="Steps">Debit Balance with Steps</string>
@@ -1592,6 +1607,7 @@
 
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+    <string name="title_activity_journal___ci_f0115_fragment_box">Journal</string>
     <string-array name="activities">
         <item>Just add Raw Calories Burnt;0.00</item>
         <item>Walk: 4.5 mph (13min/mi);0.04</item>
@@ -1759,41 +1775,41 @@
         <item>Whitewater: rafting, kayaking;0.04</item>
         <item>Wrestling;0.045</item>
     </string-array>
+
     <string-array name="bodyframe">
         <item>Small Frame</item>
         <item>Medium Frame</item>
         <item>Large Frame</item>
     </string-array>
-
     <string-array name="weightunits">
         <item>pounds lbs</item>
         <item>Kilograms Kg</item>
 
     </string-array>
+
+
     <string-array name="heightunits">
         <item>CM</item>
         <item>Inches</item>
 
     </string-array>
 
-
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>
     </string-array>
-
     <string-array name="quickstart">
         <item>5 Kg</item>
         <item>1 Stone</item>
         <item>10 Kg</item>
 
     </string-array>
+    <!-- Strings used for fragments for navigation -->
     <string-array name="pref_example_list_titles">
         <item>Always</item>
         <item>When possible</item>
         <item>Never</item>
     </string-array>
-    <!-- Strings used for fragments for navigation -->
     <string-array name="pref_example_list_values">
         <item>1</item>
         <item>0</item>
@@ -1815,12 +1831,12 @@
         <item>360</item>
         <item>-1</item>
     </string-array>
+
     <string-array name="list_preference_entries">
         <item>Entry 1</item>
         <item>Entry 2</item>
         <item>Entry 3</item>
     </string-array>
-
     <string-array name="list_preference_entry_values">
         <item>1</item>
         <item>2</item>

@@ -167,6 +167,10 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
     private static final String COLUMN_MEAL_BOX_IRON_PERCENT = "iron_percent";
     private static final String COLUMN_MEAL_BOX_CATEGORY = "category";
 
+    private static final String TABLE_DAY_OBJECT_TABLE = "Day_Object";
+    private static final String COLUMN_DAY = "Date";
+    private static final String COLUMN_TRANSACTION_IDS = "all_CiF_17_JSON_wrapped_transaction_ids_for_this_date";
+
 
     private static final String COLUMN_FOODITEMS_ID = "food_item_id";
     private static final String COLUMN_FOODITEMS_FOOD_TYPE = "food_type";
