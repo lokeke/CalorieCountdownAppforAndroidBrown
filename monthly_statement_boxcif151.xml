@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ese.com.caloriecountdownappforandroid.Monthly_Statement_BOXCIF151Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="ese.com.caloriecountdownappforandroid.Monthly_Statement_BOXCIF151Fragment">
+
+
+
+
+        <TextView
+            android:id="@+id/textview54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:text="@string/hello_blank_fragment26" />
+
+
+        <DatePicker
+            android:id="@+id/date_picker_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:clickable="true"
+            android:datePickerMode="spinner" />
+
+
+        <TextView
+            android:id="@+id/textview55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:text="@string/hello_blank_fragment27" />
+
+        <DatePicker
+        android:id="@+id/date_picker_81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:clickable="true"
+        android:datePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/cancel7"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/cancel2"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

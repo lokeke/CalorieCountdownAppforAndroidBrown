@@ -1,0 +1,392 @@
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ese.com.caloriecountdownappforandroidbrown.Food_Diary_Sheet_CIF3">
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food_item_text"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calories_text"
+                android:layout_column="10"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity_text"
+                android:layout_column="20"
+                android:padding="10dp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tablerow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tablerow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tablerow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/tablerow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/tablerow10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_text33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_text35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="20"
+                android:padding="15dp"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/search"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_food_item"/>
+
+
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/weight"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/just"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/guesstimate"/>
+
+            <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/cancel"/>
+
+            <Button
+                android:id="@+id/buttonPhotoGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/gallery"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "@string/cancel2"/>
+
+
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</ScrollView>
+
+
+
+
+
+</LinearLayout>
+
+
