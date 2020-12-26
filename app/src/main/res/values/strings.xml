@@ -12,14 +12,14 @@
 
 
     <string name="subtype_generic2">French</string>
-    <string name="hello_world">76300</string>
+    <string name="hello_world">86071</string>
 
 
     <string name="hello_world2">Your Countdown Balance</string>
-    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 270.8lbs</string>
-    <string name="estimated_date_to_zero">Estimate arrival date to zero: 18 07 21</string>
+    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 269.8lbs</string>
+    <string name="estimated_date_to_zero">Estimate arrival date to zero and £6.93 : 16 08 11</string>
     <string name="last_modified">Balance last updated on</string>
-    <string name="last_modified2">1159, 08 DEC 20</string>
+    <string name="last_modified2">1159, 25 DEC 20</string>
     <string name="Credit_Button">Credit</string>
 
 
@@ -317,10 +317,14 @@
 "DRINK,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n" +
         "SNACK,Cake Bar : Fibre One : 25g,100,89,3.1,1.9,0,1.2,11,6.5,0.2,N,5.8,1\n" +
  "ING,Paw Paw : Large Bowl : 455g,100,225,0.6,,0,1,22,16,0.016,Y,1.7,1\n" +
- "ING,Fufu : Pamper,,,,,,,,,,,,\n" +
- "ING,Lentil-Sausage Stew With Sweet Potato,,,,,,,,,,,,\n" +
- "ING,Beer : Star Lager : Radler : 33cl Can,,,,,,,,,,,,\n" +
- "ING,Indomie Noodles : with Vegetables,,,,,,,,,,,,\n" +
+ "ING,Fufu : Tamper,100,550,,,,,,,,,,\n" +
+        "ING,Nigerian Soup : Generic,100,550,,,,,,,,,,\n" +
+        "ING,Nigerian Soup : Meat,100,225,,,,,,,,,,\n" +
+        "ING,Soda : Fizzy : Teem Bitter Lemon,100,57,,,,,,,,,,\n" +
+        "ING,Tea : Peppermint Tea,100,0,,,,,,,,,,\n" +
+ "ING,Lentil-Sausage Stew With Sweet Potato,100,780,,,,,,,,,,\n" +
+ "ING,Beer : Star Lager : Radler : 33cl Can,100,199,,,,,,,,,,\n" +
+ "ING,Indomie Noodles : with Vegetables,100,650,,,,,,,,,,\n" +
  "ING,Paw Paw : Normal Bowl : 200g,100,90,0.6,,0,1,22,16,0.016,Y,1.7,1\n"
 
 </string>
@@ -434,9 +438,9 @@
 "ING,Light Peanut Butter Fudge Ice Cream,100,260,10,5,,,36,20,,N,6,\n" +
 "ING,Bread - Finest Oatmeal,75,333.33,4.4,,,5.3,20.4,,,N,,\n" +
 "ING,Bread - Pitta - Garlic and Herb,100,145,1.2,,,5.8,26.8,,,N,,\n" +
-"ING,Bread - White - Meduim Sliced,75,259.67,0.8,,,4,17.7,,,N,,\n" +
-"ING,Bread - Multigrain Farmhouse,75,320,1.6,,,5,21.3,,,N,,\n" +
-"ING,Bread - Brown - Thick,75,266.67,1,,,4.8,17.2,,,N,,\n" +
+"ING,Bread - White - Meduim Sliced,75,195,0.8,,,4,17.7,,,N,,\n" +
+"ING,Bread - Multigrain Farmhouse,75,240,1.6,,,5,21.3,,,N,,\n" +
+"ING,Bread - Brown - Thick,75,200,1,,,4.8,17.2,,,N,,\n" +
 "ING,Bread - White - Thick,75,105,0.7,,,3.6,21,,,N,,\n" +
 "ING,Bread - Wholemeal - Meduim,75,80,0.8,,,4,14.1,,,N,,\n" +
 "ING,Bread - Wholemeal - Pitta,100,145,1.5,,,6.7,26.2,,,N,,\n" +
@@ -1438,6 +1442,7 @@
 "MEAL,Beans,100,650,,,,,,,,,,\n" +
 "ING,Fish,100,250,,,,,,,,,,\n" +
 "ING,egg,100,92,,,,,,,,,,\n" +
+        "ING,Egg : generic,100,92,,,,,,,,,,\n" +
 "ING,Vegetable,100,145,,,,,,,,,,\n" +
 "ING,Water,100,0,,,,,,,,,,\n" +
 "SNACK,4 puffs : 4 Puff : Puff puff,100,600,,,,,,,,,,\n" +
@@ -1527,8 +1532,15 @@
 "RECIPE,Pearl Barley Veg,100,300,,,,,,,,,,\n" +
 "RECIPE,Roasted Vegetable Pearl Barley,100,300,,,,,,,,,,\n" +
         "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
-        "ING,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n" +
+        "ING,Tea : Alitea Cardamom 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
+        "ING,Tea : Alitea Green Tea 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
+        "ING, Soda : Fizzy Drink : Pepsi Max,100,0,0,0,0,0.2,0.2,0,0.49,N,0,1\n" +
+        "ING, Bread : Generic,100,115,,,,,,,,,,1\n"+
+        "ING,Indomie Noodles : with Vegetables end,100,650,,,,,,,,,,\n" +
         "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,\n" +
+        "ING, Fried Plantain : One Slice, 100,68,3.6,0.5,0,0.4,9.7,4.6,0.01,Y,0.7,1,\n" +
+        "ING, Plantain : 100g, 100,166,0.2,0.1,0,0.8,31,14,0.05,Y,2.3,1,\n" +
+        "ING, Plantain Chips : 13,100,90,4.5,1.5,0,1,11,11,0.2,Y,0,1,\n" +
         "ING, Fruit and Nut Mix : 30g,100,122,6.4.0.9,0,5.6,7.9,7.8,0.05,Y,5,1\n" +
         "ING, Pudding and Dessert : Ganache : Salted Caramel and Belgian Chocolate : Per Pot,100,322,25,15,0,3.6,21,18,0.49,N,0.7,1\n" +
         "ING, Pudding and Dessert : Melting Middle Chocolate Pudding : Per Pot : 135g,100,473,25.9,16.6,0,7.4,51,34.7,0.3,N,2.7,1\n" +
@@ -1545,7 +1557,7 @@
     </string>
 
     <string name="Volume4e">
-        "XRWGLEF,Indomie Noodles : with Vegetables end ,,,,,,,,,,,,/n"
+        "XRWGLEF,Indomie Noodles : with Vegetables end,100,650,,,,,,,,,,\n"
 
 
 

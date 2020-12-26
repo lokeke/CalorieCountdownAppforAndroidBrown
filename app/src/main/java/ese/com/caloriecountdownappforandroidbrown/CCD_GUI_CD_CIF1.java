@@ -97,6 +97,9 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             }
         });
 
+        instance.Set_currentBalance();
+        //instance.Start_Cycle();
+
 
 
         appContext = getApplicationContext();
@@ -808,6 +811,14 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     {
         final TextView countdownbalance = (TextView) findViewById(R.id.textView);
         return new String(countdownbalance.getText().toString());
+    }
+
+    private void Set_currentBalance()
+    {
+        final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        MIF4_Data_Model_Adapter model_adapter = new MIF4_Data_Model_Adapter(this);
+
+        countdownbalance.setText(model_adapter.RetrieveBalance());
     }
 
     private void Refresh()
