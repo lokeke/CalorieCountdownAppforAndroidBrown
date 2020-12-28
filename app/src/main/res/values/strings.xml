@@ -1534,13 +1534,32 @@
         "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
         "ING,Tea : Alitea Cardamom 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
         "ING,Tea : Alitea Green Tea 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
-        "ING, Soda : Fizzy Drink : Pepsi Max,100,0,0,0,0,0.2,0.2,0,0.49,N,0,1\n" +
-        "ING, Bread : Generic,100,115,,,,,,,,,,1\n"+
-        "ING,Indomie Noodles : with Vegetables end,100,650,,,,,,,,,,\n" +
-        "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,\n" +
-        "ING, Fried Plantain : One Slice, 100,68,3.6,0.5,0,0.4,9.7,4.6,0.01,Y,0.7,1,\n" +
-        "ING, Plantain : 100g, 100,166,0.2,0.1,0,0.8,31,14,0.05,Y,2.3,1,\n" +
-        "ING, Plantain Chips : 13,100,90,4.5,1.5,0,1,11,11,0.2,Y,0,1,\n" +
+        "ING,Wellwoman Vitamin Drink : 250ml,100,13,0.1,0.1,0,0.1,2.5,2.3,0.05,Y,,1\n"+
+        "ING,Wellman Vitamin Drink : 250ml,100,13,0.1,0.1,0,0.1,2.5,2.3,0.05,Y,,1\n"+
+        "ING,Katsu Burger : Regular,100,1000,,,0,,,,,N,,1\n"+
+        "ING,Maltina Classic classic : 330ml,100,190,0.3,0.3,0,1.32,,,,,,1\n" +
+        "ING,Malta : 330ml,100,190,0,0,0,1,46.2,36.3,0,Y,,\n"+
+        "ING,Yoghurt/yogurt Drink : Tit : 500ml,100,250,10.4,2,0,10,14,8,0.32,Y,0,1\n" +
+        "ING,Fizzy : Soda : Pop : Mirinda Apple Flavour : 500ml,100,250,,,,,,,,,,1\n" +
+        "ING,5 Alive Five Alive 5-Alive Five-Alive : Pulpy : 300ml,100,150,0,0,0,0,36,30,0.004,Y,1.2,1\n" +
+        "ING,Beer : Star : 330ml,100,190,0,0,0,0,0,0,0,N,0,1\n" +
+        "ING,Guinness : 330ml,100,150,,,,,,,,,,1\n" +
+        "ING,Cereal : Golden Morn with Milk : 50g,100,315,10.1,4.9,0,12.8,43.1,21.8,0.331,Y,3.6,1\n" +
+        "ING,
+
+        "ING,Dark Rum : Squadron : 180ml,100,450,0,0,0,0,0.9,,,,,1\n"+
+        "ING,Soda : Fizzy Drink : Pepsi Max,100,0,0,0,0,0.2,0.2,0,0.49,N,0,1\n" +
+        "ING,Bread : Generic,100,115,,,,,,,,,,1\n"+
+        "ING,Nescafe 3 in 1 : One Sachet : 32g,100,150,5.8,5.1,0,0.8,23,14.1,0.11,Y,0.8,1\n"+
+        "ING,Lite Cracker Biscuit,100,404,7.01,5,0,6.64,70,50,,N,0.26,1\n"+
+        "ING,Indomie Noodles : with Vegetables end,100,650,,,,,,,,,,1\n" +
+        "ING, Coca Cola : Coca-Coal : 1 litre,100,300,0,0,0,,,76,0.02,N,0,1\n" +
+        "ING,Juice Drink : Tropical Fruit : 330ml,100,73,1.5,0.3,0,1.5,17.16,14.7,0.03,N,,1\n" +
+        "ING,Sprite : 1 litre,100,360,0,0,0,0,89,88,0.036,N,0,1\n"+
+        "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,1\n" +
+        "ING, Fried Plantain : One Slice,100,68,3.6,0.5,0,0.4,9.7,4.6,0.01,Y,0.7,1\n" +
+        "ING, Plantain : 100g, 100,166,0.2,0.1,0,0.8,31,14,0.05,Y,2.3,1\n" +
+        "ING, Plantain Chips : 13,100,90,4.5,1.5,0,1,11,11,0.2,Y,0,1\n" +
         "ING, Fruit and Nut Mix : 30g,100,122,6.4.0.9,0,5.6,7.9,7.8,0.05,Y,5,1\n" +
         "ING, Pudding and Dessert : Ganache : Salted Caramel and Belgian Chocolate : Per Pot,100,322,25,15,0,3.6,21,18,0.49,N,0.7,1\n" +
         "ING, Pudding and Dessert : Melting Middle Chocolate Pudding : Per Pot : 135g,100,473,25.9,16.6,0,7.4,51,34.7,0.3,N,2.7,1\n" +

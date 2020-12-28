@@ -818,7 +818,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         final TextView countdownbalance = (TextView) findViewById(R.id.textView);
         MIF4_Data_Model_Adapter model_adapter = new MIF4_Data_Model_Adapter(this);
 
-        countdownbalance.setText(model_adapter.RetrieveBalance());
+        countdownbalance.setText((mBalance_text = model_adapter.RetrieveBalance()));
     }
 
     private void Refresh()
@@ -830,6 +830,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     {
         MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(this);
         data_model_adapter.Record_Food_Journal(INPUT);
+        data_model_adapter.StoreBalance(mBalance_text);
 
     }
 
@@ -953,8 +954,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         final TextView countdownbalance = (TextView) findViewById(R.id.textView);
         String CountdownFigure = countdownbalance.getText().toString();
         CountdownFigure = new RoundingCIF13().IntToString(new RoundingCIF13().StringToInt(CountdownFigure) - debit);
-        countdownbalance.setText(CountdownFigure);
-        StoreCountdownBalance(CountdownFigure);
+        countdownbalance.setText((mBalance_text = CountdownFigure));
+        StoreCountdownBalance((mBalance_text =CountdownFigure));
         Kitty();
     }
 

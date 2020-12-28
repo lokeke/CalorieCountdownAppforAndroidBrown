@@ -1242,7 +1242,7 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
             food_match = new Food_Item_CIF4();
 
             android.util.Log.d("NUMBER OF ROWS IN FETCH", new RoundingCIF13().IntToString(food_cursor.getCount()));
-            food_match.Set_food_item_name((food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_ITEM_NAME))) + " number of rows: " + (new RoundingCIF13().IntToString(food_cursor.getCount())));
+            food_match.Set_food_item_name((food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_ITEM_NAME))));
             food_match.Set_food_type(food_cursor.getString(food_cursor.getColumnIndex(COLUMN_FOODITEMS_FOOD_TYPE)));
             food_match.Set_grams_per_serving_portion(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_GRAMS_PER_SERVING_PORTION)));
             food_match.Set_calories_per_100g(food_cursor.getFloat(food_cursor.getColumnIndex(COLUMN_FOODITEMS_CALORIE_PER_100G)));
