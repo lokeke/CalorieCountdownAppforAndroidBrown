@@ -565,6 +565,9 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             final TextView countdownbalance = (TextView) findViewById(R.id.textView);
             String CountdownFigure = countdownbalance.getText().toString();
             CountdownFigure = new RoundingCIF13().IntToString(OpeningBalance);
+
+            CountdownFigure = Strip_Comma(CountdownFigure);
+
             countdownbalance.setText(CountdownFigure);
             StoreCountdownBalance(CountdownFigure);
 
@@ -1094,6 +1097,21 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private void ResetAlarmTimer(ObjectWithAllTheTimesCIF10 obj)
     {
         ResetAlarmTimer(obj.getResetBreakfastTime(), obj.getResetLunchTime(), obj.getResetDinnerTime(), obj.getResetDayEnd());
+    }
+
+    private String Strip_Comma(String INPUT)
+    {
+        for(int c = 0; c < INPUT.length(); c++)
+        {
+            if(INPUT.charAt(c) == ',')
+            {
+                StringBuffer IN = new StringBuffer(INPUT);
+                IN.deleteCharAt(c);
+                return IN.toString();
+            }
+        }
+
+        return INPUT;
     }
 
 
