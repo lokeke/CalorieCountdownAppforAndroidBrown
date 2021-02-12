@@ -28,7 +28,6 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
     private static final String ACTION_STORE_BALANCE = "ese.com.caloriecountdownappforandroid.action.STORE_BALANCE";
     private static final String TAG = "Calorie Countdown app";
-
     private static final String webadress = "https://web2.0calc.com/";
     private static final String CALCULATOR_PACKAGE_NAME = "com.android.calculator2";
     private static final String CALCULATOR_CLASS_NAME = "com.android.calculator2.Calculator";
@@ -44,7 +43,9 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
     private Button mCreditButton;
     private Button mDebitButton;
+
     private SummaryBoxCIF12 mSummation;
+
     private Date ResetBreakfastTime;
     private Date ResetLunchTime;
     private Date ResetDinnerTime;
@@ -56,24 +57,27 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private String SResetMidnight;
 
     private String mBalance_text;
+
     private int mBalance;
+
     private TextView mBalance_textview;
-
-
 
     private static Context appContext;
     public static MyCallBack mCallback;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ccd__gui__cd__cif1);
 
         instance = this;
 
-       mCallback = new MyCallBack() {
+       mCallback = new MyCallBack()
+       {
             @Override
-            public void refreshMainActivity() {
+            public void refreshMainActivity()
+            {
                 CCD_GUI_CD_CIF1.this.recreate();
 
                 //"OR"
@@ -83,49 +87,49 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             }
         };
 
+        instance.Set_currentBalance();
+        //instance.Start_Cycle(); //Only after "Start_Weight_Loss_Used_For_First_Time!
+        appContext = getApplicationContext();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setIcon(R.drawable.ic_launcher7);
 
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Snackbar.make(view, "Update your Food Diary", Snackbar.LENGTH_LONG)
                         .setAction("Update", null).show();
             }
         });
 
-        instance.Set_currentBalance();
-        //instance.Start_Cycle();
-
-
-
-        appContext = getApplicationContext();
-
-
 
         mCreditButton = (Button) findViewById(R.id.button2);
         mDebitButton = (Button) findViewById(R.id.button);
-        mCreditButton.setOnClickListener(new View.OnClickListener() {
-
+        mCreditButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 //MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(getApplicationContext());
                 //data_model_adapter.setSex(true);
-
-
                 StartFoodDiaryAidSheetCIF3();
                 //CancelAlarm();
-
             }
         });
-        mDebitButton.setOnClickListener(new View.OnClickListener() {
 
+        mDebitButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 StartDebitActivityCIF13();
+                //Set_currentBalance();
             }
         });
 
@@ -140,7 +144,6 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         //}
 
         //Start_Weight_Loss();
-
 
     }
 
@@ -191,7 +194,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_ccd__gui__cd__cif1, menu);
         return true;
@@ -413,7 +417,11 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
                 android.util.Log.d("Credit_Value, Pos 4", "We are in Start of Request Food Diary" );
 
-                Record_Food_Journal(mSummation.Get_mFoodItems());
+                long res_of_balance_store = Record_Food_Journal(mSummation.Get_mFoodItems());
+
+                String display_string = "This are the results of storing Balance to SQLite : "  +  new RoundingCIF13().LongToString(res_of_balance_store);
+
+                display_dialog_cif11.Showing(display_string);
 
                 android.util.Log.d("Credit_Value, Pos 5", "We are in Start of Request Food Diary" );
 
@@ -621,10 +629,10 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         return Greg.getTime();
     }
 
-    public void StoreCountdownBalance(String Balance)
+    public long StoreCountdownBalance(String Balance)
     {
         MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(getApplicationContext());
-        data_model_adapter.StoreBalance(Balance);
+        return data_model_adapter.StoreBalance(Balance);
     }
 
     private Date add24(Date time)
@@ -818,7 +826,11 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         final TextView countdownbalance = (TextView) findViewById(R.id.textView);
         MIF4_Data_Model_Adapter model_adapter = new MIF4_Data_Model_Adapter(this);
 
-        countdownbalance.setText((mBalance_text = model_adapter.RetrieveBalance()));
+        mBalance_text = model_adapter.RetrieveBalance();
+
+        android.util.Log.d("Set Balance = ", mBalance_text);
+
+        countdownbalance.setText(mBalance_text);
     }
 
     private void Refresh()
@@ -826,11 +838,11 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         getWindow().getDecorView().findViewById(R.id.fragment).invalidate();
     }
 
-    private void Record_Food_Journal(ArrayList<Food_Item_CIF4> INPUT)
+    private long Record_Food_Journal(ArrayList<Food_Item_CIF4> INPUT)
     {
         MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(this);
         data_model_adapter.Record_Food_Journal(INPUT);
-        data_model_adapter.StoreBalance(mBalance_text);
+        return data_model_adapter.StoreBalance(mBalance_text);
 
     }
 

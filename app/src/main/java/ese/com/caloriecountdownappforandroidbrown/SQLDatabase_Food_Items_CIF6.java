@@ -1598,19 +1598,22 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
     }
 
 
-    public void PostLatestBalance(String post) {
+    public long PostLatestBalance(String post) {
         long res = Insert_Balance(post);
         android.util.Log.d("Data Layer", "Insert Balances Success! " + new RoundingCIF13().IntToString((int) res));
+        return res;
     }
 
-    public void PostDayend(int dayend) {
+    public long PostDayend(int dayend) {
         long res = Insert_Dayend_Balance(dayend);
         android.util.Log.d("Data Layer", "Insert Dayend Success! " + new RoundingCIF13().IntToString((int) res));
+        return res;
     }
 
-    public void PostSex(String sex) {
+    public long PostSex(String sex) {
         long res = Insert_Sex(sex);
         android.util.Log.d("Data Layer", "Insert Sex Success! " + new RoundingCIF13().IntToString((int) res));
+        return res;
     }
 
     private boolean isFoodItemsTablePopulated() {
@@ -1623,6 +1626,7 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
             String BreakfastTime = enter.getBreakfastTime();
             long res = Insert_BreakfastTime(BreakfastTime);
             android.util.Log.d("Data Layer", "Insert BreakfastTime Success! " + new RoundingCIF13().IntToString((int) res));
+
         }
 
         if (enter.getLunchTime() != null) {

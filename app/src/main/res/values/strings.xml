@@ -16,10 +16,10 @@
 
 
     <string name="hello_world2">Your Countdown Balance</string>
-    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 269.8lbs</string>
+    <string name="weight_conversion_text"> \t\t\t\t\t\t\Current estimated weight: 270.6lbs</string>
     <string name="estimated_date_to_zero">Estimate arrival date to zero and £6.93 : 16 08 11</string>
     <string name="last_modified">Balance last updated on</string>
-    <string name="last_modified2">1159, 25 DEC 20</string>
+    <string name="last_modified2">1159, 24 JAN 21</string>
     <string name="Credit_Button">Credit</string>
 
 
@@ -216,7 +216,6 @@
     <string name="cancel3x">Save Journal</string>
 
 
-
     <string name="title_activity_start__weight__loss__activity_cif14">
         Open Weight Loss Account
     </string>
@@ -252,6 +251,7 @@
             "ING,Reeses Peanut Butter Eggs 1,100,180,11,,,,,,,N,,\n" +
             "ING,Robins egg (malted milk candy) 4,100,90,2.5,,,,,,,N,,\n" +
             "ING,Clementines,100,35,0,0,0,1,9,,0.001,N,1,\n" +
+            "ING,Spices,100,0,,,,,,,,,,1\n" +
             "ING,Cocoa : Green and Blacks : 4g in 200ml,100,109,3.8,2.5,0,7.5,10.5,9.6,0.23,Y,1.1,3.5\n" +
 "ING,Pears : 133g,100,62,0.1,0.09,0,0.4,13.3,13.3,0.009,Y,2.9,1.75\n" +
         "SNACK,Spring roll : One,100,170,,,,,,,,,,\n" +
@@ -364,7 +364,7 @@
 "ING,Tea,100,10,0,,,,,,,,,\n" +
 "ING,Tea : Herbal Infusions,100,10,0,,,,,,,,,\n" +
 "ING, Water : Swan : Natural Spring Water : 55cl,0,0,0,0,0,0,0,0,0,Y,0,0\n" +
-"ING,Quaker Oats : Oat so Simple : Golden Syrup :57g,100,212,2.8,0.5,0,7.6,37.2,16.8,0.33,Y,3.8,1.5\n" +
+"ING,Quaker Oats : Oat so Simple : Golden Syrup : 57g,100,212,2.8,0.5,0,7.6,37.2,16.8,0.33,Y,3.8,1.5\n" +
 "ING,Milk : UHT Semi Skimmed : 200ml,100,150,3.2,2.2,0,6.8,9.8,9.8,0.2,Y,0.4,1.2\n" +
 "MEAL,Scotch Pie : Bells : One,100,280,10.1,5.8,0,7.8,27,1.2,1.6,N,0,1.2\n" +
 "SNACK,Scotch Pie : Bells : One,100,280,10.1,5.8,0,7.8,27,1.2,1.6,N,0,1.2\n" +
@@ -383,11 +383,7 @@
 "MEAL,Korma Cooking Sauce : 125g Quarter Jar,100,110,5.8,4.8,0,1.3,12.1,8.1,0.6,Y,2.5,2.5\n" +
 "ING,Korma Cooking Sauce : 125g Quarter Jar,100,110,5.8,4.8,0,1.3,12.1,8.1,0.6,Y,2.5,2.5\n" +
 "DRINK,Milk : UHT Semi Skimmed : 200ml,100,150,3.2,2.2,0,6.8,9.8,9.8,0.2,Y,0.4,1.2\n" +
-
-
 "ING,Porridge Oats Oatmeal : Quaker : Oat so Simple : per 27g sachet,100,100,2.1,0.3,0,3,16,0.3,0,Y,2.4,2\n" +
-
-
 "ING,Salad Tomatoes : One : 80g,100,14,0.1,0.09,0,0.4,0.09,2.4,0.09,Y,0.8,0.35\n" +
 "ING,Mentos : One,100,25,0.05,0.01,0,0,2.8,2,0.01,N,0,1\n"+
 "MEAL,Thai Curry Jasmine Rice,400,73,,,0,,,,,N,,\n" +
@@ -1076,7 +1072,7 @@
 "ING,2 Breaded Chicken Breast Fillets 350g,175,205,7.4,0.7,,18.3,15.3,0.5,0.5,N,0.5,3\n" +
 "ING,2 Cheese and Ham Chicken Kievs 260g,130,255,17.2,4.7,,12.3,12.3,0.6,0.8,N,1.3,1.98\n" +
 "ING,2 Chicken breast garlic kievs 295g,147.5,260,15.5,4.2,,15.6,13.7,0.6,0.2,N,0.6,3\n" +
-"ING,2 Chicken breast cheese / ham / mushroos 360g,162.5,121,5.3,3.1,,16.9,1.5,1,0.5,N,0.1,3\n" +
+"ING,2 Chicken breast cheese / ham / mushrooms 360g,162.5,121,5.3,3.1,,16.9,1.5,1,0.5,N,0.1,3\n" +
 "ING,2 Chicken breast fillets with barbecue sauce 335g,147,112,1.7,0.6,,16.6,7.6,6.6,0.7,N,0.4,3\n" +
 "ING,2 Chicken breast peppers onion and tomato butter,118,126,4.8,1.6,,19.2,1.6,1.6,0.2,N,0.1,3\n" +
 "ING,2 Chicken breast wrapped in bacon with cheese,136,158,7.4,2.5,,22.4,0.4,0.3,0.8,N,0.1,2.99\n" +
@@ -1384,16 +1380,18 @@
 "ING,Magnum mini,100,300,,,,,,,,,,\n" +
 "ING,Milky Tea,100,100,,,,,,,,,,\n" +
 "ING,Banana,100,600,,,,,,,,,,\n" +
-"ING,Coffee,100,10,,,,,,,,,,\n" +
-"ING,Graze,100,79,,,,,,,,,,\n" +
-"ING,Big Coke,100,250,,,,,,,,,,\n" +
-"ING,Small Coke,100,110,,,,,,,,,,\n" +
-"EATOUT,Kilimanjaro : Meatpie/Meat pie,100,350,,,,,,,,,,\n" +
-"EATOUT,Kilimanjaro : Sausage Roll,100,359,,,,,,,,,,\n" +
-"EATOUT,Big Coke,100,250,,,,,,,,,,\n" +
-"EATOUT,Kilimanjaro,100,350,,,,,,,,,,\n" +
-"ING,Apple,100,135,,,,,,,,,,\n" +
-"ING,Gin : 1 Shot : One Shot : One shot : one shot : 25ml,100,75,,,,,,,,,,\n" +
+"ING,Coffee,100,10,,,,,,,,,,1\n" +
+"ING,Graze,100,79,,,,,,,,,,1\n" +
+"ING,Big Coke,100,250,,,,,,,,,,1\n" +
+"ING,Small Coke,100,110,,,,,,,,,,1\n" +
+"EATOUT,Kilimanjaro : Meatpie/Meat pie,100,350,,,,,,,,,,1\n" +
+"EATOUT,Kilimanjaro : Sausage Roll,100,359,,,,,,,,,,1\n" +
+"EATOUT,Big Coke,100,250,,,,,,,,,,1\n" +
+"EATOUT,Kilimanjaro,100,350,,,,,,,,,,1\n" +
+"ING,Apple,100,135,,,,,,,,,,1\n" +
+"ING,Gin : 1 Shot : One Shot : One shot : one shot : 25ml,100,75,,,,,,,,,,1\n" +
+        "ING,Gin : One Bottle : 180ml,100,540,,,,,,,,,,1\n" +
+        "ING,Gin : Half-a-Bottle : 900ml,100,270,,,,,,,,,,1\n" +
 "RECIPE,Shish Kabob,100,249,8.9,27.1,15.7,,,,,,,\n" +
 "RECIPE,Spicy Veal Roast,100,500,,,,,,,,,,\n" +
 "RECIPE,Ham-wrapped,Fruit,100,100,,,,,,,,,\n" +
@@ -1462,9 +1460,9 @@
 "ING,Wine : White : Glass : Large,100,150,,,,,,,,,,\n" +
 "ING,Wine : Red : Glass : Large : large,100,200,,,,,,,,,,\n" +
 "ING,Wine : Red : Glass : Small,100,150,,,,,,,,,,\n" +
-"EATOUT,Suya 6 Sticks : Wraps,100,1300,,,,,,,,,,\n" +
-"RECIPE,Suya 6 Sticks : Wraps,100,1300,,,,,,,,,,\n" +
-"MEAL,Suya 6 Sticks : Wraps,100,1300,,,,,,,,,,\n" +
+"EATOUT,Suya 6 Sticks : Wraps,100,1800,,,,,,,,,,\n" +
+"RECIPE,Suya 6 Sticks : Wraps,100,1800,,,,,,,,,,\n" +
+"MEAL,Suya 6 Sticks : Wraps,100,1800,,,,,,,,,,\n" +
 "ING,Wine : White Wine : Bottle,100,610,,,,,,,,,,\n" +
 "ING,Wine : Red Wine : Bottle,100,650,,,,,,,,,,\n" +
 "EATOUT,Yam Rice,100,440,,,,,,,,,,\n" +
@@ -1540,13 +1538,22 @@
         "ING,Maltina Classic classic : 330ml,100,190,0.3,0.3,0,1.32,,,,,,1\n" +
         "ING,Malta : 330ml,100,190,0,0,0,1,46.2,36.3,0,Y,,\n"+
         "ING,Yoghurt/yogurt Drink : Tit : 500ml,100,250,10.4,2,0,10,14,8,0.32,Y,0,1\n" +
-        "ING,Fizzy : Soda : Pop : Mirinda Apple Flavour : 500ml,100,250,,,,,,,,,,1\n" +
+        "ING,Fizzy : Soda : Pop : Mirinda Apple Flavour : 500ml,100,250,0,0,0,0,61,61,0.067,N,,1\n" +
         "ING,5 Alive Five Alive 5-Alive Five-Alive : Pulpy : 300ml,100,150,0,0,0,0,36,30,0.004,Y,1.2,1\n" +
         "ING,Beer : Star : 330ml,100,190,0,0,0,0,0,0,0,N,0,1\n" +
         "ING,Guinness : 330ml,100,150,,,,,,,,,,1\n" +
         "ING,Cereal : Golden Morn with Milk : 50g,100,315,10.1,4.9,0,12.8,43.1,21.8,0.331,Y,3.6,1\n" +
-        "ING,
+        "ING,Amstel Malta : Malt Drink drink : 330mml,100,180,0.3,0.28,0,1.32,42.57,31.02,0.05,Y,,1\n" +
+        "ING,Free From Cranberry and Orange tiffin Tiffin : 150g,100,761,44.25,22.2,0,5.1,81.9,60,0.54,N,7.5,1\n" +
+        "ING,Biscuits : Cookies : Cream Crackers : 21g : 3 pieces : Beloxxi,100,100,4,2,0,2,14,3,0.04,N,,1\n" +
+        "ING,Biscuits : Cookies : Digestive: 30g : Oxford Prince,100,130,4.62,3,0,1.65,20.43,18,,N,2.1,1\n" +
+        "ING,Biscuits : Cookies : Noreos : 8 Biscuits : 26g,100,122,5.1,3,0,2.1,17,5.3,0.1,N,0.1,1\n" +
 
+        "ING,Crisps : Potato Chips : Burt Hand Cooked Mature Cheddar and Spring Onion :40g,100,200,11,1.24,2.88,21.52,0.92,0.44,N,1.96,1\n" +
+        "ING,Waffer : Strawberry Cream : Pure Bliss : 45g,100,256,16.2,10,0,3.15,24.3,20,,N,,1\n" +
+        "ING,Waffer : 45g,100,280,16.2,10,0,3.15,24.3,20,,N,,1\n" +
+        "ING,Waffer : Chocolate Cream : Sona : 22g,100,96,2.2,1,0,2.32,17,10,,N,,1\n" +
+        "ING,Free From Cranberry and Orange tiffin Tiffin : 30g,100,152,8.8,4.4,0,1,16.4,12,0.11,N,1.5,1\n" +
         "ING,Dark Rum : Squadron : 180ml,100,450,0,0,0,0,0.9,,,,,1\n"+
         "ING,Soda : Fizzy Drink : Pepsi Max,100,0,0,0,0,0.2,0.2,0,0.49,N,0,1\n" +
         "ING,Bread : Generic,100,115,,,,,,,,,,1\n"+
@@ -1556,19 +1563,41 @@
         "ING, Coca Cola : Coca-Coal : 1 litre,100,300,0,0,0,,,76,0.02,N,0,1\n" +
         "ING,Juice Drink : Tropical Fruit : 330ml,100,73,1.5,0.3,0,1.5,17.16,14.7,0.03,N,,1\n" +
         "ING,Sprite : 1 litre,100,360,0,0,0,0,89,88,0.036,N,0,1\n"+
-        "ING, Whiskey : Whisky : One Shot 25ml, 100,110,,,,,,,,N,,,1\n" +
-        "ING, Fried Plantain : One Slice,100,68,3.6,0.5,0,0.4,9.7,4.6,0.01,Y,0.7,1\n" +
-        "ING, Plantain : 100g, 100,166,0.2,0.1,0,0.8,31,14,0.05,Y,2.3,1\n" +
-        "ING, Plantain Chips : 13,100,90,4.5,1.5,0,1,11,11,0.2,Y,0,1\n" +
-        "ING, Fruit and Nut Mix : 30g,100,122,6.4.0.9,0,5.6,7.9,7.8,0.05,Y,5,1\n" +
-        "ING, Pudding and Dessert : Ganache : Salted Caramel and Belgian Chocolate : Per Pot,100,322,25,15,0,3.6,21,18,0.49,N,0.7,1\n" +
-        "ING, Pudding and Dessert : Melting Middle Chocolate Pudding : Per Pot : 135g,100,473,25.9,16.6,0,7.4,51,34.7,0.3,N,2.7,1\n" +
-        "ING, Confectionery : Chocolate : Almond and Hazelnut Chocolate Florentines : Per 3 Florentines : 29g,100,162,10,3.3,0,2.3,15,11,0.01,N,1,1\n" +
-        "ING, Cereal Bar or Bakes : Soft Bakes : Red Berries : Per Bake : 50g,100,185,4.8,0.4,0,3.1,30,9.7,0.21,Y,5,1\n" +
-        "ING, Ice Cream IceCream : Salted Caramel : One : 80g : Pudding and Desserts or Dessert : Icecream,100,285,17,13,0,2.3,30,28,0.23,N,0.8,1\n" +
-        "ING, Cheese Slices : Dairylea : One Slice : 25g,100,56,3.4,2.2,0,3.8,2.1,1.6,0.36,N,0.6,1\n" +
-        "ING, Sausage : Frankfurter : One,100,100,8.8,3.4,0,4.4,0.7,0.7,0.56,N,0.4,1\n" +
-        "MEAL, Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
+        "ING,Sprite : 350ml,100,126,0,0,0,0,31.15,30,0.01,N,0,1\n"+
+        "ING,Sprite : 500ml,100,180,0,0,0,0,44.5,40,0.02,N,0,1\n"+
+        "ING,Orange Juice Drink : Amira : 50cl,100,170,0.5,,0,3,39,31,,Y,,1\n" +
+        "ING,Mango Juice Drink : Amira : 50cl,100,170,0.5,,0,3,39,31,,Y,,1\n" +
+        "ING, African Pear : Puruple : One,100,409,18,,0,2,11,11,,Y,2.71,1\n" +
+        "ING, African Star Apple : Agbalumo : Abalumo : One,100,119,5,,0,4,9,9,,Y,4,1\n" +
+        "ING,Whiskey : Whisky : One Shot 25ml,100,110,,,,,,,N,,,1\n" +
+        "ING,Fried Plantain : One Slice,100,68,3.6,0.5,0,0.4,9.7,4.6,0.01,Y,0.7,1\n" +
+        "ING,Plantain : 100g, 100,166,0.2,0.1,0,0.8,31,14,0.05,Y,2.3,1\n" +
+        "ING,Plantain Chips : 13,100,90,4.5,1.5,0,1,11,11,0.2,Y,0,1\n" +
+        "ING,Fruit and Nut Mix : 30g,100,122,6.4.0.9,0,5.6,7.9,7.8,0.05,Y,5,1\n" +
+        "ING,Pudding and Dessert : Ganache : Salted Caramel and Belgian Chocolate : Per Pot,100,322,25,15,0,3.6,21,18,0.49,N,0.7,1\n" +
+        "ING,Pudding and Dessert : Melting Middle Chocolate Pudding : Per Pot : 135g,100,473,25.9,16.6,0,7.4,51,34.7,0.3,N,2.7,1\n" +
+        "ING,Confectionery : Chocolate : Almond and Hazelnut Chocolate Florentines : Per 3 Florentines : 29g,100,162,10,3.3,0,2.3,15,11,0.01,N,1,1\n" +
+        "ING,Cereal Bar or Bakes : Soft Bakes : Red Berries : Per Bake : 50g,100,185,4.8,0.4,0,3.1,30,9.7,0.21,Y,5,1\n" +
+        "ING,Ice Cream IceCream : Salted Caramel : One : 80g : Pudding and Desserts or Dessert : Icecream,100,285,17,13,0,2.3,30,28,0.23,N,0.8,1\n" +
+        "ING, Ice Cream IceCream : 11 Scoops,100,1760,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 10 Scoops,100,1600,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 9 Scoops,100,1440,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 8 Scoops,100,1280,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 7 Scoops,100,1120,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 6 Scoops,100,960,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 5 Scoops,100,800,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 4 Scoops,100,640,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 3 Scoops,100,480,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 2 Scoops,100,320,,,,,,,,,,1\n" +
+        "ING, Ice Cream IceCream : 1 Scoops,100,160,,,,,,,,,,1\n" +
+        "ING,Cheese Slices : Dairylea : One Slice : 25g,100,56,3.4,2.2,0,3.8,2.1,1.6,0.36,N,0.6,1\n" +
+        "ING,Sausage : Frankfurter : One,100,100,8.8,3.4,0,4.4,0.7,0.7,0.56,N,0.4,1\n" +
+        "MEAL,Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
+        "ING,Fizzy Drinks : Soda : Bitter Lemon : Schweppes : 350ml,100,90,0,0,0,,,,,,,1\n" +
+        "ING,Red Sauce : red sauce,100,450,,,,,,,,,,1\n" +
+        "ING,White Wine : half-bottle,100,333,,,,,,,,,,1\n" +
+        "ING,White Wine : Bottle,100,611,,,,,,,,,,1\n" +
+        "ING, Large Moin Moin : Large moinmoin large moimoi,100,500,,,,,,,,,,1\n" +
 "ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n"
 
 
@@ -1639,6 +1668,10 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="title_activity_journal___ci_f0115_fragment_box">Journal</string>
+    <string name="title_activity_diet__planner__c_i_f0116_fragment_box">
+        Diet_Planner_CIF0116_fragment_box
+    </string>
+
     <string-array name="activities">
         <item>Just add Raw Calories Burnt;0.00</item>
         <item>Walk: 4.5 mph (13min/mi);0.04</item>
@@ -1806,36 +1839,35 @@
         <item>Whitewater: rafting, kayaking;0.04</item>
         <item>Wrestling;0.045</item>
     </string-array>
-
     <string-array name="bodyframe">
         <item>Small Frame</item>
         <item>Medium Frame</item>
         <item>Large Frame</item>
     </string-array>
+
+
     <string-array name="weightunits">
         <item>pounds lbs</item>
         <item>Kilograms Kg</item>
 
     </string-array>
 
-
     <string-array name="heightunits">
         <item>CM</item>
         <item>Inches</item>
 
     </string-array>
-
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <!-- Strings used for fragments for navigation -->
     <string-array name="quickstart">
         <item>5 Kg</item>
         <item>1 Stone</item>
         <item>10 Kg</item>
 
     </string-array>
-    <!-- Strings used for fragments for navigation -->
     <string-array name="pref_example_list_titles">
         <item>Always</item>
         <item>When possible</item>
@@ -1854,6 +1886,7 @@
         <item>6 hours</item>
         <item>Never</item>
     </string-array>
+
     <string-array name="pref_sync_frequency_values">
         <item>15</item>
         <item>30</item>
@@ -1862,7 +1895,6 @@
         <item>360</item>
         <item>-1</item>
     </string-array>
-
     <string-array name="list_preference_entries">
         <item>Entry 1</item>
         <item>Entry 2</item>

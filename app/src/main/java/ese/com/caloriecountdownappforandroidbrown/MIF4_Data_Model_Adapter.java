@@ -62,16 +62,16 @@ public class MIF4_Data_Model_Adapter extends FragmentActivity
     }
 
 
-    public void  StoreBalance(String cBalance)
+    public long  StoreBalance(String cBalance)
     {
         SQLDatabase_Food_Items_CIF6 jackie = new SQLDatabase_Food_Items_CIF6(context);
-        jackie.PostLatestBalance(cBalance);
+        return jackie.PostLatestBalance(cBalance);
     }
 
-    public void StoreDayEndBalance(int dyendBal)
+    public long StoreDayEndBalance(int dyendBal)
     {
         SQLDatabase_Food_Items_CIF6 jackie = new SQLDatabase_Food_Items_CIF6(context);
-        jackie.PostDayend(dyendBal);
+        return jackie.PostDayend(dyendBal);
     }
 
 
