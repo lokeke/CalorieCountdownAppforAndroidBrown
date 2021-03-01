@@ -30,6 +30,8 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
     private HealthProfileCiF3 mAccount;
     private Display_Dialog_CIF11 display_dialog_cif11;
 
+    private String mTargetWeight = "-1";
+
 
     public Start_Weight_Loss_ActivityCIF14Fragment() {
     }
@@ -160,6 +162,10 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
         android.util.Log.d("Checking Weight units: ",IN.getWeightUnits());
         IN.setCurrentWeight(editText70.getText().toString());
         IN.setTargetWeight(editText71.getText().toString());
+        mTargetWeight = editText71.getText().toString();
+
+        android.util.Log.d("TargetWeight",IN.getTargetWeight());
+
         IN.setWeightUnits(IN.getWeightUnits());
         IN.setQuickStart(spinner3.getSelectedItem().toString());
         //IN.setHieghtUnits(spinner4.getSelectedItem().toString());
@@ -534,6 +540,8 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
         String str3 = IN.getCurrentWeight();
         String str2 = "275";
 
+
+
         double float3 = new RoundingCIF13().StringToFloat(str3);
 
 
@@ -542,15 +550,20 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
         {
             if(IN.getOptionSelected() == "0")
             {
-                float3 = float3 - 11.0;
+                return mTargetWeight;
             }
 
             if(IN.getOptionSelected() == "1")
             {
-                float3 = float3 - 14.0;
+                float3 = float3 - 11.0;
             }
 
             if(IN.getOptionSelected() == "2")
+            {
+                float3 = float3 - 14.0;
+            }
+
+            if(IN.getOptionSelected() == "3")
             {
                 float3 = float3 - 22.0;
             }

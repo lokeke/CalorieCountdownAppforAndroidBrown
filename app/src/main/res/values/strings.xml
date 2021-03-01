@@ -355,6 +355,7 @@
 "DRINK,Lime Cordial,100,5,0.4,0,0,0.4,0.4,0.4,0.06,Y,0.4,1\n" +
 "ING,Cheese : Wensleydale with Cranberries : 30g,100,110,8.2,5.2,0,5.3,3.5,3.1,0.3,N,0.5,2.5\n" +
 "ING,Cheese : Grated Extra Mature Cheddar : 30g,100,125,11,6.5,0,7.6,0.4,0.4,0.54,N,0,2.5\n" +
+        "ING,Cheese : Generic : 30g,100,125,11,6.5,0,7.6,0.4,0.4,0.54,N,0,2.5\n" +
 "DRINK,Green Tea,100,10,0,,,,,,,,,\n" +
 "DRINK,Tea,100,10,0,,,,,,,,,\n" +
 "DRINK,Tea : Herbal Infusions,100,10,0,,,,,,,,,\n" +
@@ -432,13 +433,13 @@
 "ING,Nik Naks,30,561,38.3,8.4,,,,,1,N,3,\n" +
 "ING,Special K Crackers,30,400,10,,,10,77,30,0.87,N,,\n" +
 "ING,Light Peanut Butter Fudge Ice Cream,100,260,10,5,,,36,20,,N,6,\n" +
-"ING,Bread - Finest Oatmeal,75,333.33,4.4,,,5.3,20.4,,,N,,\n" +
+"ING,Bread : Slice - Finest Oatmeal,75,333.33,4.4,,,5.3,20.4,,,N,,\n" +
 "ING,Bread - Pitta - Garlic and Herb,100,145,1.2,,,5.8,26.8,,,N,,\n" +
-"ING,Bread - White - Meduim Sliced,75,195,0.8,,,4,17.7,,,N,,\n" +
-"ING,Bread - Multigrain Farmhouse,75,240,1.6,,,5,21.3,,,N,,\n" +
-"ING,Bread - Brown - Thick,75,200,1,,,4.8,17.2,,,N,,\n" +
-"ING,Bread - White - Thick,75,105,0.7,,,3.6,21,,,N,,\n" +
-"ING,Bread - Wholemeal - Meduim,75,80,0.8,,,4,14.1,,,N,,\n" +
+"ING,Bread : Slice - White - Meduim Sliced,75,195,0.8,,,4,17.7,,,N,,\n" +
+"ING,Bread : Slice - Multigrain Farmhouse,75,240,1.6,,,5,21.3,,,N,,\n" +
+"ING,Bread : Slice - Brown - Thick,75,200,1,,,4.8,17.2,,,N,,\n" +
+"ING,Bread : Slice - White - Thick,75,105,0.7,,,3.6,21,,,N,,\n" +
+"ING,Bread : Slice - Wholemeal - Meduim,75,80,0.8,,,4,14.1,,,N,,\n" +
 "ING,Bread - Wholemeal - Pitta,100,145,1.5,,,6.7,26.2,,,N,,\n" +
 "ING,Finest Chicken Kiev,249,212,11.2,4.8,,19.5,8.2,0.9,1,N,2.6,5.5\n" +
 "ING,Vegetable Broth,500,42,0.32,,,8.52,1.32,,,N,,\n" +
@@ -579,9 +580,9 @@
 "ING,Medjool Dates 180g,10,290,0.2,0.1,,3.3,68,68,0,Y,4,1.88\n" +
 "ING,Medjool Date and Walnut 200g,20,335,7.7,0.7,,4.6,60.9,60.9,0,Y,3.9,2.75\n" +
 "ING,Monkey Nuts 500g,25,566,46,8.7,,25.6,12.5,6.2,0,Y,6.2,1.25\n" +
-"ING,Natural Apricot srte 250g,30,170,0.6,0,,4,36.5,36.5,0,Y,6.3,2.09\n" +
+"ING,Natural Apricot sorte 250g,30,170,0.6,0,,4,36.5,36.5,0,Y,6.3,2.09\n" +
 "ING,Organic Dried Mango 100g,25,330,1.2,0.2,,2.2,77,47.9,0,Y,5.4,1.5\n" +
-"ING,Peacan Nuts 150g,33,695,70.1,5.7,,9.2,5.8,4.3,0,Y,4.7,1.99\n" +
+"ING,Pecan Nuts 150g,33,695,70.1,5.7,,9.2,5.8,4.3,0,Y,4.7,1.99\n" +
 "ING,Pistachio Nuts 150g,25,610,52.8,5.8,,22.5,10.2,6.2,0,Y,10.7,1.99\n" +
 "ING,Prunes 250g,100,150,0.4,0,,2.5,34,34,0,Y,5.7,1.8\n" +
 "ING,Pumpkin Seeds 125g,25,585,45.8,8.6,,24.5,17.8,1,0,Y,3.9,0.75\n" +
@@ -1098,7 +1099,7 @@
 "ING,bumper pack chicken drum sticks and thighs,120,230,17.7,6.3,,17.6,0,0,0.3,N,0,3\n" +
 "ING,chicken drumsticks 810g,190,230,17.7,6.3,,17.6,0,0,0.3,N,0,3\n" +
 "ING,chicken wings 1kg,255,210,15.3,4.3,,17.9,0,0,0.3,N,0,2.5\n" +
-"ING,Chillig mango mini chicken fillets 200g,100,130,0.7,0.2,,27.1,3.7,3.7,1.3,N,1,2.75\n" +
+"ING,Chilli mango mini chicken fillets 200g,100,130,0.7,0.2,,27.1,3.7,3.7,1.3,N,1,2.75\n" +
 "ING,Healthy living turkey breast,120,100,1.2,0.6,,22.3,0,0,0.3,N,0,5\n" +
 "ING,Tulip Cheese and bacon grills 312g,80,241,15.8,5.1,,12.5,12.3,1.3,2.6,N,0.8,1.69\n" +
 "ING,Tulip Spam Fritters 320g,150,247,12.3,4.3,,11.9,22.4,1.5,1.5,N,0.9,1.76\n" +
@@ -1376,6 +1377,7 @@
 "EATOUT,Small Coke,100,110,,,,,,,,,,\n" +
 "RECIPE,Recipe : Weight Watchers : Egg and Lentils Curry,100,173,,,,,,,,,,\n"+
 "ING,Jic,100,1,,,,,,,,,,\n" +
+        "ING,Jicertainity,100,1,,,,,,,,,,\n" +
 "EATOUT,Pizza Express : Magherita,100,600,,,,,,,,,,\n" +
 "ING,Magnum mini,100,300,,,,,,,,,,\n" +
 "ING,Milky Tea,100,100,,,,,,,,,,\n" +
@@ -1441,7 +1443,7 @@
 "ING,Fish,100,250,,,,,,,,,,\n" +
 "ING,egg,100,92,,,,,,,,,,\n" +
         "ING,Egg : generic,100,92,,,,,,,,,,\n" +
-"ING,Vegetable,100,145,,,,,,,,,,\n" +
+"ING,Vegetable : Veggie : Veggies,100,145,,,,,,,,,,\n" +
 "ING,Water,100,0,,,,,,,,,,\n" +
 "SNACK,4 puffs : 4 Puff : Puff puff,100,600,,,,,,,,,,\n" +
 "ING,4 puff,100,600,,,,,,,,,,\n" +
@@ -1453,7 +1455,6 @@
 "ING,Chips,100,150,,,,,,,,,,\n" +
 "ING,Melon,100,89,,,,,,,,,,\n" +
 "ING,Pineapple,100,100,,,,,,,,,,\n" +
-"ING,Suya : One Stick,100,310,,,,,,,,,,\n" +
 "EATOUT,Suya : 6 Sticks.,100,1800,,,,,,,,,,\n" +
 "ING,Gin,100,350,,,,,,,,,,\n" +
 "ING,Wine : White : Glass : Small : small,100,150,,,,,,,,,,\n" +
@@ -1467,12 +1468,12 @@
 "ING,Wine : Red Wine : Bottle,100,650,,,,,,,,,,\n" +
 "EATOUT,Yam Rice,100,440,,,,,,,,,,\n" +
 "ING,Yam Rice,100,440,,,,,,,,,,\n" +
-"ING,Yam,100,180,,,,,,,,,,\n" +
+"ING,Yam,100,180,0.2,0,0,2,37.4,0.7,0.011,Y,5.3,\n" +
 "EATOUT,Water : 1 cup : One Cup : 1 Cup,100,0,,,,,,,,,,\n" +
 "ING,Guinea Fowl : Half-a-hen,100,550,,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Grilled Guinea portion,100,300,,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Smokey Jollof Rice,100,500,,,,,,,,,,\n" +
-"EATOUT,KMAC Grill : Wings Special : 5 Wings : Sweet Potato wedges or Corn on the Cob : Pepper sauce or Ketchup	100	750,,,,,,,,,,,,\n"  +
+"EATOUT,KMAC Grill : Wings Special : 5 Wings : Sweet Potato wedges or Corn on the Cob : Pepper sauce or Ketchup,100,750,,,,,,,,,,\n"  +
 "EATOUT,KMAC Grill : Seafood Black Box,100,2450,,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Maxi Black Box,100,3900,,,,,,,,,\n" +
 "EATOUT,KMAC Grill : Jumbo Black box,100,8000,,,,,,,,,,\n" +
@@ -1495,8 +1496,8 @@
 "DRINK,Smoothie,100,299,,,,,,,,,,\n" +
 "MEAL,Jollof Rice,100,350,,,,,,,,,,\n" +
 "ING,Rice,100,200,,,,,,,,,,\n" +
-"MEAL,Fried Plantain - 1 Slice,100,68,,,,,,,,,,\n" +
-"MEAL,Plantain Serving Portion.,100,500,,,,,,,,,,\n" +
+"MEAL,Fried Plantain : Dodo : 1 Slice,100,68,,,,,,,,,,\n" +
+"MEAL,Plantain : Dodo Serving Portion.,100,500,,,,,,,,,,\n" +
 "DRINK,Water : 1 Cup cup,100,0,,,,,,,,,,\n" +
 "ING,Bread One Slice,100,115,,,,,,,,,,\n" +
 "ING,Butter : 1tbsp,100,100,,,,,,,,,,\n" +
@@ -1529,7 +1530,7 @@
 "SNACK,Samosa,100,308,,,,,,,,,,\n" +
 "RECIPE,Pearl Barley Veg,100,300,,,,,,,,,,\n" +
 "RECIPE,Roasted Vegetable Pearl Barley,100,300,,,,,,,,,,\n" +
-        "MEAL, Prawn Cocktail Salad with Egg : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
+        "MEAL, Prawn Cocktail Salad with Egg : Prawn Salad : Medium Bowl,100,500,35.2,3.9,0,14.3,3.4,3.2,0.9,Y,2,1\n" +
         "ING,Tea : Alitea Cardamom 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
         "ING,Tea : Alitea Green Tea 3 in 1,100,125,3.8,3.7,0,0,18.3,14.6,0.02,Y,0.6,1\n" +
         "ING,Wellwoman Vitamin Drink : 250ml,100,13,0.1,0.1,0,0.1,2.5,2.3,0.05,Y,,1\n"+
@@ -1592,12 +1593,162 @@
         "ING, Ice Cream IceCream : 1 Scoops,100,160,,,,,,,,,,1\n" +
         "ING,Cheese Slices : Dairylea : One Slice : 25g,100,56,3.4,2.2,0,3.8,2.1,1.6,0.36,N,0.6,1\n" +
         "ING,Sausage : Frankfurter : One,100,100,8.8,3.4,0,4.4,0.7,0.7,0.56,N,0.4,1\n" +
-        "MEAL,Prawn Cocktail Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
+        "MEAL,Prawn Cocktail Salad : Prawn Salad : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
+        "ING,Prawn Cocktail Salad : Prawn Salad with Avocado : Medium Bowl,100,400,30.5,2.5,0,8.8,3.4,2.7,0.6,Y,2,1\n" +
         "ING,Fizzy Drinks : Soda : Bitter Lemon : Schweppes : 350ml,100,90,0,0,0,,,,,,,1\n" +
         "ING,Red Sauce : red sauce,100,450,,,,,,,,,,1\n" +
         "ING,White Wine : half-bottle,100,333,,,,,,,,,,1\n" +
         "ING,White Wine : Bottle,100,611,,,,,,,,,,1\n" +
         "ING, Large Moin Moin : Large moinmoin large moimoi,100,500,,,,,,,,,,1\n" +
+        "ING, Cake : Generic,100,425,23,4,0,4,62,47,0.37,N,2,1\n" +
+        "ING, Cake : Velvet,100,480,23,9,0,4,62,47,0.37,N,2,1\n" +
+        "ING, Coke : Coca-Cola : 35cl,100,110,,,,,,,,,,1\n" +
+        "ING, Juice : Chi : exotic : Pineapple and Coconut Nectar 500ml,100,162,0,0,0,1,66,66,,Y,,1\n" +
+        "ING, Beer : Gulder : 500ml,100,156,0,0,0,0,0,0,0,N,0,1\n" +
+        "ING, Beer : Gulder : 330ml,100,156,0,0,0,0,0,0,0,N,0,1\n" +
+        "ING, Powdered Milk : One Heaped Tablespoon,100,65,0.15,0,0,5,9,9,.003,Y,0.3,1\n" +
+        "ING, Evaporated Milk,100,200,8.8,6.2,0,8,12.3,12.3,0.125,Y,,1\n" +
+        "ING, Cream Cake : One Slice,100,192,10,0,0,15,24,24,0,N,0,1\n" +
+        "ING, Coconut Cream Cake : One Slice,100,253,4,0,0,5,49,30,0.3,N,0,1\n" +
+        "ING, Coconut Cake : One Slice,100,280,10,5,0,3,43,30,0.33,N,0,1\n" +
+        "ING, Mousse : Generic,100,250,4,0,0,3,22,21,0,N,1,1\n" +
+        "ING, Irish Lamb Stew : 382g,100,353,19,6,0,14,33,5,0.41,N,6,1\n" +
+        "ING, Fish Stew,100,230,7,0,0,0,0,0,0.5,N,0,1\n" +
+        "ING, Pork Ribs : 3 ribs,100,330,22,8,0,18,18,15,0.84,N,1,1\n" +
+        "ING, Pepper Sauce : One Tablespoon,100,75,7.5,0.6,0,0,1.2,0.6,0,N,0m,1\n" +
+        "ING, Fried Yam : 200g,100,400,0.2,0,0,1.5,28,0.5,0,Y,4.1,1\n" +
+        "ING, Yam : 200g,100,400,0.2,0,0,1.5,28,0.5,0,Y,4.1,1\n" +
+
+        "ING, Mango Soup : 20g,100,50,0,0,0,0,13,7,0,Y,0,1\n" +
+        "ING, Gizzard : Meat,100,92,1.3,0,0,18,0,0,0,Y,0,1\n" +
+        "ING, Kidney : Meat : 50g,100,80,4.7,1.4,0,27,0,0,0.94,N,0,1\n" +
+        "ING, Bread Slices,100,115,,,,,,,,,,1\n" +
+        "ING, Pap : Corn Porridge,100,450,3.4,0,0,8.2,78.1,0,0,Y,0,1\n" +
+        "ING, Shallot Biscuit : 3 pieces,100,280,,,,,,,,,,1\n" +
+        "ING, Fruits : Generic,100,100,,,,,,,,,,1\n" +
+        "ING, Egg with Spice,100,100,,,,,,,,,,1\n" +
+        "ING, Egg with Vegetables,100,100,,,,,,,,,,1\n" +
+        "ING, Spaghetti red sauce and fish,100,1000,,,,,,,,,,1\n" +
+        "ING, Nigerian Soup : Egusi Soup,100,550,,,,,,,,,,1\n" +
+        "ING, Nigerian Soup : Okoro Soup,100,550,,,,,,,,,,1\n" +
+        "ING, Fufu : Plantain Fufu,100,550,,,,,,,,,,1\n" +
+        "ING, Fufu : White Tamper,100,550,,,,,,,,,,1\n" +
+        "ING, Red Stew,100,240,26,6,0,4,7,4,0.2,N,6,1\n" +
+        "ING, Shawarma Large,100,925,26,2.2,0,70,110,20,1.3,N,8.4,1\n" +
+        "ING, Shawarma Small,100,475,13.2,1.1,0,35,55,10,0.65,N,4.2,1\n" +
+        "ING, Pineapple Juice : 330ml,100,170,0,0,0,1.7,30,22,0,Y,0,1\n" +
+        "ING, Full Coke,100,250,,,,,,,,,,1\n" +
+        "ING,Yoghurt/yogurt Drink : Tit : 250ml,100,125,5.2,1,0,5,7,4,0.16,Y,0,1\n" +
+        "ING, Energy drink : Red Bull : 250ml,100,110,0,0,0,1,28,27,0.1,N,0,1\n" +
+        "ING, Energy drink : Red Bull Light/Sugar free : 250ml,100,5,0,0,0,1,28,27,0.1,N,0,1\n" +
+        "ING, Energy drink : Red Bull : 473ml,100,218,0,0,0,0,52,52,0.189,N,0,1\n" +
+        "ING, Energy drink : Monster : 500ml,100,230,0,0,0,0,58,54,0.37,N,0,1\n" +
+        "ING, La Casera,100,250,,,,,,,,,,1\n" +
+        "ING, Cabernet 375ml,100,275,0,0,0,0,0,0,0,Y,0,1\n" +
+        "ING, Fruit n Fibre with Milk : 40g,100,211,4.5,3,0,8,34,16,0.250,Y,3.5,1\n" +
+        "ING, Fruit and Fibre with Milk : 40g,100,211,4.5,3,0,8,34,16,0.250,Y,3.5,1\n" +
+        "ING, Chicken Suya : One Stick,100,133,8,0,0,15,0,0,0,N,0,1\n" +
+        "ING, Nigerian Soup : Bitter Leaf : Ogbono : 100g,100,697,67,0,0,8.5,15,10,1,N,1,1\n" +
+        "ING, Frosties 75g with Milk,100,412,7.7,0,0,11.8,74,19,0.3,Y,2,1\n" +
+        "ING, Egg : Boiled,100,78,5,2,0,6,0.6,0.6,0.062,Y,0,1\n" +
+        "ING, Malibu : 25ml,100,51,5.6,0,0,0,0,0,0,N,0,1\n" +
+        "ING, Cashew Fruit,100,39,0.3,0,0,0.2,9.5,0,0,Y,1,1\n" +
+        "ING, Watermelon : 154g,100,46,0.2,0,0,0.9,11,9,0.002,Y,0.6,1\n" +
+        "ING, Pineapple and Watermelon Bowl,100,145,0.6,0,0,2.7,33,27,0.01,Y,1.8,1\n" +
+        "ING, Pizza : Genesis : Large,100,,,,,,,,,,,1\n" +
+        "ING, Pizza : Genesis : Medium : Chicken,100,,,,,,,,,,,1\n" +
+        "ING, Quarter Watermelon,100,500,,,,,,,,,,1\n" +
+        "ING, Quarter Melon,100,500,,,,,,,,,,1\n" +
+        "ING, Gravy : Generic : 1 Serving,100,45,3,0,0,0,4,3,0.2,N,0,1\n" +
+        "ING, Meat : 100g: Protein : Generic,100,200,8.8,0,0,16.1,2.8,2,0,Y,0,1\n" +
+        "ING, Guinness : 330ml,100,117,0,0,0,1,9.24,6.6,0,N,0,1\n" +
+        "ING, Guinness : Bottle,100,176,0,0,0,1.5,14,10,0,N,0,1\n" +
+        "ING, Sauce : Generic,100,180,17,2.5,0,0,6,4,0.62,N,0,1\n" +
+        "ING, Nutrimilk Nutri-milk Nutri-Milk: 520ml,100,174,5,0,0,5,26,20,0.052,Y,0,1\n" +
+        "ING, Nigerian Soup : Pepper Soup,100,550,,,,,,,,,,1\n" +
+        "ING, Nigerian Soup : Abang Afang,100,550,,,,,,,,,,1\n" +
+        "ING, Amala : Swallow,100,550,,,,,,,,,,1\n" +
+        "ING, Eba : Swallow,100,550,1.8,0,0,16,180,0,0,N,0,1\n" +
+        "ING, Pounded Yam : Swallow,100,550,2,1.6,0,0,38,0.6,0.009,N,6,1\n" +
+        "ING, Semovita : Swallow,100,600,0,0,0,20,150,0,0,N,1.3,1\n" +
+        "ING, Wheat : Swallow,100,550,15,2.5,0,35,75,0,0.025,N,20,1\n" +
+        "ING, Jambalaya Rice : 662g,100,870,39,12,0,36,93,7,1.9,N,7,1\n" +
+        "ING, Crispy Fried Yam,100,400,0.2,0,0,1.5,28,0.5,0,Y,4.1,1\n" +
+        "ING, Ata Sauce,100,362,0.9,0,0,8.9,76,0,0,N,0.6,1\n" +
+        "ING, Fried Rice,100,668,22.8,0,0,13.7,101.6,0,0,N,0,1\n" +
+        "ING, Assorted Meat 100g: Protein,100,342,26,0,0,24,2.9,0,0,Y,0,1\n" +
+        "ING, Croaker 113g: Protein : Fish,100,190,12,0,0,21,0,0,0.84,N,0,1\n" +
+        "ING, Cowleg Cow feet: 113g: Protein,100,310,25,10,0,20,0,0,0,Y,0,1\n" +
+        "ING, Snail : 100g : Protein,100,90,1.4,0.4,0,16.1,2,0,0.07,Y,0,1\n" +
+        "ING, Titus Fish : 100g : Protein,100,154,7,0,0,22.7,0,0,0.57,Y,0,1\n" +
+        "ING, Kpanla Panla: 100g : Protein,100,182,1.2,1.2,0,25.4,,,,Y,0,1\n" +
+        "ING, Fish : Cod : 100g : Protein,100,105,1.2,1.2,0,22.8,,,,Y,0,1\n" +
+        "ING, Nigerian Soup: Edikailong Soup,100,550,,,,,,,,,,1\n" +
+        "ING, Ofada Sauce Stew,100,351,26,12,0,24,3.9,2.1,1.02,N,0.6,1\n" +
+        "ING, Ofada Sauce Stew and Rice,100,700,26.5,12.5,0,27.5,37.9,20.1,1.02,N,1.1,1\n" +
+        "ING, Shredded Turkey and Plantain Porridge,100,600,7,5,0,25,51,0.03,0,N,0,1\n" +
+        "ING, Noodles Shredded Chicken and Dodo,100,700,10,2,0,28,59,56,0.6,N,0,1\n" +
+        "ING, Peppered Chicken/Goat Meat/ Beef/ Chips,100,600,5.4,2,0,30,110,16,0.18,N,0,1\n" +
+        "ING, Stir Fry Pasta,100,571,27,3,0,22,60,50,0.13,N,0,1\n" +
+        "ING, Shrimp Avocado Salad,100,365,17,5,0,25.1,15,7,0.6,Y,17,1\n" +
+        "ING, Rocket Breakfast,100,276,8,2.1,0,23.2,24.2,10.4,1.2,Y,0,1\n" +
+        "ING, Nigerian Soup : Efo Riro,100,550,12,5,0,0,9,3,0.01,N,0,1\n" +
+        "ING, Nigerian Soup : Banga,100,550,28.2,5.7,0,43,12.5,3.5,2,N,3.5,1\n" +
+        "ING, Nigerian Soup : Afang,100,550,28.2,5.7,0,43,12.5,3.5,2,N,3.5,1\n" +
+        "ING, Nigerian Soup : Oha,100,550,28.2,5.7,0,43,12.5,3.5,2,N,3.5,1\n" +
+        "ING, Nigerian Soup : White Soup,100,550,28.2,5.7,0,43,12.5,3.5,2,N,3.5,1\n" +
+        "ING, Yam Plantain  Beans Porridge,100,500,36.8,10.3,0,3.3,50,25,0.05,N,5,1\n" +
+        "ING, Nkwobi : Cow foot : Igbo,100,300,12,6,0,19,13,5,0.01,N,0,1\n" +
+        "ING, Isi Ewu,100,141,15,8,0,0,0,0,0.7,N,0,1\n" +
+        "ING, Abacha,100,330,0.5,0.2,0,3,78,4,0.03,Y,4,1\n" +
+        "ING, Boli,100,252,,,,,,,,,,1\n" +
+        "ING, Hot Water,100,0,0,0,0,0,0,0,0,Y,0,1\n" +
+        "ING, Onions,100,38,0,0,0,0,9,0,0,N,0,1\n" +
+        "ING, Coke 35cl : Coca-Cola,100,110,,,,,,,,,,1\n" +
+        "ING,Suya : One Stick,100,390,25,7,0,35,8,3,0.86,N,2,1\n" +
+        "ING, Suya : 5 Sticks,100,1950,125,35,0,175,40,15,4.3,N,10,1\n" +
+        "ING, Beer : Stella : 330ml,100,104,0,0,0,0,8,0,0,N,0,1\n" +
+        "ING, Beer : Stella Black : 330ml,100,190,0,0,0,0,23,0,0,N,0,1\n" +
+        "ING, Gum,100,40,,,,,,,,,,1\n" +
+        "ING, Jam no Sugar : 20g,100,30,0.02,0.01,0,0.12,12,0.4,0.004,N,0,1\n" +
+        "ING, Banana Cake,100,270,11,3,0,3,38,21,0.26,N,3,1\n" +
+        "ING, Vanilla extract : 1 tsp,100,10,0,0,0,0,0.4,0,0,N,0,1\n" +
+        "ING, Apple Juice,100,143,0,0,0,0,35,35,0,Y,0,1\n" +
+        "ING, Salt : 10g,100,0,0,0,0,0,0,0,10,N,0,1\n" +
+        "ING, Lemon Sponge Cake : 1 Slice,100,260,5,2,0,4,52,48,0.01,N,0,1\n" +
+        "ING, Lattice Pastry,100,297,,,,,,,,,,1\n" +
+        "ING, Tonic Water,100,130,0.33,0.33,0,0.33,30.69,30.69,0,N,0.33,1\n" +
+        "ING, Generic : Plantain meat/Pork and Potato Sweet,100,426,9,1.5,0,24,67,23,0.3,N,7,1\n" +
+        "ING, Medium onions,100,60,0,0,0,2,14,9,0.005,Y,3,1\n" +
+        "ING, Pepsi lite Pepsi Light,100,0,0,0,0,0,0,0,0,N,0,1\n" +
+        "ING, Chin Chin : 1 portion,100,120,4,1,0,2,18,6,0.065,N,0,1\n" +
+        "ING, Generic : Sandwich,100,500,,,,,,,,,,1\n" +
+        "ING, Orji : Origin: Gin/Herbal : 30ml,100,67,0.1,0,0,0.1,0.1,0,0,N,0,1\n" +
+        "ING, Pepsi diet,100,0,0,0,0,0,0,0,0,N,0,1\n" +
+        "ING, Yam and Red Beans,100,670,22,2.5,0,19,103,28,0.31,N,21,1\n" +
+        "ING, Generic : Oil : 10g,100,90,10,4,0,0,0,0,0,N,0,1\n" +
+        "ING, Sprite 330ml,100,152,0,0,0,0,34.3,34.3,0,N,0,1\n" +
+        "ING, Groundnut : 30g,100,170,15,2.1,0,7.74,4.83,0.141,0.05,Y,2.55,1\n" +
+        "ING, Palm nut Sauce,100,510,52.6,5.7,0,1.5,9.5,3,0.01,N,1.8,1\n" +
+        "ING, Palm nut Soup,100,510,52.6,5.7,0,1.5,9.5,3,0.01,N,1.8,1\n" +
+        "ING, Margarine : 1 tablespoon,100,70,8,1,0,0,0,0,0.11,N,0,1\n" +
+        "ING, Coke 1 litre : Coca-Cola,100,450,0,0,0,0,112,112,0,N,0,1\n" +
+        "ING, Fried Rice : 1 Scoop,100,470,19,3.5,0,11,64,3,0.83,N,3,1\n" +
+        "ING, Fufu : Generic,100,550,1.8,0,0,16,180,0,0,N,0,1\n" +
+        "ING, Coconut Rice,100,453,21,15,0,6.8,61.4,20,0.112,N,19,1\n" +
+        "ING, Szechuan Chicken : Container,100,230,14,2,0,3,24,2,0.21,N,2,1\n" +
+        "ING, Szechuan Chilli Sauce,100,70,0.1,0,0,0.6,16.6,11.9,0.33,N,1.1,1\n" +
+        "ING, Szechuan Chicken Chilli Sauce,100,230,14,2,0,3,24,2,0.21,N,2,1\n" +
+        "ING, Snickers : 50g,100,248,13,5,0,4.3,30.3,25,0.3,N,0,1\n" +
+        "ING, Snickers : White,100,200,10,4,0,4,23,20,0.1,N,1,1\n" +
+        "ING, Yam Porridge with Spinach,100,565,24,10,0,4.9,73.1,0,0.11,N,2,1\n" +
+        "ING, Uba,100,315,1,0,0,21,52,0,0,N,0,1\n" +
+        "ING, Stock Fish,100,327,1,0,0,78,0,0,0,N,0,1\n" +
+        "ING, Stock Fish and Uba,100,650,1,0,0,99,52,0,0,N,0,1\n" +
+        "ING, Fufu : Pounded Yam,100,550,0.2,0,0,2,37.4,0.7,0.011,Y,5.3,\n" +
+
+
+
 "ING,Safflower Oil : 15ml,100,124,13.8,1.7,0,0,0,0,0,N,0,1.25\n"
 
 
@@ -1863,6 +2014,7 @@
     </string-array>
     <!-- Strings used for fragments for navigation -->
     <string-array name="quickstart">
+        <item>0 Kg</item>
         <item>5 Kg</item>
         <item>1 Stone</item>
         <item>10 Kg</item>
