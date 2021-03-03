@@ -115,7 +115,7 @@ public class NewDayCountdown extends IntentService {
         boolean no = false;
 
         Intent i = new Intent(NewDayCountdown.this, CCD_GUI_CD_CIF1.class);
-        i.putExtra(START_WEIGHT_LOSS,yes);
+        i.putExtra(START_WEIGHT_LOSS,no);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 

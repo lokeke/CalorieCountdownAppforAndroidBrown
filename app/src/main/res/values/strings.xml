@@ -25,6 +25,7 @@
 
     <string name="Debit_Button">Debit</string>
     <string name="action_start_weightloss_title">Start Weight Loss</string>
+    <string name="action_kitty">Kitty</string>
 
     <string name="Health">Health APIs</string>
     <string name="Health_Data1">Health Data</string>

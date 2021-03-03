@@ -47,14 +47,16 @@
             <item android:id="@+id/submenu5" android:title="Monthly Statement and Food Journal"></item>
             </group>
             <group android:id="@+id/group4">
+                <item android:id="@+id/submenu6a" android:title="Kitty"></item>
             <item android:id="@+id/submenu6" android:title="Populate Food Database"></item>
             <item android:id="@+id/submenu9" android:title="Depopulate Food Database"></item>
             <item android:id="@+id/submenu7" android:title="Clear Database"></item>
+
             </group>
             <item android:id="@+id/submenu8" android:title=" Calculator">
                 <menu>
-                    <item android:id="@+id/sub-submenuitem1" android:title="Web Calculator"></item>
-                    <item android:id="@+id/sub-submenuitem2" android:title="Native Caluclator"></item>
+                    <item android:id="@+id/sub_submenuitem1" android:title="Web Calucalator" />
+                    <item android:id="@+id/sub_submenuitem2" android:title="Native Calculator"></item>
                 </menu>
             </item>
         </menu>

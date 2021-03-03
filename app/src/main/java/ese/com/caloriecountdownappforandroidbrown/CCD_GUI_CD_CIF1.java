@@ -32,14 +32,14 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private static final String CALCULATOR_PACKAGE_NAME = "com.android.calculator2";
     private static final String CALCULATOR_CLASS_NAME = "com.android.calculator2.Calculator";
 
-    private static int REQUEST_CODE_GET_FOOD_ITEM = 1;
-    private static int REQUEST_CODE_START_DEBIT_ACTIVITY = 5;
-    private static int REQUEST_CODE_START_WEIGHT_LOSS_ACTIVITY = 8;
-    private static int REQUEST_CODE_LOG_IT_IN = 15;
-    private static int REQUEST_CODE_NEW_DAY = 7;
-    private static int REQUEST_CODE_MONTHLY_STATEMENT_ACTIVITY = 9;
-    private static int REQUEST_CODE_DIET_PLAN = 16;
-    private static int REQUEST_CODE_START_JOURNAL_ACTIVITY = 17;
+    private static final int REQUEST_CODE_GET_FOOD_ITEM = 1;
+    private static final int REQUEST_CODE_START_DEBIT_ACTIVITY = 5;
+    private static final int REQUEST_CODE_START_WEIGHT_LOSS_ACTIVITY = 8;
+    private static final int REQUEST_CODE_LOG_IT_IN = 15;
+    private static final int REQUEST_CODE_NEW_DAY = 7;
+    private static final int REQUEST_CODE_MONTHLY_STATEMENT_ACTIVITY = 9;
+    private static final int REQUEST_CODE_DIET_PLAN = 16;
+    private static final int REQUEST_CODE_START_JOURNAL_ACTIVITY = 17;
 
     private Button mCreditButton;
     private Button mDebitButton;
@@ -297,14 +297,18 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     protected void onActivityResult(int requestcode, int resultcode, Intent data) {
         super.onActivityResult(requestcode, resultcode, data);
 
-        try {
-
-            if (data == null) {
+        try
+        {
+            if (data == null)
+            {
                 Log.d(TAG, "Sorry Mate, Intent is null Baby!");
                 return;
             }
-        } catch (Exception c) {
-            ;
+        }
+
+        catch (Exception c)
+        {
+
         }
 
 

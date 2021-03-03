@@ -785,7 +785,9 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
         Log.d("Calorie Countdown", "Check to state of Cursor");
         if (foodItemCursor.getCount() < 1) {
             ArrayList<Food_Item_CIF4> placebo = new ArrayList<Food_Item_CIF4>();
-            placebo.add(new Food_Item_CIF4());
+            Food_Item_CIF4 not_found = new Food_Item_CIF4();
+            not_found.Set_food_item_name(food_item_name + " not found");
+            placebo.add(not_found);
             foodItemCursor.close();
             return placebo;
         } else {
