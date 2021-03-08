@@ -812,7 +812,7 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
         get the time of the day
         if less than noon InsertBreakfastTransaction
         if less than 4pm but greater than noon
-        if less greather than 4pm InsertDinnerTransaction
+        if less greater than 4pm InsertDinnerTransaction
         */
 
         Breakfast_Transaction_CIF22 bt = new Breakfast_Transaction_CIF22();

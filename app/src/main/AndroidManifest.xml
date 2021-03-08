@@ -11,9 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".JSONWrappingActivity"
+            android:label="@string/title_activity_j_s_o_n_wrapping"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Diet_Planner_CIF0116_fragment_box"
             android:label="@string/title_activity_diet__planner__c_i_f0116_fragment_box"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Journal_Activity_CiF0115_fragment_box"
             android:label="@string/title_activity_journal___ci_f0115_fragment_box"
@@ -106,8 +110,8 @@
             android:enabled="true"
             android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

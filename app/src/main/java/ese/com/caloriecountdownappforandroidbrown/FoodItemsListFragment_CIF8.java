@@ -1,9 +1,11 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
 
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.ListFragment;
 import android.os.Bundle;
+import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.view.View;
@@ -16,6 +18,8 @@ import java.util.ArrayList;
  */
 public class FoodItemsListFragment_CIF8 extends ListFragment
 {
+    private static final int REQUEST_CODE_JSON_WRAP = 18;
+
     //private FoodItemsCursor m_food_items_cursor;
     private ArrayList<Food_Item_CIF4> mFoodItems;
 
@@ -39,12 +43,12 @@ public class FoodItemsListFragment_CIF8 extends ListFragment
 
         if(mFoodItems.get(position).Get_food_item_name().endsWith("not found"))
         {
-
+            Start_JSON_Wrapping(mFoodItems.get(position).Get_food_item_name());
         }
         else
             {
 
-            //Alogrithm Engineering -> Kotlin : Correct food item looking for clicked, if user already gave calories, just add, should not be in
+            //Algrithm Engineering -> Kotlin : Correct food item looking for clicked, if user already gave calories, just add, should not be in
             //this stage, if gave name and weight update balance and summary box straight up don't ask, if user only gave name then you need
             //to ask like blackberry regular, collect weight of item and update with summary box
 
@@ -55,6 +59,19 @@ public class FoodItemsListFragment_CIF8 extends ListFragment
             }
 
 
+    }
+
+    public void Start_JSON_Wrapping(String INPUT)
+    {
+        //Algorithm Engineering -> Kotlin Documentation
+        //Introduction : Starts the process of JSONWrapper, by taking the name of the Food item not found, which we ultimately
+        //wish to add to SQL_CiF6 and in a dialog back toast message ask the User & Client to Repeat app "CREDIT" should now find it there
+        //Remember complete depopulate with Unit.27
+        //Description :
+        //STEP ONE
+        android.content.Intent intent = new Intent(this.getContext(), JSONWrappingActivity.class );
+        intent.putExtra("not found",INPUT);
+        this.startActivityForResult(intent, REQUEST_CODE_JSON_WRAP);
     }
 
 
