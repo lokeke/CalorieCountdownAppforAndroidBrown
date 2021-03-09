@@ -55,6 +55,7 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
     private Runnable r;
 
+    Button buttonPhotoGallery;
 
     //Class Member Attributes and Propeties Area////////////////////////////////////////////////////
 
@@ -73,6 +74,8 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
 
         //Get Button 3 into Controller World.
+
+        buttonPhotoGallery = (Button) findViewById(R.id.buttonPhotoGallery);
         mMultiSearchButton = (Button) findViewById(R.id.button4);
         mCancel = (Button) findViewById(R.id.button8);
         mCancel2 = (Button) findViewById(R.id.button9);
@@ -147,6 +150,15 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
 
 
+            }
+        });
+
+
+        buttonPhotoGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Food_Diary_Sheet_CIF3.this, GalleryActivity.class);
+                startActivity(intent);
             }
         });
 

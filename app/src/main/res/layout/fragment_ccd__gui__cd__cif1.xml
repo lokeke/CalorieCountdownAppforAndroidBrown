@@ -39,16 +39,21 @@
             android:textSize="60sp"
             android:textStyle="normal" />
 
-
-
+        <Button
+            android:id="@+id/buttonGallery"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/gallery"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
         <Button
             android:id="@+id/button2"
             android:layout_width="144dp"
-
             android:layout_height="wrap_content"
-
-
-            android:layout_alignStart="@+id/textView0"
             android:layout_alignTop="@+id/button"
             android:fontFamily="sans-serif-light"
             android:padding="8sp"
