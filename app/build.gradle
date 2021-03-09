@@ -7,31 +7,74 @@ android {
         minSdkVersion 26
         targetSdkVersion 26
         versionCode 32
-        versionName '2.0'
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        compileSdkVersion 29
+        defaultConfig {
+            applicationId "com.softuvo.caloriecountdownappforandroidbrown"
+            minSdkVersion 21
+            targetSdkVersion 29
+            versionCode 33
+            versionName '2.0'
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         }
-    }
-    productFlavors {
-    }
-    buildToolsVersion '27.0.3'
-}
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+        productFlavors {
+        }
+        buildToolsVersion '27.0.3'
 
-dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation 'com.android.support:design:27.1.0'
-    implementation 'com.android.support:support-compat:27.0.0'
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.google.android.gms:play-services-ads:11.6.2'
-    implementation 'com.google.firebase:firebase-messaging:11.6.2'
-    implementation project(':picasso-2.71828')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+        /* compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
+    }
+
+    dependencies {
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+        implementation 'com.android.support:appcompat-v7:27.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+        implementation 'com.android.support:design:27.1.0'
+        implementation 'com.android.support:support-compat:27.0.0'
+        //noinspection GradleCompatible
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+        //noinspection GradleCompatible
+        implementation 'com.android.support:design:27.1.1'
+        //noinspection GradleCompatible
+        implementation 'com.android.support:support-compat:27.1.1'
+        //noinspection GradleCompatible
+        implementation 'com.android.support:support-v4:27.1.1'
+        implementation 'com.google.android.gms:play-services-ads:11.6.2'
+        implementation 'com.google.firebase:firebase-messaging:11.6.2'
+        implementation project(':picasso-2.71828')
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+        //noinspection GradleCompatible
+        androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+        compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+        implementation 'com.github.bumptech.glide:glide:3.7.0'
+        implementation 'com.android.support:cardview-v7:+'
+        //annotationProcessor 'com.github.bumptech.glide:compiler:3.7.0'
+        //cropper
+        implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+        implementation 'com.intuit.sdp:sdp-android:1.0.6'
+        implementation 'com.alexvasilkov:gesture-views:2.3.1'
+
+        implementation 'com.jakewharton:butterknife:8.8.1'
+
+        testImplementation 'junit:junit:4.12'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+        implementation 'com.google.firebase:firebase-analytics:11.0.4'
+        // Add the Firebase Crashlytics dependency.
+        implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+        /*implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'*/
+    }
 }

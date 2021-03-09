@@ -39,6 +39,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private static int REQUEST_CODE_DIET_PLAN = 16;
 
     private Button mCreditButton;
+    private Button buttonGallery;
+
     private Button mDebitButton;
     private SummaryBoxCIF12 mSummation;
     private Date ResetBreakfastTime;
@@ -100,6 +102,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
 
         mCreditButton = (Button) findViewById(R.id.button2);
+
+        buttonGallery = (Button) findViewById(R.id.buttonGallery);
         mDebitButton = (Button) findViewById(R.id.button);
         mCreditButton.setOnClickListener(new View.OnClickListener() {
 
@@ -122,6 +126,15 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             }
         });
 
+
+
+        buttonGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CCD_GUI_CD_CIF1.this, GalleryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //final TextView countdownbalance = (TextView) findViewById(R.id.textView);
         //countdownbalance.setText(RetrieveCountdownBalance());

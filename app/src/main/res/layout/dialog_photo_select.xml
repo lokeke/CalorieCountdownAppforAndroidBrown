@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vw_background"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/popup_image"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_choose_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/choose"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/vw_background"
+            app:layout_constraintBottom_toBottomOf="@id/vw_background"
+            app:layout_constraintStart_toStartOf="@id/vw_background"
+            app:layout_constraintEnd_toEndOf="@id/vw_background"
+            />
+
+        <Button
+            android:id="@+id/iv_camera"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:text="CAMERA"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/vw_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_background"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/iv_gallery"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="GALLERY"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_camera"
+            app:layout_constraintVertical_bias="0.01999998"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/iv_cancel"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="CANCEL"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_gallery"
+            app:layout_constraintVertical_bias="0.01999998"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
