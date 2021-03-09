@@ -21,6 +21,7 @@ import java.io.IOException;
 
 public class Splash_Screen_Fragement_001_Class extends Activity implements Splash_Screen_Fragment_001 {
 
+    // Code push
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 1000;
 
