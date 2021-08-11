@@ -45,6 +45,8 @@ public class Food_Item_CIF4
     private int Quantity;
 
     private ArrayList<String> reserve_food_item_name_list;
+    private long barcode;
+    private String image_file;
 
 
     public Food_Item_CIF4(String name)
@@ -80,6 +82,8 @@ public class Food_Item_CIF4
 
         reserve_food_item_name_list = new ArrayList<String>();
         reserve_food_item_name_list.add(food_item_name);
+        barcode = 1010101011;
+        image_file = "data/image_src_" + name;
     }
 
     public Food_Item_CIF4()
@@ -116,6 +120,8 @@ public class Food_Item_CIF4
 
         reserve_food_item_name_list = new ArrayList<String>();
         reserve_food_item_name_list.add("empty");
+        barcode = 1010101011;
+        image_file = "data/image_src_" + food_item_name;
     }
 
 
@@ -229,6 +235,8 @@ public class Food_Item_CIF4
     public int Get_calorie_value(){return Calorie_Value;}
 
     public int Get_Quantity(){return Quantity;}
+    public long Get_Barcode(){return barcode;}
+    public String Get_Image_File(){return image_file;}
 
     public ArrayList<String> getReserve_food_item_name_list() {
         return reserve_food_item_name_list;
@@ -364,6 +372,10 @@ public class Food_Item_CIF4
         return mMeal_ID;
     }
 
+    public void Set_Barcode(long Input){barcode = Input;}
+
+    public void Set_Image_File(String Input){image_file = Input;}
+
     @Override
     public String toString()
     {
@@ -394,6 +406,8 @@ public class Food_Item_CIF4
     {
         return false;
     }
+
+
 
 
 

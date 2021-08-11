@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="99dp"
+        android:gravity="center">
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
@@ -13,14 +20,23 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="108dp" />
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search for this item"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="384dp" />
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search for this item"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="598dp" />
+
+        <WebView
+            android:id="@+id/webview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -9,11 +9,20 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher2"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Recalibrate"
+            android:label="@string/title_activity_recalibrate"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Google_Search_WebView_CiF000123fragmented_Object"
+            android:label="@string/title_activity_google__search__web_view__ci_f000123fragmented__object"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".JSONWrappingActivity"
             android:label="@string/title_activity_j_s_o_n_wrapping"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Diet_Planner_CIF0116_fragment_box"
             android:label="@string/title_activity_diet__planner__c_i_f0116_fragment_box"

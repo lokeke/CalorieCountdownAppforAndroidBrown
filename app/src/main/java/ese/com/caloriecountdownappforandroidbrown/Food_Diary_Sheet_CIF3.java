@@ -32,6 +32,7 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
     private static int REQUEST_CODE_FOODITEMSLIST = 2;
     private static int REQUEST_CODE_ADD_NEW_ITEM = 3;
     private static int REQUEST_CODE_SPELLINGITEMSLIST = 4;
+    private static int REQUEST_CODE_RECALIBRATE = 5;
     private static final String TAG = "Calorie Countdown App";
     public static final String TOTAL_CREDIT_VALUE = "Total Credit Countup Value";
     public static final String SUMMATION_TEXT = "Report Summary";
@@ -42,14 +43,19 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
 
     //1. Array of Food_Item_CIF4 (use m/a/s convention)
     private ArrayList<Food_Item_CIF4> mFoodItems;
+
     private Button mMultiSearchButton;
     private Button mCancel;
     private Button mCancel2;
     private Button mAddNewItem;
+    private Button mRecalibrate;
+
     private Context mAppContext;
+
     private ArrayList<Food_Item_CIF4> FetchedFoodItems;
     private ArrayList<Food_Item_CIF4> resultList;
     private ArrayList<Food_Item_CIF4> resultList2 = new ArrayList<Food_Item_CIF4>();
+
     private Food_Item_CIF4 enter;
     private String OUTsb = "empty";
     private Merge_List_fragment_object mPivot = new Merge_List_fragment_object();
@@ -80,6 +86,14 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
         mMultiSearchButton = (Button) findViewById(R.id.button4);
         mCancel = (Button) findViewById(R.id.button8);
         mCancel2 = (Button) findViewById(R.id.button9);
+        mRecalibrate = (Button) findViewById(R.id.button11);
+        mRecalibrate.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+               launch_recalibrate();
+            }
+        });
         mAddNewItem = (Button) findViewById(R.id.button3);
         mAddNewItem.setOnClickListener(new View.OnClickListener()
         {
@@ -784,25 +798,30 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
         }
     }
 
+
+
     private void launchAddNewFoodView()
     {
-
         Intent i = new Intent(Food_Diary_Sheet_CIF3.this, Add_New_Item_Activity_CIF12.class);
-
-
         startActivityForResult(i,REQUEST_CODE_ADD_NEW_ITEM);
-
     }
+
+
+
+    private void launch_recalibrate()
+    {
+        Intent i = new Intent(Food_Diary_Sheet_CIF3.this, Recalibrate.class);
+        startActivityForResult(i, REQUEST_CODE_RECALIBRATE);
+    }
+
 
     private Food_Item_CIF4 launchAddNewFoodView(Food_Item_CIF4 M)
     {
         Intent i = new Intent(Food_Diary_Sheet_CIF3.this, Add_New_Item_Activity_CIF12.class);
-
-
         startActivityForResult(i,REQUEST_CODE_ADD_NEW_ITEM);
-
         return new Food_Item_CIF4();
     }
+
 
     private void RecordTrackedFoodItems(Breakfast_Box_CIF17 FoodItemBox)
     {
@@ -819,6 +838,8 @@ public class Food_Diary_Sheet_CIF3 extends FragmentActivity implements SpellChec
         bt.Set_BreakfastBox(FoodItemBox);
         Data_Adapter.InsertBreakfastTransaction(bt);
     }
+
+
 
     private void RecordMonthlyStatementData_Summary_Box(SummaryBoxCIF12 summary_box)//(Lunch_Box_CIF17 FoodItemBox)
     {

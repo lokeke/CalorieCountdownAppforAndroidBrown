@@ -35,6 +35,8 @@ public class Log_It_In_CIF15Fragment extends Fragment {
     public static final String ResultDinnerTime = "Dinner time";
     public static final String ResultMidnight = "1700";
 
+    public static final long twentyFourHours = (24*60*60*1000);
+
 
 
     private Button mServices;
@@ -123,7 +125,8 @@ public class Log_It_In_CIF15Fragment extends Fragment {
         i.setAction(ACTION_CREDIT_BREAKFAST_TRANSACTION);
         PendingIntent pi = PendingIntent.getService(getActivity(), REQUEST_CODE_LOG_IT_IN_BREAKFAST_BOX, i, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC, (System.currentTimeMillis()), pi);
+        //alarmManager.set(AlarmManager.RTC, (System.currentTimeMillis()), pi);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,Kalends.getTimeInMillis(),twentyFourHours, pi);
         Log.d("Countdown", "Alarm Manager Set Yeah verify");
 
     }
@@ -156,7 +159,7 @@ public class Log_It_In_CIF15Fragment extends Fragment {
         i.setAction(ACTION_CREDIT_BREAKFAST_TRANSACTION);
         PendingIntent pi = PendingIntent.getService(getActivity(), REQUEST_CODE_LOG_IT_IN_BREAKFAST_BOX, i, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC, (System.currentTimeMillis()),intervalmillis, pi);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, Kalends.getTimeInMillis(),intervalmillis, pi);
         Log.d("Countdown", "Alarm Manager Set Yeah verify");
     }
 
@@ -177,8 +180,8 @@ public class Log_It_In_CIF15Fragment extends Fragment {
         int year = yr;
         java.util.Calendar Kalends = Calendar.getInstance();
         Kalends.setTime(new Date());
-        Kalends.set(Calendar.HOUR_OF_DAY, hour);
-        Kalends.set(Calendar.MINUTE, minute);
+        Kalends.set(Calendar.HOUR_OF_DAY, 19);
+        Kalends.set(Calendar.MINUTE, 30);
         // Kalends.set(Calendar.DAY_OF_MONTH, day_of_month);
         //Kalends.set(Calendar.MONTH,month);
         // Kalends.set(Calendar.YEAR, year);
@@ -188,7 +191,7 @@ public class Log_It_In_CIF15Fragment extends Fragment {
         i.setAction(ACTION_CREDIT_FINALMEAL_TRANSACTION);
         PendingIntent pi = PendingIntent.getService(getActivity(), REQUEST_CODE_LOG_IT_IN_DINNER_BOX, i, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC, (System.currentTimeMillis()+ KalendTime),intervalmillis, pi);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, Kalends.getTimeInMillis(),twentyFourHours, pi);
         Log.d("Countdown", "Alarm Manager Set Yeah verify");
     }
 

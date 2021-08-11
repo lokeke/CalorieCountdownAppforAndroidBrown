@@ -38,6 +38,8 @@ public class Add_New_Item_Activity_CIF2Fragment extends Fragment {
         return v;
     }
 
+
+
     private long Adding_New_Item_pressed()
     {
 
@@ -164,5 +166,37 @@ public class Add_New_Item_Activity_CIF2Fragment extends Fragment {
         SQLDatabase_Food_Items_CIF6 database = new SQLDatabase_Food_Items_CIF6(getActivity());
         return database.Insert_Food_Item_Row(new_item);
     }
+    
+    public long add_JSON_OBJ_TO_CIF6(JSON_Object INPUT)
+    {
+        final int i = 1;
+        return i;
+    }
+
+    public long add_Transactions_CiF22_To_CiF6(Transactions_CIF22 Input_new_item)
+    {
+        //IDO : Should be using Data Model Adapter Here.                                                                Brown Architect Artist Slick Style presentation ref Apple
+        SQLDatabase_Food_Items_CIF6 database = new SQLDatabase_Food_Items_CIF6(getActivity());
+        return 0;
+        //return database.Insert_Food_Item_Row(Input_new_item.get_Food_items_or_items_Kotlin_1_5_0());
+
+        //transform Object0001 to CiF22 and from CiF22 to Food items/list of foodiems, to be added
+        //directly to final function below and research database for new and missing item Credit as
+        //normal to the end, PUSH, back to folder start using app in Beta -> £6.52
+    }
+
+    public long add_Transactions_CiF22_To_CiF6(java.util.ArrayList<Food_Item_CIF4> add)
+    {
+        //IDO : Should be using Data Model Adapter Here.                                                                Brown Architect Artist Slick Style presentation ref Apple
+        SQLDatabase_Food_Items_CIF6 database = new SQLDatabase_Food_Items_CIF6(getActivity());
+
+        for(Food_Item_CIF4 m : add)
+        {
+            database.Insert_Food_Item_Row(m);
+        }
+
+        return 0;
+    }
+
 }
 

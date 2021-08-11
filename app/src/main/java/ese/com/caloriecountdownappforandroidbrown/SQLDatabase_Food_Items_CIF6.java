@@ -1540,6 +1540,11 @@ public class SQLDatabase_Food_Items_CIF6 extends SQLiteOpenHelper {
 
     }
 
+    public void Insert_Food_Item_Row(JSONWrapperCIFClass INPUT)
+    {
+        ;
+    }
+
     public void CreateAccountTables(HealthProfileCiF3 OUT) {
         //ENGLISH ~> IDO (New Menu/Submenuitem from Functional Model?)~> Algorithm Engineering (Building Blocks&)~> Android ~>(Phone)*~>(re)Load ~> www.ese-edet.eu End&Repeat, (apk Dev Console progress Bar on Track!)(Remember Weekly Friday Lamppost for www) (Read same thing same spot for revolve 2 happen.)Repeat Constantly on Track till <*August 16,16 Fast Track> Opening Soon exe  www.ee-edet.eu (re)Load -> www.ese-edet.eu.
         // *Test Menu/Sub Menuitem for (Green) (CFF and Value QVM). up and down train 2 www fronts beleive I can do 100 by <> not going to change in fut

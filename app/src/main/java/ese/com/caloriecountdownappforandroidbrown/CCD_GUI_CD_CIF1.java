@@ -23,6 +23,7 @@ import java.util.Date;
 
 public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
+    public static String itemToFind = "No item Picked up";
 
     public static CCD_GUI_CD_CIF1 instance;
 
@@ -442,6 +443,12 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
                 android.util.Log.d("Credit_Value, Pos 9", "We are in Start of Request Food Diary" );
                 Refresh();
                 android.util.Log.d("Credit_Value, Pos 10", "We are in Start of Request Food Diary" );
+
+
+                if(isItDayEnd())
+                {
+                    New_Day_2();
+                }
             }
             catch(NullPointerException e)
             {
@@ -1076,7 +1083,10 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
     }
 
-
+    public void New_Day_2()
+    {
+        //Calendar event emitted & Admob & 77p & B x G = ¢#∞§€¡@!£5.57 + WWW.ESE-EDET.EU & Numbers 7v7
+    }
 
     public void setResetDayEnd()
     {
@@ -1118,7 +1128,10 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         return INPUT;
     }
 
-
+    private boolean isItDayEnd()
+    {
+        return false;
+    }
 
 
     class CurrentCalendar

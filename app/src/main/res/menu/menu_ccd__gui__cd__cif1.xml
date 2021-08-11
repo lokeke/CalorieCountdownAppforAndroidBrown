@@ -19,6 +19,13 @@
         android:title="@string/action_food_diary_credit_title">
         <menu>
 
+            <item android:id="@+id/submenu10x" android:title="Note">
+                <menu>
+                    <item android:id="@+id/sub_submenuitem91" android:title="Food Diary Notes" />
+                    <item android:id="@+id/sub_submenuitem92" android:title="Fitness Log Notes"></item>
+                </menu>
+            </item>
+
             <item android:id="@+id/submenu8x" android:title=" Accrual">
                 <menu>
                     <item android:id="@+id/submenu3aa" android:title="Accurual"></item>

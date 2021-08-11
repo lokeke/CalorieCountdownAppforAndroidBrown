@@ -69,8 +69,10 @@ public class FoodItemsListFragment_CIF8 extends ListFragment
         //Remember complete depopulate with Unit.27
         //Description :
         //STEP ONE
+
         android.content.Intent intent = new Intent(this.getContext(), JSONWrappingActivity.class );
         intent.putExtra("not found",INPUT);
+        CCD_GUI_CD_CIF1.itemToFind = INPUT;
         this.startActivityForResult(intent, REQUEST_CODE_JSON_WRAP);
     }
 

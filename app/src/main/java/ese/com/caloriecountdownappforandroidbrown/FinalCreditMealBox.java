@@ -29,6 +29,7 @@ public class FinalCreditMealBox extends IntentService {
     // TODO: Rename parameters
     private static final String EXTRA_BALANCE = "ese.com.caloriecountdownappforandroid.extra.BALANCE";
     private static final String EXTRA_PARAM2 = "ese.com.caloriecountdownappforandroid.extra.PARAM2";
+    public static final long twentyFourHours = (24*60*60*1000);
 
     /**
      * Starts this service to perform action Foo with the given parameters. If
@@ -97,13 +98,14 @@ public class FinalCreditMealBox extends IntentService {
         //Launch intent i see or reconn to previous diagram box Technology. to Launch CIF1 with message & <"Credit Breakfast Transaction (Food items you had for breakfast by lauching App and clicking Credit Button">
         //Need to find out right Context to give it.
 
-        Toaster("Credit Dinner Transaction: Hit Ok and the Credit button in App and record all Food Items in your Dinner Box");
+        Toaster("Credit Dinner Transaction: Hit Ok and the Credit button in app and record all Food Items in your Dinner Box");
 
         //Positive Button should Say Launch App.
 
 
         Intent i = new Intent(FinalCreditMealBox.this, CCD_GUI_CD_CIF1.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.putExtra("Start New Day",true);
         startActivity(i);
 
     }
@@ -136,6 +138,7 @@ public class FinalCreditMealBox extends IntentService {
         PendingIntent pi = PendingIntent.getService(getApplicationContext(), REQUEST_CODE_FINAL_MEAL, i, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(this.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC, Kalends.getTimeInMillis(), pi);
+        alarmManager.setRepeating(AlarmManager.RTC,Kalends.getTimeInMillis(),twentyFourHours, pi);
         Log.d("Countdown", "Alarm Manager Set Yeah");
     }
 

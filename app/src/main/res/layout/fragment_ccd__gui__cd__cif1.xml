@@ -44,11 +44,10 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="144dp"
-
             android:layout_height="wrap_content"
 
 
-            android:layout_alignStart="@+id/textView0"
+            android:layout_alignStart="@+id/textView"
             android:layout_alignTop="@+id/button"
             android:fontFamily="sans-serif-light"
             android:padding="8sp"

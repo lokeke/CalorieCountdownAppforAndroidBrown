@@ -21,14 +21,14 @@ public class BoxCIF17
         mFoodBox = new ArrayList<Food_Item_CIF4>();
         //mFoodBox.add(new Food_Item_CIF4());
         mMeal =  "Food Item Box";
-        inhousecsvtext ="";
+        inhousecsvtext = "data/inhousecsv.txt";
     }
 
     public BoxCIF17(String mealname)
     {
         mFoodBox = new ArrayList<Food_Item_CIF4>();
         mMeal =  mealname;
-        inhousecsvtext ="";
+        inhousecsvtext = "data/inhousecsv.txt";
     }
 
     public void addFoodItem(Food_Item_CIF4 m)
@@ -109,6 +109,28 @@ public class BoxCIF17
     {
         return Energy_OUT;
     }
+
+    public String Get_data_file_path()
+    {
+        return inhousecsvtext;
+    }
+
+    public void Set_data_file_path(String IN)
+    {
+        inhousecsvtext = IN;
+    }
+
+    public String Get_inhousecsvtext()
+    {
+        return inhousecsvtext;
+    }
+
+    public void Set_inhousecsvtext(String IN)
+    {
+        inhousecsvtext = IN;
+    }
+
+
 
     public void Set_Transaction_ID_for_all_Food_items(long ID)
     {
