@@ -4,11 +4,11 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "ese.com.caloriecountdownappforandroidbrown"
+        applicationId 'ese.com.caloriecountdownappforandroidbrown1'
         minSdkVersion 26
-        targetSdkVersion 29
-        versionCode 32
-        versionName '2.0'
+        targetSdkVersion 30
+        versionCode 34
+        versionName 'Beta 2.0'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
