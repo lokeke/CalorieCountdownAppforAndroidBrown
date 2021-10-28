@@ -2,14 +2,13 @@ package ese.com.caloriecountdownappforandroidbrown;
 
 
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.ListFragment;
+
+import androidx.fragment.app.ListFragment;
+import androidx.fragment.app.DialogFragment;
 import android.os.Bundle;
-import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 

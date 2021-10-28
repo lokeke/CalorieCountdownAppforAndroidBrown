@@ -5,18 +5,18 @@ android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin"
 android:paddingBottom="@dimen/activity_vertical_margin"
 tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_ActivityCIF14Fragment">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:paddingBottom="@dimen/activity_vertical_margin"
             android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
             tools:context="ese.com.caloriecountdownappforandroidbrown.Debit_Activity_CIF13Fragment">
 
 
@@ -49,7 +49,7 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12sp"
-                android:text= "@string/SWL_Last_name" />
+                android:text="@string/SWL_Last_name" />
 
             <TextView
                 android:id="@+id/textview38"
@@ -70,15 +70,14 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:id="@+id/textview40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:padding="12sp"
-                android:text="@string/SWL_email"
-                android:clickable="false" />
+                android:text="@string/SWL_email" />
 
             <EditText
                 android:id="@+id/edit_text67"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
 
 
             <TextView
@@ -89,11 +88,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:text="@string/SWL_gender" />
 
             <Spinner
+                android:id="@+id/spincity15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spincity15"
-                android:padding="12sp"
-                android:entries="@array/genders"/>
+                android:entries="@array/genders"
+                android:padding="12sp" />
 
             <TextView
                 android:id="@+id/textview43"
@@ -103,11 +102,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:text="@string/SWL_bodyframe" />
 
             <Spinner
+                android:id="@+id/spincity1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spincity1"
-                android:padding="12sp"
-                android:entries="@array/bodyframe"/>
+                android:entries="@array/bodyframe"
+                android:padding="12sp" />
 
             <TextView
                 android:id="@+id/textview44"
@@ -117,11 +116,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:text="@string/SWL_weight_units" />
 
             <Spinner
+                android:id="@+id/spincity2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spincity2"
-                android:padding="12sp"
-                android:entries="@array/weightunits"/>
+                android:entries="@array/weightunits"
+                android:padding="12sp" />
 
             <TextView
                 android:id="@+id/textview45"
@@ -143,11 +142,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:text="@string/SWL_quick_start" />
 
             <Spinner
+                android:id="@+id/spincity3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spincity3"
-                android:padding="12sp"
-                android:entries="@array/quickstart"/>
+                android:entries="@array/quickstart"
+                android:padding="12sp" />
 
             <TextView
                 android:id="@+id/textview47"
@@ -155,7 +154,6 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:layout_height="wrap_content"
                 android:padding="12sp"
                 android:text="@string/SWL_targetweight" />
-
 
 
             <EditText
@@ -175,11 +173,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/CM1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/CM1"
-                    android:text="@string/CM1"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/CM1" />
 
                 <EditText
                     android:id="@+id/edit_text76a"
@@ -187,11 +185,11 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                     android:layout_height="wrap_content" />
 
                 <RadioButton
+                    android:id="@+id/Inches1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Inches1"
-                    android:text="@string/Inches1"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Inches1" />
 
 
                 <EditText
@@ -200,21 +198,22 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                     android:layout_height="wrap_content" />
 
                 <RadioButton
+                    android:id="@+id/Feet1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Feet1"
-                    android:text="@string/Feet1"
-                    android:onClick="onRadioButtonClicked"/>
-
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Feet1" />
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <EditText
                         android:id="@+id/edit_text78a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
+
                     <EditText
                         android:id="@+id/edit_text79a"
                         android:layout_width="wrap_content"
@@ -222,20 +221,22 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 </LinearLayout>
 
                 <RadioButton
+                    android:id="@+id/Meters1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Meters1"
-                    android:text="@string/Meters1"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Meters1" />
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <EditText
                         android:id="@+id/edit_text80a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
+
                     <EditText
                         android:id="@+id/edit_text81a"
                         android:layout_width="wrap_content"
@@ -243,16 +244,15 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 </LinearLayout>
 
 
-
             </RadioGroup>
 
             <Spinner
+                android:id="@+id/spincity4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spincity4"
-                android:padding="12sp"
                 android:entries="@array/heightunits"
-                android:visibility="invisible"/>
+                android:padding="12sp"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/textview49"
@@ -260,7 +260,7 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:layout_height="wrap_content"
                 android:padding="12sp"
                 android:text="@string/SWL_client_height"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
 
             <EditText
                 android:id="@+id/edit_text72"
@@ -311,18 +311,17 @@ tools:context="ese.com.caloriecountdownappforandroidbrown.Start_Weight_Loss_Acti
                 android:text="@string/SWL_final_final_meal_reminder" />
 
 
-
             <Button
                 android:id="@+id/button14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text= "@string/cancel5"/>
+                android:text="@string/cancel5" />
 
             <Button
                 android:id="@+id/button15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text= "@string/cancel2"/>
+                android:text="@string/cancel2" />
 
 
         </LinearLayout>

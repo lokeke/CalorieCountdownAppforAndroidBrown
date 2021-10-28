@@ -1,6 +1,8 @@
 package ese.com.caloriecountdownappforandroidbrown.ui.debitactivitycif13;
 
-import android.arch.lifecycle.ViewModel;
+//import android.arch.lifecycle.ViewModel;
+
+import androidx.lifecycle.ViewModel;
 
 public class DebitActivityCIF13ViewModel extends ViewModel {
     // TODO: Implement the ViewModel

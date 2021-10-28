@@ -1,6 +1,6 @@
 package ese.com.caloriecountdownappforandroidbrown
 
-import android.os.Bundle
+/*import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -17,4 +17,4 @@ class Diet_Planner_CIF0116_fragment_box : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
     }
-}
+}*/

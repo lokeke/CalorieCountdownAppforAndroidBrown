@@ -224,6 +224,13 @@
 
     <string name="title_activity_log__it__in__cif15">Record Meal Eaten Transaction</string>
 
+    <string name="title_activity_recalibrate">Recalibrate Countdown Balance</string>
+
+    <string name="title_activity_google__search__web_view__ci_f000123fragmented__object">Search the Cloud for Food item</string>
+
+
+
+
     <string name="CM1">CM</string>
 
     <string name="Inches1">Inches</string>

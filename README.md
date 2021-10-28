@@ -2,7 +2,7 @@
 Calorie_Countdown_app
 
 
-Hello, and welcome to the Repo Codebase of Calorie Countdown app for android
+Hello, and welcome to the Repo Codebase of Calorie Countdown app for Android
 
 This is a Weight Loss app to help Client/Users Lose Weight, feel great and Healthy hence reducing
 their chances of contracting and succumbing to the Corona SAR Virus.

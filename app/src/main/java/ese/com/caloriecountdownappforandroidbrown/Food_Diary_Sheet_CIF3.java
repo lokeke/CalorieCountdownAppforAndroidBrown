@@ -2,7 +2,8 @@ package ese.com.caloriecountdownappforandroidbrown;
 
 
         import android.content.Intent;
-        import android.support.v4.app.FragmentActivity;
+        //import androidx.core.app.FragmentActivity;
+        import androidx.fragment.app.FragmentActivity;
         //import android.support.v7.app.ActionBarActivity;
         import android.os.Bundle;
         import android.view.Menu;
@@ -11,16 +12,13 @@ package ese.com.caloriecountdownappforandroidbrown;
         import android.view.textservice.SpellCheckerSession;
         import android.view.textservice.TextServicesManager;
         import android.widget.Button;
-        import android.widget.TextView;
         import android.widget.EditText;
         import java.util.*;
         import android.util.Log;
         import android.content.Context;
-        import android.service.textservice.SpellCheckerService;
         import android.view.textservice.SuggestionsInfo;
         import android.view.textservice.SentenceSuggestionsInfo;
         import android.view.textservice.TextInfo;
-        import android.os.Build;
 
 // Controller Class for Food Diary Screen/Credit/Menuitem
 

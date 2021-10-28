@@ -2,11 +2,11 @@ package ese.com.caloriecountdownappforandroidbrown;
 
 
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
+import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 
 /**
  * Created by lokeke on 14/10/2015.

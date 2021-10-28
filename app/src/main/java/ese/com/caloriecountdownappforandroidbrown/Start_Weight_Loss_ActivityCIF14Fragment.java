@@ -1,7 +1,7 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -91,9 +91,7 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
 
     private void OpenAccount(HealthProfileCiF3 IN)
     {
-        //IDO ~> Alogrithm Engineering ~> Android : Display VitalStats :
-
-
+        //IDO ~> Algorithm Engineering ~> Android : Display VitalStats :
         DisplayVitalStats(GetOpeningBalance(GetVitalStatsString(FillInMIFs(ExtractView(IN)))));
     }
 

@@ -2,12 +2,10 @@ package ese.com.caloriecountdownappforandroidbrown;
 
 import android.database.Cursor;
 import android.database.CursorWrapper;
-import android.support.v4.widget.ViewGroupUtils;
+//import androidx.core.widget.ViewGroupUtils;
+import androidx.appcompat.widget.ViewUtils;
 import android.util.Log;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.CursorWrapper;
-import android.util.Log;
+
 import java.util.Date;
 
 public class SHealth_Cursor_241 extends CursorWrapper

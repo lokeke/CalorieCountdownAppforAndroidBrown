@@ -9,12 +9,11 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Context;
 
 
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 //import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 

@@ -1,6 +1,8 @@
 package ese.com.caloriecountdownappforandroidbrown;
 
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 import ese.com.caloriecountdownappforandroidbrown.ui.debitactivitycif13.Debit_Activity_CIF13Fragment;
