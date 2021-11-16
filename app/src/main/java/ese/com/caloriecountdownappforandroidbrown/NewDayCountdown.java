@@ -29,6 +29,11 @@ public class NewDayCountdown extends IntentService {
     private static final String EXTRA_BALANCE = "ese.com.caloriecountdownappforandroid.extra.BALANCE";
     private static final String EXTRA_PARAM2 = "ese.com.caloriecountdownappforandroid.extra.PARAM2";
 
+    public interface MyCallBack
+    {
+        public void refreshMainActivity();
+    }
+
     /**
      * Starts this service to perform action Foo with the given parameters. If
      * the service is already performing a task this action will be queued.
@@ -131,7 +136,7 @@ public class NewDayCountdown extends IntentService {
         int mBalance = new RoundingCIF13().StringToInt(currentBalance);
         if(data_model_adapter.getSex() == "MALE")
         {
-            mBalance = mBalance - 2500;
+            mBalance = mBalance - 2000;
         }
         if(data_model_adapter.getSex() == "FEMALE")
         {
@@ -139,10 +144,10 @@ public class NewDayCountdown extends IntentService {
         }
         else
         {
-            mBalance = mBalance - 2500;
+            mBalance = mBalance - 2000;
         }
         data_model_adapter.StoreBalance(new RoundingCIF13().IntToString(mBalance));
-        data_model_adapter.StoreDayEndBalance((mBalance - 350 + 2500));
+        data_model_adapter.StoreDayEndBalance((mBalance - 350 + 2000));
     }
 
     private void SetNewDayAlarm(int h, int m, int d, int mon, int yr)

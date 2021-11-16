@@ -2,12 +2,15 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
         applicationId 'ese.com.caloriecountdownappforandroidbrown1'
         minSdkVersion 26
-        targetSdkVersion 30
-        versionCode 34
+        targetSdkVersion 31
+        versionCode 35
         versionName 'Beta 2.0'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -19,13 +22,16 @@ android {
     }
     productFlavors {
     }
-    buildToolsVersion '29.0.2'
+    buildToolsVersion '31.0.0'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 
@@ -47,6 +53,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0-rc02'
     implementation 'androidx.fragment:fragment:1.2.4'
     implementation 'androidx.fragment:fragment-ktx:1.2.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'

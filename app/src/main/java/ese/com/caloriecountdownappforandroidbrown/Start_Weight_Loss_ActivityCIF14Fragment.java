@@ -120,6 +120,7 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
 
 
 
+
         Spinner spinner1 = (Spinner) getActivity().findViewById(R.id.spincity1);
         Spinner spinner2 = (Spinner) getActivity().findViewById(R.id.spincity2);
         Spinner spinner3 = (Spinner) getActivity().findViewById(R.id.spincity3);
@@ -570,19 +571,22 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
         {
             if(str == "kilograms")
             {
-                if(IN.getOptionSelected() == "0")
+                if(getWeightLossTarget() != 0)
                 {
-                    float3 = float3 - 5;
+                    float3 = float3 = getWeightLossTarget();
                 }
+                else {
+                    if (IN.getOptionSelected() == "0") {
+                        float3 = float3 - 5;
+                    }
 
-                if(IN.getOptionSelected() == "1")
-                {
-                    float3 = float3 - 6;
-                }
+                    if (IN.getOptionSelected() == "1") {
+                        float3 = float3 - 6;
+                    }
 
-                if(IN.getOptionSelected() == "2")
-                {
-                    float3 = float3 - 10;
+                    if (IN.getOptionSelected() == "2") {
+                        float3 = float3 - 10;
+                    }
                 }
             }
             else
@@ -617,6 +621,45 @@ public class Start_Weight_Loss_ActivityCIF14Fragment extends Fragment {
         in = k;
         in = in/100;
         return in;
+    }
+
+    private float getWeightLossTarget()
+    {
+        if(hasValue())
+        {
+            return getHasValue();
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    private boolean hasValue()
+    {
+       return true;
+    }
+
+    private float getHasValue()
+    {
+
+            return getWeightLossBoxValue();
+
+    }
+
+    private float getWeightLossBoxValue()
+    {
+        EditText hasValue = (EditText) getActivity().findViewById(R.id.edit_text71);
+        String contents = hasValue.getText().toString();
+        if(contents != null && contents.length() >= 1)
+        {
+            float weightlosstozero = new RoundingCIF13().StringToFloat(contents);
+            return weightlosstozero;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
 }

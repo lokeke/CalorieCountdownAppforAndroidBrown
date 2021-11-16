@@ -1,5 +1,4 @@
 package ese.com.caloriecountdownappforandroidbrown;
-
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -18,8 +17,6 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.widget.Toolbar;
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -290,6 +287,12 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
         }
 
+        if (id == R.id.action_food_diary_credit) // Physical Activity Debit
+        {
+            StartClient_Guide();
+
+        }
+
 
 
 
@@ -315,7 +318,6 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         {
 
         }
-
 
         if (requestcode == REQUEST_CODE_START_WEIGHT_LOSS_ACTIVITY) {
             String vitals;
@@ -517,8 +519,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         {
             //Alogrithm Engineering ~> Android (Black ~> Builder) : This is Lego Box for where 5pm Magic Occurs :
 
-            MIF1NewDayEndSetAlarm dayEndSetAlarm = new MIF1NewDayEndSetAlarm();
-            dayEndSetAlarm.NewDayEndSetAlarm(new Date(), this);
+            //MIF1NewDayEndSetAlarm dayEndSetAlarm = new MIF1NewDayEndSetAlarm();
+            //dayEndSetAlarm.NewDayEndSetAlarm(new Date(), this);
 
         }
 
@@ -697,14 +699,100 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     @Override
     public void recreate()
     {
-        android.util.Log.d("Main", "We have been recreated, now delete this");
+        /*android.util.Log.d("Main", "We have been recreated, now delete this");
         //Simply get new Balance and display.
 
+        //Get Actual balance please tech
         mBalance = 76702;
+        //yeah
         mBalance_text = "76,702";
-
+//call new day and subtrack please
         mBalance_textview = (TextView)findViewById(R.id.textView);
-        mBalance_textview.setText(mBalance_text);
+        mBalance_textview.setText(mBalance_text);*/
+
+
+
+
+
+
+
+
+
+        //super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_ccd__gui__cd__cif1);
+
+        instance = this;
+
+        mCallback = new MyCallBack()
+        {
+            @Override
+            public void refreshMainActivity()
+            {
+                CCD_GUI_CD_CIF1.this.recreate();
+
+                //"OR"
+
+                //finish();
+                //startActivity(getIntent());
+            }
+        };
+
+        instance.Set_currentBalance();
+        //instance.Start_Cycle(); //Only after "Start_Weight_Loss_Used_For_First_Time!
+        appContext = getApplicationContext();
+
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_launcher7);
+
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Snackbar.make(view, "Update your Food Diary", Snackbar.LENGTH_LONG)
+                        .setAction("Update", null).show();
+            }
+        });
+
+        mCreditButton = (Button) findViewById(R.id.button2);
+        mDebitButton = (Button) findViewById(R.id.button);
+        mCreditButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                //MIF4_Data_Model_Adapter data_model_adapter = new MIF4_Data_Model_Adapter(getApplicationContext());
+                //data_model_adapter.setSex(true);
+                StartFoodDiaryAidSheetCIF3();
+                //CancelAlarm();
+            }
+        });
+
+        mDebitButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                StartDebitActivityCIF13();
+                //Set_currentBalance();
+            }
+        });
+
+
+        //final TextView countdownbalance = (TextView) findViewById(R.id.textView);
+        //countdownbalance.setText(RetrieveCountdownBalance());
+
+        //boolean value = getIntent().getBooleanExtra(NewDayCountdown.START_WEIGHT_LOSS,false);
+        //if(value)
+        //{
+        //Start_Weight_LossPlus24();
+        //}
+
+        //Start_Weight_Loss();*/
     }
 
 
@@ -738,15 +826,15 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         mBalance = new RoundingCIF13().StringToInt(currentBalance);
         if(data_model_adapter.getSex() == "MALE")
         {
-            mBalance = mBalance - 2570;
+            mBalance = mBalance - 2000;
         }
         if(data_model_adapter.getSex() == "FEMALE")
         {
-            mBalance = mBalance - 2050;
+            mBalance = mBalance - 2000;
         }
         else
         {
-            mBalance = mBalance - 2350;
+            mBalance = mBalance - 2000;
         }
         data_model_adapter.StoreBalance(new RoundingCIF13().IntToString(mBalance));
         data_model_adapter.StoreDayEndBalance((mBalance - 350 + 2570));
@@ -1112,6 +1200,26 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         ResetDinnerTime = dtime;
     }
 
+    public void ChangeTextColor()
+    {
+
+    }
+
+    public void ChangeButtonColor()
+    {
+
+    }
+
+    public void ChangeBackgroundImage()
+    {
+
+    }
+
+    public void Recalibrate()
+    {
+
+    }
+
     private void ResetAlarmTimer(ObjectWithAllTheTimesCIF10 obj)
     {
         ResetAlarmTimer(obj.getResetBreakfastTime(), obj.getResetLunchTime(), obj.getResetDinnerTime(), obj.getResetDayEnd());
@@ -1159,6 +1267,19 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             Day_of_the_Month = Kalends.DAY_OF_MONTH;
             Month = Kalends.MONTH;
             Year = Kalends.YEAR;
+        }
+
+        public void Start_Client_Guide()
+        {
+            ShootClientGuide();
+        }
+
+        private ShootClientGuide()
+        {
+            Start_Client_Guide_Activity();
+            {
+
+            }
         }
 
 

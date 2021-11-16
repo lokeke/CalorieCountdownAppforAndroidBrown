@@ -31,7 +31,11 @@ public class MIF1NewDayEndSetAlarm
             //CancelAlarm();
 
             //CFF Refinement Box i : *“Make DayEnd 9pm work properly first most important execution.
-            // *See Blackberry. *Bring NewDaySetAlarm out into MIF, when one DayEnd is set it Calls MIF for next go, must be and 9pm. ask users to round up last remaining boxes for the day give 30 minutes so 8:30pm Dinner notification and boom new day end like iPhone calculator steps set in Data like current for new Day end” check it works in Samsung well tight like boxes before (re)Loading ~> www.ese-edet.eu.
+            // *See Blackberry. *Bring NewDaySetAlarm out into MIF, when one DayEnd is set it Calls MIF for next go,
+            // must be and 9pm. ask users to round up last remaining boxes for the day give
+            // 30 minutes so 8:30pm Dinner notification and boom new day end like iPhone calculator
+            // steps set in Data like current for new Day end” check it works in Samsung well tight
+            // like boxes before (re)Load... -> PUSH -> WWW.ESE-EDET.EU*.
 
             mContext = mCon;
             java.util.Calendar Kalends = Calendar.getInstance();
