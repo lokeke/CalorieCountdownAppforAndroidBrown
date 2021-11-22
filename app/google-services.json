@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265899282375",
+    "project_id": "edrive-bde8f",
+    "storage_bucket": "edrive-bde8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265899282375:android:97342ab02423bbd06ad3e2",
+        "android_client_info": {
+          "package_name": "ese.com.caloriecountdownappforandroidbrown1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265899282375-l6iao6c5fga4gpc8k57urkvlp6su370v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5hf9RQJHfhfLZTYg6OzIBmt8ZehFU2g8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265899282375-l6iao6c5fga4gpc8k57urkvlp6su370v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

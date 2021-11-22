@@ -24,6 +24,22 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FoodNoteItemDetailHostActivity"
+            android:exported="false"
+            android:label="@string/title_activity_food_note_item_detail_host"
+            android:resizeableActivity="true"
+            tools:targetApi="24" />
+        <activity
+            android:name=".BBC_news_app_news_app"
+            android:exported="false"
+            android:label="@string/title_activity_bbc_news_app_news_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BBC_news_app"
+            android:exported="false"
+            android:label="@string/title_activity_bbc_news_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Other_BBC_Job_app"
             android:exported="false" />
         <activity

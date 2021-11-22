@@ -2120,6 +2120,11 @@
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
     <string name="title_activity_client_guide_acitivity">Client_Guide_Acitivity_Activity</string>
+    <string name="title_activity_bbc_news_app">BBC_news_app</string>
+    <string name="title_activity_bbc_news_app_news_app">BBC_news_app_news_app</string>
+    <string name="title_activity_food_note_item_detail_host">FoodNoteItemDetailHostActivity</string>
+    <string name="title_foodnoteitem_list">FoodNoteItems</string>
+    <string name="title_foodnoteitem_detail">FoodNoteItem Detail</string>
 
 
 </resources>

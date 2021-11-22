@@ -2,6 +2,7 @@ package ese.com.caloriecountdownappforandroidbrown;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -19,6 +20,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -34,6 +36,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private static final String webadress = "https://web2.0calc.com/";
     private static final String CALCULATOR_PACKAGE_NAME = "com.android.calculator2";
     private static final String CALCULATOR_CLASS_NAME = "com.android.calculator2.Calculator";
+    private static final String filepath = "~/ClientGuide.pdf";
 
     private static final int REQUEST_CODE_GET_FOOD_ITEM = 1;
     private static final int REQUEST_CODE_START_DEBIT_ACTIVITY = 5;
@@ -43,6 +46,7 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
     private static final int REQUEST_CODE_MONTHLY_STATEMENT_ACTIVITY = 9;
     private static final int REQUEST_CODE_DIET_PLAN = 16;
     private static final int REQUEST_CODE_START_JOURNAL_ACTIVITY = 17;
+    private static final int REQUEST_CODE_GET_FOOD_NOTE_ITEM = 18;
 
     private Button mCreditButton;
     private Button mDebitButton;
@@ -193,8 +197,6 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
    // }
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -220,6 +222,13 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         if (id == R.id.sub_submenuitem1) {
 
             StartWebCalculatorFragment2();
+
+            return true;
+        }
+
+        if (id == R.id.sub_submenuitem91) {
+
+            StartFoodDiaryNotes();
 
             return true;
         }
@@ -287,10 +296,9 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
         }
 
-        if (id == R.id.action_food_diary_credit) // Physical Activity Debit
+        if (id == R.id.action_Client_Guide) // Physical Activity Debit
         {
-            StartClient_Guide();
-
+            Start_Client_Guide();
         }
 
 
@@ -299,6 +307,29 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void Start_Client_Guide()
+    {
+        ShootClientGuide();
+    }
+
+    private void ShootClientGuide()
+    {
+
+        File file = new File(filepath);
+        Uri path = Uri.fromFile(file);
+        Intent pdfOpenintent = new Intent(Intent.ACTION_VIEW);
+        pdfOpenintent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        pdfOpenintent.setDataAndType(path, "application/pdf");
+        try {
+            startActivity(pdfOpenintent);
+        }
+        catch (ActivityNotFoundException e) {
+
+        }
+
+    }
+
 
 
     @Override
@@ -678,6 +709,16 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
         this.startActivityForResult(i, REQUEST_CODE_GET_FOOD_ITEM);
         android.util.Log.d("Pre Multi-Search", "number4");
         //CancelAlarm();
+
+    }
+
+    private void StartFoodDiaryNotes()
+    {
+        android.util.Log.d("Pre Food Diary Notes", "number2");
+        Intent i = new Intent(CCD_GUI_CD_CIF1.this, FoodNoteItemDetailHostActivity.class);
+        android.util.Log.d("Pre Food Diary Notes", "number3");
+        this.startActivityForResult(i, REQUEST_CODE_GET_FOOD_NOTE_ITEM);
+        android.util.Log.d("Pre Food Diary Notes", "number4");
 
     }
 
@@ -1269,18 +1310,8 @@ public class CCD_GUI_CD_CIF1 extends AppCompatActivity {
             Year = Kalends.YEAR;
         }
 
-        public void Start_Client_Guide()
-        {
-            ShootClientGuide();
-        }
 
-        private ShootClientGuide()
-        {
-            Start_Client_Guide_Activity();
-            {
 
-            }
-        }
 
 
     }
